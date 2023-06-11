@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../../Shared/Navbar/Navbar";
 import Footer from "../../Shared/Footer/Footer";
 import { Outlet } from "react-router-dom";
 
 const Parent = () => {
+  const [theme, setTheme] = useState("light");
+  useEffect(() => {
+    const newTheme = localStorage.getItem("theme");
+    if (newTheme) {
+      setTheme(newTheme);
+    }
+  }, []);
+
   return (
-    <div>
-      <Navbar />
+    <div data-theme={theme}>
+      <Navbar theme={theme} setTheme={setTheme} />
       <Outlet />
       <Footer />
     </div>
