@@ -15,7 +15,7 @@ const Parent = () => {
   return (
     <div 
     // data-theme={theme} 
-    className={`${theme === "dark" && "dark"}`}>
+    className={`${theme === "dark" && "dark"} font-poppins`}>
       <Navbar theme={theme} setTheme={setTheme} />
       <Outlet />
       <Footer />
