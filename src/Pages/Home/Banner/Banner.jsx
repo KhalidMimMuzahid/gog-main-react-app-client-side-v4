@@ -82,13 +82,13 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div>
-        <h3>Start learning with </h3>
-        <h3>Geeks of Gurukul</h3>
-        <p>
-          Get unlimited access to structured courses & doubt clearing sessions
+      <div className="py-30">
+        <h3 className="text-[36px] font-bold text-right"><span>Start learning with</span> <br />
+        <span>Geeks of Gurukul</span></h3>
+        <p className="text-[18px] text-[#8A8F98] text-right font-medium">
+          Get unlimited access to structured courses & doubt <br /> clearing sessions
         </p>
-        <button className='px-4 py-2 text-white bg-[#00A3FF] rounded-[20px]'>
+        <button className='px-4 py-2 text-white bg-[#00A3FF] rounded-[20px] ml-[74%] my-4'>
           Assessment Test
         </button>
       </div>
