@@ -4,6 +4,7 @@ import Banner from "./Banner/Banner";
 
 import SchoolChamp from "./UpCommingBatches/SchoolChamp/SchoolChamp";
 import Landing from "./Landing/Landing";
+import SDEInfo from "./SDEInfo/SDEInfo";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
 
       <Landing />
       <Banner/>
+      <SDEInfo />
       <SchoolChamp/>
 
     </div>
