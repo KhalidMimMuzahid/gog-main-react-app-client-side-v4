@@ -7,7 +7,7 @@ import roadmap from "../../../assets/Banner/roadmap.svg";
 
 const Banner = () => {
   return (
-    <div className='p-4 grid grid-cols-1 md:grid-cols-2'>
+    <div className='grid grid-cols-1 md:grid-cols-2 p-[65px]'>
       <div className='flex items-center justify-center gap-[10px]'>
         <div className='flex flex-col gap-[40px]'>
           <div className='w-[340px] h-[170px] rounded-[20px] bg-[#BDF5BC] p-5 hover:translate-x-8 hover:translate-y-8 transition-[1500ms] hover:cursor-pointer'>
@@ -84,7 +84,7 @@ const Banner = () => {
       </div>
       <div className="py-30">
         <h3 className="text-[36px] font-bold text-right"><span>Start learning with</span> <br />
-        <span>Geeks of Gurukul</span></h3>
+        <span className="text-[#37ED81]">Geeks of Gurukul</span></h3>
         <p className="text-[18px] text-[#8A8F98] text-right font-medium">
           Get unlimited access to structured courses & doubt <br /> clearing sessions
         </p>
