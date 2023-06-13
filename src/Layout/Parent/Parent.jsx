@@ -17,7 +17,7 @@ const Parent = () => {
       // data-theme={theme}
       className={`${theme === "dark" && "dark"}`}
     >
-      <div className="font-poppins bg:white dark:bg-[#121313]">
+      <div className="font-poppins bg-[#F8FFF9] dark:bg-[#121313]">
         <Navbar theme={theme} setTheme={setTheme} />
         <Outlet />
         <Footer />
