@@ -52,7 +52,7 @@ const navbarVars2 = [
 
 const Navbar = ({ theme, setTheme }) => {
   return (
-    <div className="sticky top-0 z-100">
+    <div className="sticky top-0 z-10">
       <nav className="bg-[#F8FFF9] dark:bg-[#121313] shadow dark:shadow-[#41414140] text-[#101010] dark:text-white">
         <div className="px-[75px] mx-auto ">
           <div className="flex items-center justify-between h-[90px]">
