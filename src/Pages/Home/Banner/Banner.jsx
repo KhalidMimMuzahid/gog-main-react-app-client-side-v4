@@ -7,13 +7,13 @@ import roadmap from "../../../assets/Banner/roadmap.svg";
 
 const Banner = () => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 p-[65px]'>
+    <div className='grid grid-cols-1 md:grid-cols-2 p-[40px]'>
       <div className='flex items-center justify-center gap-[10px]'>
         <div className='flex flex-col gap-[40px]'>
           <div className='w-[340px] h-[170px] rounded-[20px] bg-[#BDF5BC] p-5 hover:translate-x-8 hover:translate-y-8 transition-[1500ms] hover:cursor-pointer'>
             <div className='flex'>
               <div className="w-1/2 font-medium">
-                <p className="text-[20px]">
+                <p className="text-[20px] text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC]">
                   Students Currently
                   <br />
                   Enrolled
@@ -28,7 +28,7 @@ const Banner = () => {
           <div className='w-[340px] h-[170px] rounded-[20px] bg-[#BDF5BC] p-5'>
             <div className='flex'>
               <div className="w-1/2 font-medium">
-                <p className="text-[20px]">Total Batch</p>
+                <p className="text-[20px] text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC]">Total Batch</p>
                 <p className="text-[36px]">10+</p>
               </div>
               <div className="w-1/2">
@@ -40,8 +40,8 @@ const Banner = () => {
             <div className='flex'>
               <div className="w-1/2 font-medium">
                 <p className="text-[20px]">
-                  We Started <br />
-                  Our Journey
+                  <span className="text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC]">We Started</span> <br />
+                  <span className="text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC]">Our Journey</span>
                 </p>
                 <p className="text-[36px]">2023</p>
               </div>
@@ -56,8 +56,8 @@ const Banner = () => {
             <div className='flex'>
               <div className="w-1/2 font-medium">
                 <p className="text-[20px]">
-                  Placement <br />
-                  Rate
+                  <span className="text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC]">Placement</span> <br />
+                  <span className="text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC]">Rate</span>
                 </p>
                 <p className="text-[36px]">96%</p>
               </div>
@@ -70,8 +70,8 @@ const Banner = () => {
             <div className='flex'>
               <div className="w-1/2 font-medium">
                 <p className="text-[20px]">
-                  Hiring <br />
-                  Partners
+                  <span className="text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC]">Hiring</span> <br />
+                  <span className="text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC]">Partners</span>
                 </p>
                 <p className="text-[36px]">50+</p>
               </div>
@@ -82,15 +82,17 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="py-30">
-        <h3 className="text-[36px] font-bold text-right"><span>Start learning with</span> <br />
+      <div className="grid place-items-center">
+        <div className="p-4">
+        <h3 className="text-[36px] font-bold text-right text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#4BA25D] via-[#3DA5BD] to-[#905BEC]"><span>Start learning with</span> <br />
         <span className="text-[#37ED81]">Geeks of Gurukul</span></h3>
         <p className="text-[18px] text-[#8A8F98] text-right font-medium">
           Get unlimited access to structured courses & doubt <br /> clearing sessions
         </p>
-        <button className='px-4 py-2 text-white bg-[#00A3FF] rounded-[20px] ml-[74%] my-4'>
+        <button className='px-4 py-2 text-white bg-[#00A3FF] rounded-[20px] my-4 float-right'>
           Assessment Test
         </button>
+        </div>
       </div>
     </div>
   );
