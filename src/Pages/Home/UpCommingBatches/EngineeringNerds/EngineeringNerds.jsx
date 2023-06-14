@@ -1,124 +1,44 @@
-import React from 'react';
-import hourGlass from "../../../../assets/icons/Duration.svg";
-import Clock from "../../../../assets/icons/Clock.svg";
-import Graduation from "../../../../assets/icons/Graduation cap.svg";
-import prduct from "../../../../assets/icons/User Trusted Product.svg";
+import React from "react";
+import CardComponent from "../CardComponent/CardComponent";
+
+const info = [
+  {
+    heading: "Electrical Engineering",
+    pricing: "₹3999/month",
+    desc: "Electrical engineering is a field of engineering that deals with the study and application of electricity, electronics,and electromagnetism. Electrical engineers work in a very wide range of industries & the skills required are likewise variable.",
+    timing: "Flexible time",
+    duration: "36 weeks",
+    eligibility: "Engineering branches",
+  },
+
+  {
+    heading: "Mechanical Engineering",
+    pricing: "₹3999/month",
+    desc: "Mechanical engineering is a branch of engineering that deals with the design, manufacturing, and maintenance of mechanical systems.Using principles motion,energy,force ensuring designs safely,efficiently,and reliably.",
+    timing: "Flexible time",
+    duration: "36 weeks",
+    eligibility: "Engineering branches",
+  },
+];
 
 const EngineeringNerds = () => {
-    return (
-        <div className="mt-[120px]">
-      <h2 className="text-[36px] font-[700] text-center	text-transparent bg-clip-text text-gradient bg-gradient-to-r from-green-500 to-blue-500">
-        UPCOMING <span className="text-[#4BA25D]">ENGINEERING NERDS</span> BATCHES
+  return (
+    <div className="mt-[120px] px-[65px]">
+      <h2 className="text-4xl font-medium text-center text-transparent bg-clip-text text-gradient bg-gradient-to-r from-green-500 to-blue-500 mb-[24px]">
+        UPCOMING{" "}
+        <span className="text-[#4BA25D] font-bold">ENGINEERING NERDS</span>{" "}
+        BATCHES
       </h2>
-      <p className="text-center leading-27 text-[18px] font-[500]">
-      We Provide Job Assistance Engineering Courses for Graduate and Undergraduate, Engineering Folks.
+      <p className="text-center leading-27 text-[18px] font-[500] dark:text-white">
+        We Provide Job Assistance Engineering Courses for Graduate and
+        Undergraduate, Engineering Folks.
       </p>
-      <div className="px-[65px] grid grid-cols-1 md:grid-cols-2 gap-10 mt-[80px]">
-        <div className="flex flex-col items-start   w-625  bg-green-200 rounded-2xl">
-          <div className="p-[40px]">
-            <div className="grid grid-cols-4  content-evenly content-between">
-              <div className="text-[24px]  col-span-3 font-[600] text-gray-900">
-                <h4>Electrical Engineering</h4>
-              </div>
-              <div className="">
-                <h4 className=" float-right h-29 w-120 left-425 top-7 rounded-[16px] p-1 bg-gradient-to-r from-green-500 to-blue-500  text-[16px] font-[400] text-[#FFFFFF] text-center">
-                ₹ 3999/month
-                </h4>
-              </div>
-            </div>
-            <div className="mt-[32px]">
-                <p className="text-md font-normal font-poppins text-base leading-6 tracking-normal text-justify">Electrical engineering is a field of engineering that deals with the study and application of electricity, electronics,and electromagnetism. Electrical engineers work in a very wide range of industries & the skills required are likewise variable.</p>
-            </div>
-            <div className="mt-[32px]">
-                <div className="flex flex-col">
-                    <div className="flex items-center gap-[25px]">
-                        <img  src={hourGlass} alt="Hour glass image" />
-                        <p className="flex gap-10"><span>Class Timings</span> <span>-</span> <span>Flexible time</span></p>
-                    </div>
-                    <div className="flex items-center gap-[25px]">
-                        <img  src={Clock} alt="clock image" />
-                        <p className="flex gap-10"><span>Duration</span> <span className="pl-[42px]" >-</span> <span>36 weeks</span></p>
-                    </div>
-                    <div className="flex items-center gap-[25px]">
-                        <img src={Graduation} alt="Hour glass image" />
-                        <p className="flex gap-10"><span>Eligibility</span> <span className="pl-[42px]">-</span> <span>Engineering branches</span></p>
-                    </div>
-                    <div className="flex items-center gap-[25px]">
-                        <img src={prduct} alt="Hour glass image" />
-                        <p className="flex gap-10">Guided by a team of individuals from the IITians</p>
-                    </div>
-                </div>
-            </div>
-            <div className="my-[32px]  border border-green-400 border-opacity-75">
-              
-            </div>
-
-            <div className="flex justify-between">
-              <div className="flex gap-10">
-                <img  src={Clock} alt="clock image" />
-                <div><p className="text-[#101010] font-[400] text-[18px]">Hurry up</p> <p className="text-[#4BA25D] font-[600] text-[18px]">Limited Seat</p></div>
-              </div>
-              <div className="flex gap-5 ">
-                <div className="float-right"><button className="btn btn-outline rounded-full text-[16px] font-[500] eading-[24px]">Know More</button></div>
-                <div className="float-right"><button className="btn btn-info rounded-full text-[white] text-[16px] font-[500] eading-[24px]">Know More</button></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-col items-start   w-625  bg-green-200 rounded-2xl">
-          <div className="p-[40px]">
-            <div className="grid grid-cols-4  content-evenly content-between">
-              <div className="text-[24px]  col-span-3 font-[600] text-gray-900">
-                <h4>Mechanical Engineering</h4>
-              </div>
-              <div className="">
-                <h4 className=" float-right h-29 w-120 left-425 top-7 rounded-[16px] p-1 bg-gradient-to-r from-green-500 to-blue-500  text-[16px] font-[400] text-[#FFFFFF] text-center">
-                ₹ 3999/month
-                </h4>
-              </div>
-            </div>
-            <div className="mt-[32px]">
-                <p className="text-md font-normal font-poppins text-base leading-6 tracking-normal text-justify">Mechanical engineering is a branch of engineering that deals with the design, manufacturing, and maintenance of mechanical systems.Using principles motion,energy,force ensuring designs safely,efficiently,and reliably.</p>
-            </div>
-            <div className="mt-[32px]">
-                <div className="flex flex-col">
-                    <div className="flex items-center gap-[25px]">
-                        <img  src={hourGlass} alt="Hour glass image" />
-                        <p className="flex gap-10"><span>Class Timings</span> <span>-</span> <span>Flexible time</span></p>
-                    </div>
-                    <div className="flex items-center gap-[25px]">
-                        <img  src={Clock} alt="clock image" />
-                        <p className="flex gap-10"><span>Duration</span> <span className="pl-[42px]" >-</span> <span>36 weeks</span></p>
-                    </div>
-                    <div className="flex items-center gap-[25px]">
-                        <img src={Graduation} alt="Hour glass image" />
-                        <p className="flex gap-10"><span>Eligibility</span> <span className="pl-[42px]">-</span> <span>Engineering branches</span></p>
-                    </div>
-                    <div className="flex items-center gap-[25px]">
-                        <img src={prduct} alt="Hour glass image" />
-                        <p className="flex gap-10">Guided by a team of individuals from the IITians</p>
-                    </div>
-                </div>
-            </div>
-            <div className="my-[32px]  border border-green-400 border-opacity-75">
-              
-            </div>
-
-            <div className="flex justify-between">
-              <div className="flex gap-10">
-                <img  src={Clock} alt="clock image" />
-                <div><p className="text-[#101010] font-[400] text-[18px]">Hurry up</p> <p className="text-[#4BA25D] font-[600] text-[18px]">Limited Seat</p></div>
-              </div>
-              <div className="flex gap-5 ">
-                <div className="float-right"><button className="btn btn-outline rounded-full text-[16px] font-[500] eading-[24px]">Know More</button></div>
-                <div className="float-right"><button className="btn btn-info rounded-full text-[white] text-[16px] font-[500] eading-[24px]">Know More</button></div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-[80px]">
+        <CardComponent info={info[0]} />
+        <CardComponent info={info[1]} />
       </div>
     </div>
-    );
+  );
 };
 
 export default EngineeringNerds;
