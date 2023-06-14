@@ -9,6 +9,7 @@ import EngineeringNerds from "./UpCommingBatches/EngineeringNerds/EngineeringNer
 
 import Landing from "./Landing/Landing";
 import SDEInfo from "./SDEInfo/SDEInfo";
+import ExploreCourses from "./ExploreCourses/ExploreCourses";
 
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
       <SchoolChamp/>
       <CodingBees/>
       <EngineeringNerds/>
+      <ExploreCourses/>
 
     </div>
   );
