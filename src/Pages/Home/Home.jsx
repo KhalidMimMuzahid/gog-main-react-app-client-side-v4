@@ -10,17 +10,29 @@ import EngineeringNerds from "./UpCommingBatches/EngineeringNerds/EngineeringNer
 import Landing from "./Landing/Landing";
 import SDEInfo from "./SDEInfo/SDEInfo";
 
+import Super30 from "./Super30/Super30";
+import Faq from "./Faq/Faq";
+
+import ExploreCourses from "./ExploreCourses/ExploreCourses";
+
+
 
 const Home = () => {
   return (
     <div>
 
       <Landing />
-      <Banner/>
+      <Banner />
+      <Super30/>
       <SDEInfo />
       <SchoolChamp/>
       <CodingBees/>
       <EngineeringNerds/>
+
+      <Faq/>
+
+      <ExploreCourses/>
+
 
     </div>
   );
