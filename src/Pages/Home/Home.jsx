@@ -10,6 +10,7 @@ import EngineeringNerds from "./UpCommingBatches/EngineeringNerds/EngineeringNer
 import Landing from "./Landing/Landing";
 import SDEInfo from "./SDEInfo/SDEInfo";
 import Super30 from "./Super30/Super30";
+import Faq from "./Faq/Faq";
 
 
 const Home = () => {
@@ -23,7 +24,7 @@ const Home = () => {
       <SchoolChamp/>
       <CodingBees/>
       <EngineeringNerds/>
-
+      <Faq/>
     </div>
   );
 };
