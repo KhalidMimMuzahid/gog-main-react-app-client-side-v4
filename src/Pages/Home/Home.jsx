@@ -14,6 +14,7 @@ import Super30 from "./Super30/Super30";
 import Faq from "./Faq/Faq";
 
 import ExploreCourses from "./ExploreCourses/ExploreCourses";
+import DreamJob from "./DreamJob/DreamJob";
 
 
 
@@ -28,6 +29,8 @@ const Home = () => {
       <SchoolChamp/>
       <CodingBees/>
       <EngineeringNerds/>
+
+      <DreamJob/>
 
       <Faq/>
 
