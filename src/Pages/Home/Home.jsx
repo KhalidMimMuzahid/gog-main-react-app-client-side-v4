@@ -8,6 +8,7 @@ import CodingBees from "./UpCommingBatches/CodingBees/CodingBees";
 import EngineeringNerds from "./UpCommingBatches/EngineeringNerds/EngineeringNerds";
 
 import Landing from "./Landing/Landing";
+import SDEInfo from "./SDEInfo/SDEInfo";
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
 
       <Landing />
       <Banner/>
+      <SDEInfo />
       <SchoolChamp/>
       <CodingBees/>
       <EngineeringNerds/>
