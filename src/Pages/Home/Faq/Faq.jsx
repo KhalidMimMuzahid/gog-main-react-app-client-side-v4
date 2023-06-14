@@ -50,9 +50,9 @@ const Faq = () => {
       </h3>
       <div className='join join-vertical w-full'>
         {faqs?.map((faq, i) => (
-          <div key={i} className='collapse collapse-arrow join-item border border-base-300'>
+          <div key={i} className='collapse collapse-arrow join-item'>
             <input type='radio' name='my-accordion-4'/>
-            <div className='collapse-title text-[18px] font-medium'>
+            <div className='collapse-title text-[18px] font-medium dark:text-white'>
               {faq?.q}
             </div>
             <div className='collapse-content'>
