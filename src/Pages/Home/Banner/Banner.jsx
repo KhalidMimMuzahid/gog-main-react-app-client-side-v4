@@ -7,8 +7,8 @@ import roadmap from "../../../assets/Banner/roadmap.svg";
 
 const Banner = () => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 p-[40px]'>
-      <div className='flex items-center justify-center gap-[10px]'>
+    <div className='grid grid-cols-1 md:grid-cols-2 p-[65px]'>
+      <div className='flex flex-col md:flex-row lg:flex-row items-center justify-center gap-[40px]'>
         <div className='flex flex-col gap-[40px]'>
           <div className='w-[340px] h-[170px] rounded-[20px] bg-[#BDF5BC] p-5 hover:translate-x-8 hover:translate-y-8 transition-[1500ms] hover:cursor-pointer'>
             <div className='flex'>
