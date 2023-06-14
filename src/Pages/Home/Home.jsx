@@ -8,6 +8,7 @@ import CodingBees from "./UpCommingBatches/CodingBees/CodingBees";
 import EngineeringNerds from "./UpCommingBatches/EngineeringNerds/EngineeringNerds";
 
 import Landing from "./Landing/Landing";
+import SDEInfo from "./SDEInfo/SDEInfo";
 import Super30 from "./Super30/Super30";
 
 
@@ -18,6 +19,7 @@ const Home = () => {
       <Landing />
       <Banner />
       <Super30/>
+      <SDEInfo />
       <SchoolChamp/>
       <CodingBees/>
       <EngineeringNerds/>
