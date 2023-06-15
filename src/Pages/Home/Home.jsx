@@ -14,6 +14,7 @@ import Super30 from "./Super30/Super30";
 import Faq from "./Faq/Faq";
 
 import ExploreCourses from "./ExploreCourses/ExploreCourses";
+import StudentReview from "./StudentReview/StudentReview";
 import DreamJob from "./DreamJob/DreamJob";
 import Benefits from "./Benefits/Benefits";
 
@@ -39,8 +40,8 @@ const Home = () => {
       <Faq/>
 
       <ExploreCourses/>
-
-
+      <StudentReview />
+      <Faq/>
     </div>
   );
 };
