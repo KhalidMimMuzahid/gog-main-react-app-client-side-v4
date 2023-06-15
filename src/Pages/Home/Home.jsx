@@ -15,6 +15,9 @@ import Faq from "./Faq/Faq";
 
 import ExploreCourses from "./ExploreCourses/ExploreCourses";
 import StudentReview from "./StudentReview/StudentReview";
+import DreamJob from "./DreamJob/DreamJob";
+import Benefits from "./Benefits/Benefits";
+
 
 
 
@@ -29,6 +32,13 @@ const Home = () => {
       <SchoolChamp/>
       <CodingBees/>
       <EngineeringNerds/>
+
+      <DreamJob/>
+      <Benefits/>
+      
+
+      <Faq/>
+
       <ExploreCourses/>
       <StudentReview />
       <Faq/>
