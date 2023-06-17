@@ -4,7 +4,7 @@ import EachCarouselSection from "./EachCarouselSection/EachCarouselSection";
 function Carousel({data}) {
   return (
     <div className="my-10 flex flex-col justify-between gap-6 items-center">
-      <div className="carousel carousel-center w-[60%] md:w-[90%] sm:w-[70%]">
+      <div className="carousel carousel-center w-[50%] md:w-[90%] sm:w-[70%]">
         {data.map((item, index) => (
           <div id={item?.id} className="carousel-item w-full" key={index}>
             <EachCarouselSection item={item} />
