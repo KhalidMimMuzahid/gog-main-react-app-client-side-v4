@@ -41,7 +41,6 @@ const Home = () => {
 
       <ExploreCourses/>
       <StudentReview />
-      <Faq/>
     </div>
   );
 };
