@@ -87,7 +87,9 @@ function StudentReview() {
             ))}
           </div>
         </div>
-        
+        <div className="">
+          <Carousel data={data} />
+        </div>
       </div>
     </div>
   );
