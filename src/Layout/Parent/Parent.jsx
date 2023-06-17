@@ -20,7 +20,7 @@ const Parent = () => {
       <div className="font-poppins bg-[#F8FFF9] dark:bg-[#121313]">
         <Navbar theme={theme} setTheme={setTheme} />
         <Outlet />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );
