@@ -43,7 +43,7 @@ const Benefits = () => {
     ]
 
     return (
-        <div className='mx-[65px]'>
+        <div className='mx-[20px] md:mx-[65px]'>
             <h4 className='mb-[80px] text-center font-[500] md:text-[36px] text-[22px]  bg-clip-text text-transparent bg-gradient-to-r from-green-500 via-blue-500 to-purple-500'>Geeks of Gurukul offers a range of benefits to students, including:</h4>
 
             <div className='mx-auto flex flex-col gap-10'>

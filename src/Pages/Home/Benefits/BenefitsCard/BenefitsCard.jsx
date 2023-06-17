@@ -6,11 +6,11 @@ const BenefitsCard = ({each}) => {
     
 
     return (
-        <div className=" bg-[#D1FFD0] text-center mx-[80px] md:text-left rounded-2xl flex flex-col md:flex-row  items-center px-[20px] py-[40px] gap-[40px] ">
-            <div><img src={thambnail} alt="images for benefits" /></div>
+        <div className=" bg-[#D1FFD0] dark:bg-[#222C26] text-center md:mx-[80px] md:text-left rounded-2xl flex flex-col md:flex-row  items-center px-[20px] md:py-[40px] gap-[40px] ">
+            <div><img className='w-full' src={thambnail} alt="images for benefits" /></div>
             <div>
-                <h4 className='font-[600] text-[18px] text-[#101010] mb-[24px]'>{title}</h4>
-                <p className='font-[500] text-[16px] text-[#101010] mb-[24px]'>{body}</p>
+                <h4 className='font-[600] text-[18px] dark:text-[#FFFFFF] text-[#101010] mb-[24px]'>{title}</h4>
+                <p className='font-[500] text-[16px]  dark:text-[#8A8F98] text-[#101010] mb-[24px]'>{body}</p>
             </div>
         </div>
     );
