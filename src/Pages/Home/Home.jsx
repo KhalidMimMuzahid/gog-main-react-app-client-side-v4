@@ -17,6 +17,7 @@ import ExploreCourses from "./ExploreCourses/ExploreCourses";
 import StudentReview from "./StudentReview/StudentReview";
 import DreamJob from "./DreamJob/DreamJob";
 import Benefits from "./Benefits/Benefits";
+import StudentPlaced from "./StudentPlaced/StudentPlaced";
 
 
 
@@ -24,7 +25,6 @@ import Benefits from "./Benefits/Benefits";
 const Home = () => {
   return (
     <div>
-
       <Landing />
       <Banner />
       <Super30/>
@@ -32,15 +32,12 @@ const Home = () => {
       <SchoolChamp/>
       <CodingBees/>
       <EngineeringNerds/>
-
       <DreamJob/>
       <Benefits/>
-      
-
-      <Faq/>
-
       <ExploreCourses/>
       <StudentReview />
+      <StudentPlaced/>
+      <Faq/>
     </div>
   );
 };
