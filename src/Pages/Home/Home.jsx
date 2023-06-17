@@ -25,7 +25,6 @@ import StudentPlaced from "./StudentPlaced/StudentPlaced";
 const Home = () => {
   return (
     <div>
-
       <Landing />
       <Banner />
       <Super30/>
@@ -33,18 +32,11 @@ const Home = () => {
       <SchoolChamp/>
       <CodingBees/>
       <EngineeringNerds/>
-
       <DreamJob/>
       <Benefits/>
-      
-
-      <Faq/>
-
       <ExploreCourses/>
       <StudentReview />
-
       <StudentPlaced/>
-
       <Faq/>
     </div>
   );
