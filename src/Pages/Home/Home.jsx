@@ -17,6 +17,7 @@ import ExploreCourses from "./ExploreCourses/ExploreCourses";
 import StudentReview from "./StudentReview/StudentReview";
 import DreamJob from "./DreamJob/DreamJob";
 import Benefits from "./Benefits/Benefits";
+import StudentPlaced from "./StudentPlaced/StudentPlaced";
 
 
 
@@ -41,6 +42,9 @@ const Home = () => {
 
       <ExploreCourses/>
       <StudentReview />
+
+      <StudentPlaced/>
+
       <Faq/>
     </div>
   );
