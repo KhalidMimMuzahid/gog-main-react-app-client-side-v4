@@ -7,10 +7,10 @@ import polygon from "../../../assets/someBG/polygon.svg";
 const ExploreCourses = ({ info }) => {
   return (
     <div className="relative rounded-3xl m-[30px] md:m-[65px] p-10 lg:p-16 text-[#101010] dark:text-white bg-white shadow-md shadow-[#19B85140] dark:bg-[#1C202A] dark:shadow-none">
-      <img src={star} className="w-[20%] md:w-[15%] absolute left-0 bottom-0" />
-      <img src={rectangle} className="w-[20%] md:w-[15%] absolute top-0 left-1/4" />
-      <img src={polygon} className="w-[20%] md:w-[15%] absolute bottom-0 right-1/4" />
-      <img src={circle} className="w-[20%] md:w-[15%] absolute top-0 right-0" />
+      <img src={star} className="w-[20%] md:w-[15%] lg:w-[10%] absolute left-0 bottom-0" />
+      <img src={rectangle} className="w-[20%] md:w-[15%] lg:w-[10%] absolute top-0 left-1/4" />
+      <img src={polygon} className="w-[20%] md:w-[15%] lg:w-[10%] absolute bottom-0 right-1/4" />
+      <img src={circle} className="w-[20%] md:w-[15%] lg:w-[10%] absolute top-0 right-0" />
       <div className="">
         <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-10">
           <div className="col-span-1 lg:col-span-10 z-10">
