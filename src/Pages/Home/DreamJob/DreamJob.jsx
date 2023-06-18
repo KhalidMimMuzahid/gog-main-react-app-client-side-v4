@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import simpleSteps from "../../../assets/someBG/5 Simple Steps.svg";
 import simpleSteps2 from "../../../assets/someBG/02.svg";
 import simpleSteps3 from "../../../assets/someBG/03.svg";
 import simpleSteps4 from "../../../assets/someBG/04.svg";
 import simpleSteps5 from "../../../assets/someBG/05.svg";
-import style from "./dreamJob.module.css"
+import style from "./dreamJob.module.css";
 import Step from "./Step/Step";
 
 const DreamJob = () => {
@@ -12,6 +12,20 @@ const DreamJob = () => {
     expandedIndex: null,
     selectedThambnail: simpleSteps,
   });
+
+  useEffect(() => {
+    const stepsImage = document.getElementById("steps-image");
+    const d_nested = document.getElementById("steps-image-id");
+    d_nested && stepsImage?.removeChild(d_nested);
+    const newImageElement = document.createElement("img");
+    newImageElement.setAttribute("style", "transition: all 4s ease-in-out 1s;");
+    newImageElement.setAttribute("src", jobStatus?.selectedThambnail);
+    newImageElement.setAttribute("id", "steps-image-id");
+    // newImageElement.setAttribute("class", "steps-image-class");
+    newImageElement.setAttribute("class", style?.steps_image_class);
+
+    stepsImage.appendChild(newImageElement);
+  }, [jobStatus?.expandedIndex]);
 
   const stepsForGotHired = [
     {
@@ -52,14 +66,19 @@ const DreamJob = () => {
       <div className="md:px-[60px] grid grid-cols-1 gap-10 md:grid-cols-2 mt-[40px] ">
         <div className="duration-300">
           <ul className="text-[#101010] font-[500] md:text-[24px] text-[18px] dark:text-[#FFFFFF]">
-            {stepsForGotHired?.map((step, i) => (
-              <Step key={i} index={i} jobStatus={jobStatus} setJobStatus={setJobStatus} step={step} defaultThumb = {simpleSteps} />
-            ))}
+              {stepsForGotHired?.map((step, i) => (
+                <Step
+                  key={i}
+                  index={i}
+                  jobStatus={jobStatus}
+                  setJobStatus={setJobStatus}
+                  step={step}
+                  defaultThumb={simpleSteps}
+                />
+              ))}
           </ul>
         </div>
-        <div className="mx-auto my-auto">
-          <img src={jobStatus?.selectedThambnail} className={style.fade_in} alt="steps image" />
-        </div>
+        <div className="mx-auto my-auto" id="steps-image"></div>
       </div>
     </div>
   );
