@@ -70,7 +70,7 @@ function StudentReview() {
   return (
     <div className="flex justify-center p-[30px] md:py-[65px] mx-auto">
       <div className="text-[#101010] dark:text-white">
-        <h2 className="text-center text-[36px] font-medium text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#4BA25D] via-[#3DA5BD] to-[#905BEC] my-5">
+        <h2 className="text-center text-[25px] md:text-[36px] font-medium text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#4BA25D] via-[#3DA5BD] to-[#905BEC] my-10">
           100+ CODING GEEKS TO INSPIRE YOU
         </h2>
         <div className="py-[80px] hidden lg:block">

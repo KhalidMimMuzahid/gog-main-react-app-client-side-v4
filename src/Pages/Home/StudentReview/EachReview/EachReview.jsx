@@ -15,7 +15,7 @@ function EachReview({ item, index, active, setActive, setShouldUpdate }) {
         style.triangle_gradient
       } relative pt-5 px-5 ${
         index === active ? "w-[400px]" : "w-[240px]"
-      } h-[800px]  duration-300 overflow-hidden dark:bg-[#191C1E] border border-[#37ED81] hover:cursor-pointer`}
+      } h-[800px]  duration-300 overflow-hidden dark:bg-[#191C1E] border border-[#b1ffd0] dark:border-[#12502b] hover:cursor-pointer`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={() => setShouldUpdate(true)}
     >
