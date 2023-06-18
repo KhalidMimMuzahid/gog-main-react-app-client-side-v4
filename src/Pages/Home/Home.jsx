@@ -18,6 +18,7 @@ import StudentReview from "./StudentReview/StudentReview";
 import DreamJob from "./DreamJob/DreamJob";
 import Benefits from "./Benefits/Benefits";
 import StudentPlaced from "./StudentPlaced/StudentPlaced";
+import MeetOurTeam from "./MeetOurTeam/MeetOurTeam";
 
 
 
@@ -36,6 +37,7 @@ const Home = () => {
       <Benefits/>
       <ExploreCourses/>
       <StudentReview />
+      <MeetOurTeam/>
       <StudentPlaced/>
       <Faq/>
     </div>
