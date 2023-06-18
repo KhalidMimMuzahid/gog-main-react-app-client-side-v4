@@ -68,12 +68,12 @@ function StudentReview() {
   }, [shouldUpdate]);
 
   return (
-    <div className="flex justify-center p-[30px] md:p-[65px] mx-auto">
+    <div className="flex justify-center p-[30px] md:py-[65px] mx-auto">
       <div className="text-[#101010] dark:text-white">
         <h2 className="text-center text-[36px] font-medium text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#4BA25D] via-[#3DA5BD] to-[#905BEC] my-5">
           100+ CODING GEEKS TO INSPIRE YOU
         </h2>
-        <div className="py-[80px] px-[160px] hidden lg:block">
+        <div className="py-[80px] hidden lg:block">
           <div className="flex">
             {data.map((item, index) => (
               <EachReview
@@ -87,7 +87,7 @@ function StudentReview() {
             ))}
           </div>
         </div>
-        <div className="">
+        <div className="lg:hidden block">
           <Carousel data={data} />
         </div>
       </div>

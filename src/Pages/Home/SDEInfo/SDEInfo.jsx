@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { BsPatchCheck } from "react-icons/bs";
 import lightSVG from "../../../assets/SDEInfo/light.svg"
 import darkSVG from "../../../assets/SDEInfo/dark.svg"
 
 import style from "./sdeInfo.module.css"
+import { UIContext } from "../../../contexts/UIProvider/UIProvider";
 
 const points = [
   "10LPA: Average CTC at entry level placement.",
@@ -13,6 +14,7 @@ const points = [
 ];
 
 function SDEInfo() {
+  const {theme} = useContext(UIContext);
   return (
     <div className="grid grid-cols-1 md:grid-cols-12 pt-[21px] pb-[65px] px-[65px] gap-20 items-center">
       <div className="md:col-span-7">
@@ -32,7 +34,7 @@ function SDEInfo() {
       <div className="md:col-span-5">
         <h2 className={`${style.gradient_text} text-2xl font-medium`}>What Software Developers are Earning</h2>
         <p className="text-[#101010] dark:text-white mt-10 text-xl font-normal dark:font-thin">These are the average salaries you could be earning as a software developer in India. Source: Glassdoor.com</p>
-        <img src={lightSVG} className="mt-5" />
+        <img src={theme === "light" ? lightSVG : darkSVG} className="mt-5" />
       </div>
     </div>
   );

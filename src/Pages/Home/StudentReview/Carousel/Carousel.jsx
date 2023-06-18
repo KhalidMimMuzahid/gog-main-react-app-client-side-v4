@@ -1,24 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import EachCarouselSection from "./EachCarouselSection/EachCarouselSection";
+import { AnimatePresence, motion, MotionConfig } from "framer-motion";
+import { useEffect } from "react";
 
-function Carousel({data}) {
+function Carousel({ data }) {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev >= 3 ? 0 : prev + 1));
+    }, 5000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   return (
-    <div className="my-10 flex flex-col justify-between gap-6 items-center">
-      <div className="carousel carousel-center w-[50%] md:w-[90%] sm:w-[70%]">
-        {data.map((item, index) => (
-          <div id={item?.id} className="carousel-item w-full" key={index}>
-            <EachCarouselSection item={item} />
+    <>
+      <div className="w-full">
+        <div className="mx-auto flex flex-col justify-center">
+          <div className="w-[90dvw] overflow-hidden">
+            <motion.div
+              animate={{ x: `-${index * 100}%` }}
+              className="flex items-center"
+            >
+              {data.map((item, indexHere) => (
+                <div id={item?.id} className="" key={indexHere}>
+                  <EachCarouselSection item={item} />
+                </div>
+              ))}
+            </motion.div>
           </div>
-        ))}
+        </div>
+        <div className="my-5 flex gap-10 justify-center">
+          {data.map((item, indexHere) => (
+            <div className={`h-[10px] w-[10px] ${index === indexHere ? "bg-[#4BA25D]" : "bg-[#a0ffb3]"} rounded-full`} key={indexHere} onClick={() => setIndex(indexHere)}></div>
+          ))}
+        </div>
       </div>
-      <div className="flex justify-center w-full py-2 gap-2">
-        {data.map((item, index) => (
-          <a href={`#${item?.id}`} className="btn btn-xs rounded-full bg-[#4BA25D]" key={index}>
-            <span className="">1</span>
-          </a>
-        ))}
-      </div>
-    </div>
+    </>
   );
 }
 

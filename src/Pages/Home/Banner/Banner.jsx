@@ -5,93 +5,100 @@ import meeting from "../../../assets/Banner/meeting.svg";
 import placement from "../../../assets/Banner/placement.svg";
 import roadmap from "../../../assets/Banner/roadmap.svg";
 
+const data = [
+  {
+    title: "Students Currently Enrolled",
+    number: "200+",
+    img: cap,
+  },
+  {
+    title: "Total Batch",
+    number: "10+",
+    img: hiring,
+  },
+  {
+    title: "We Started Our Journey",
+    number: "2023",
+    img: meeting,
+  },
+  {
+    title: "Placement Rate",
+    number: "96%",
+    img: placement,
+  },
+  {
+    title: "Hiring Partners",
+    number: "50+",
+    img: roadmap,
+  },
+];
+
 const Banner = () => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 p-[65px]'>
-      <div className='flex flex-col md:flex-row lg:flex-row items-center justify-center gap-[40px]'>
-        <div className='flex flex-col gap-[40px]'>
-          <div className='w-[340px] h-[170px] rounded-[20px] bg-[#BDF5BC] p-5 hover:translate-x-8 hover:translate-y-8 transition-[1500ms] hover:cursor-pointer'>
-            <div className='flex'>
-              <div className="w-1/2 font-medium">
-                <p className="text-[20px] text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC]">
-                  Students Currently
-                  <br />
-                  Enrolled
-                </p>
-                <p className="text-[36px]">200+</p>
-              </div>
-              <div className="w-1/2">
-                <img src={cap} alt='enrolled-student' />
-              </div>
+    <div className="p-[65px]">
+      <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
+        <div className="col-span-8 flex flex-col md:flex-row lg:flex-row items-center gap-[40px]">
+          <div className="flex flex-col gap-[40px]">
+            <div className="flex flex-col gap-[40px]">
+              {data.slice(0, 3).map((item, index) => (
+                <div
+                  className="w-[340px] rounded-[20px] bg-[#BDF5BC] dark:bg-[#222C26] p-5 lg:hover:translate-x-6 lg:hover:scale-110 transition-[2000ms] hover:cursor-pointer"
+                  key={index}
+                >
+                  <div className="flex items-center">
+                    <div className="w-1/2 font-medium">
+                      <p className="text-[20px] font-medium text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC] dark:from-[#37ED81] dark:to-[#905BEC]">
+                        {item?.title}
+                      </p>
+                      <p className="text-[36px] dark:text-[#3BE686]">
+                        {item?.number}
+                      </p>
+                    </div>
+                    <div className="w-1/2">
+                      <img src={item?.img} alt="enrolled-student" />
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-          <div className='w-[340px] h-[170px] rounded-[20px] bg-[#BDF5BC] p-5'>
-            <div className='flex'>
-              <div className="w-1/2 font-medium">
-                <p className="text-[20px] text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC]">Total Batch</p>
-                <p className="text-[36px]">10+</p>
+          <div className="flex flex-col gap-[40px]">
+            {data.slice(3, 5).map((item, index) => (
+              <div
+                className="w-[340px] rounded-[20px] bg-[#BDF5BC] dark:bg-[#222C26] p-5 lg:hover:translate-x-4 lg:hover:scale-110 transition-[2000ms] hover:cursor-pointer"
+                key={index}
+              >
+                <div className="flex items-center">
+                  <div className="w-1/2 font-medium">
+                    <p className="text-[20px] font-medium text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC] dark:from-[#37ED81] dark:to-[#905BEC]">
+                      {item?.title}
+                    </p>
+                    <p className="text-[36px] dark:text-[#3BE686]">
+                      {item?.number}
+                    </p>
+                  </div>
+                  <div className="w-1/2">
+                    <img src={item?.img} alt="enrolled-student" />
+                  </div>
+                </div>
               </div>
-              <div className="w-1/2">
-                <img src={hiring} alt='enrolled-student' />
-              </div>
-            </div>
-          </div>
-          <div className='w-[340px] h-[170px] rounded-[20px] bg-[#BDF5BC] p-5'>
-            <div className='flex'>
-              <div className="w-1/2 font-medium">
-                <p className="text-[20px]">
-                  <span className="text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC]">We Started</span> <br />
-                  <span className="text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC]">Our Journey</span>
-                </p>
-                <p className="text-[36px]">2023</p>
-              </div>
-              <div className="w-1/2">
-                <img src={meeting} alt='enrolled-student' />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className='flex flex-col gap-[40px]'>
-          <div className='w-[340px] h-[170px] rounded-[20px] bg-[#BDF5BC] p-5'>
-            <div className='flex'>
-              <div className="w-1/2 font-medium">
-                <p className="text-[20px]">
-                  <span className="text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC]">Placement</span> <br />
-                  <span className="text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC]">Rate</span>
-                </p>
-                <p className="text-[36px]">96%</p>
-              </div>
-              <div className="w-1/2">
-                <img src={placement} alt='enrolled-student' />
-              </div>
-            </div>
-          </div>
-          <div className='w-[340px] h-[170px] rounded-[20px] bg-[#BDF5BC] p-5'>
-            <div className='flex'>
-              <div className="w-1/2 font-medium">
-                <p className="text-[20px]">
-                  <span className="text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC]">Hiring</span> <br />
-                  <span className="text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC]">Partners</span>
-                </p>
-                <p className="text-[36px]">50+</p>
-              </div>
-              <div className="w-1/2">
-                <img src={roadmap} alt='enrolled-student' />
-              </div>
-            </div>
+            ))}
           </div>
         </div>
-      </div>
-      <div className="grid place-items-center">
-        <div className="p-4">
-        <h3 className="text-[36px] font-bold text-right text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#4BA25D] via-[#3DA5BD] to-[#905BEC]"><span>Start learning with</span> <br />
-        <span className="text-[#37ED81]">Geeks of Gurukul</span></h3>
-        <p className="text-[18px] text-[#8A8F98] text-right font-medium">
-          Get unlimited access to structured courses & doubt <br /> clearing sessions
-        </p>
-        <button className='px-4 py-2 text-white bg-[#00A3FF] rounded-[20px] my-4 float-right'>
-          Assessment Test
-        </button>
+        <div className="col-span-4">
+          <div className="p-4">
+            <h3 className="text-[36px] font-semibold text-right text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#4BA25D] via-[#3DA5BD] to-[#905BEC]">
+              <span>Start learning with</span> <br />
+              <span className="text-[#37ED81]">Geeks of Gurukul</span>
+            </h3>
+            <p className="text-[18px] text-[#8A8F98] text-right font-medium mt-7 mb-5">
+              Get unlimited access to structured courses & doubt clearing
+              sessions
+            </p>
+            <button className="px-4 py-2 text-white bg-[#00A3FF] rounded-[20px] my-4 float-right">
+              Assessment Test
+            </button>
+          </div>
         </div>
       </div>
     </div>
