@@ -56,7 +56,7 @@ const StudentPlaced = () => {
       </h2>
 
       <div>
-        <Marquee className="mb-[60px]" speed={40}>
+        <Marquee className="mb-[60px]" speed={50}>
           {brands1?.map((image, i) => (
             <img className="md:px-[40px] md:h-[60px] px-[20px] h-[30px]" src={image} alt="" />
           ))}
