@@ -42,7 +42,7 @@ const DreamJob = () => {
   ];
 
   return (
-    <div className="mx-[65px] my-[120px]">
+    <div className="mx-[30px] md:mx-[65px] my-[120px]">
       <h2 className=" md:px-[60px] font-poppins  font-[600] text-[22px] md:text-[48px]  md:leading-[72px] dark:text-[#FFFFFF] text-[#101010]">
         Secure your Dream Job <br /> with these{" "}
         <span className="text-[#4BA25D] dark:text-[#37ED81]">
