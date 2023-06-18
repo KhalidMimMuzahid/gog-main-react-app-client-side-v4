@@ -35,9 +35,9 @@ const data = [
 
 const Banner = () => {
   return (
-    <div className="p-[65px]">
+    <div className="p-[30px] md:p-[65px]">
       <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
-        <div className="col-span-8 flex flex-col md:flex-row lg:flex-row items-center gap-[40px]">
+        <div className="col-span-8 flex flex-col lg:flex-row items-center gap-[40px]">
           <div className="flex flex-col gap-[40px]">
             <div className="flex flex-col gap-[40px]">
               {data.slice(0, 3).map((item, index) => (
@@ -70,7 +70,7 @@ const Banner = () => {
               >
                 <div className="flex items-center">
                   <div className="w-1/2 font-medium">
-                    <p className="text-[20px] font-medium text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC] dark:from-[#37ED81] dark:to-[#905BEC]">
+                    <p className="text-xl font-medium text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC] dark:from-[#37ED81] dark:to-[#905BEC]">
                       {item?.title}
                     </p>
                     <p className="text-[36px] dark:text-[#3BE686]">
@@ -85,19 +85,21 @@ const Banner = () => {
             ))}
           </div>
         </div>
-        <div className="col-span-4">
+        <div className="col-span-4 mt-10 lg:mt-0">
           <div className="p-4">
-            <h3 className="text-[36px] font-semibold text-right text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#4BA25D] via-[#3DA5BD] to-[#905BEC]">
+            <h3 className="text-[30px] md:text-[36px] font-medium md:font-semibold text-center lg:text-right text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#4BA25D] via-[#3DA5BD] to-[#905BEC]">
               <span>Start learning with</span> <br />
               <span className="text-[#37ED81]">Geeks of Gurukul</span>
             </h3>
-            <p className="text-[18px] text-[#8A8F98] text-right font-medium mt-7 mb-5">
+            <p className="text-[18px] text-[#8A8F98] text-center lg:text-right font-medium mt-7 mb-5">
               Get unlimited access to structured courses & doubt clearing
               sessions
             </p>
-            <button className="px-4 py-2 text-white bg-[#00A3FF] rounded-[20px] my-4 float-right">
-              Assessment Test
-            </button>
+            <div className="flex lg:justify-end justify-center">
+              <button className="px-4 py-2 text-white bg-[#00A3FF] rounded-[20px] my-4 float-right">
+                Assessment Test
+              </button>
+            </div>
           </div>
         </div>
       </div>
