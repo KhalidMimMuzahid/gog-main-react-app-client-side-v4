@@ -45,18 +45,20 @@ const Faq = () => {
   ];
   return (
     <div className='w-11/12 mx-auto my-16'>
-      <h3 className='text-center text-[36px] font-medium text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#4BA25D] via-[#3DA5BD] to-[#905BEC] my-5'>
+      <h3 className='text-center text-[24px] md:text-[36px] font-medium text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#4BA25D] via-[#3DA5BD] to-[#905BEC] my-5'>
         Frequently Asked Questions
       </h3>
       <div className='join join-vertical w-full'>
         {faqs?.map((faq, i) => (
           <div key={i} className='collapse collapse-arrow join-item'>
-            <input type='radio' name='my-accordion-4'/>
-            <div className='collapse-title text-[18px] font-medium dark:text-white'>
+            <input type='radio' name='my-accordion-4' />
+            <div className='collapse-title text-[16px] md:text-[18px] font-medium dark:text-white'>
               {faq?.q}
             </div>
             <div className='collapse-content'>
-                    <p className="text-[#98A2B3]">{faq?.a}</p>
+              <p className='text-[#98A2B3] text-[14px] md:text-[16px]'>
+                {faq?.a}
+              </p>
             </div>
           </div>
         ))}
