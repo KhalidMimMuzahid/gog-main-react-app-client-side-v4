@@ -1,14 +1,6 @@
-/* .border_gradient {
-  position: relative;
-}
-.border_gradient:hover::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 40px;
-  padding: 2px;
+.border_gradient:hover {
   background: linear-gradient(to right, #00a3ff, #3da5bd, #905bec);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-} */
+}
+.border_gradient:hover > .border_removal {
+  border-color: #12131300 !important;
+}

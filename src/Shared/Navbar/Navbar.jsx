@@ -52,7 +52,7 @@ const navbarVars2 = [
 ];
 
 const Navbar = () => {
-  const {theme, setTheme} = useContext(UIContext);
+  const { theme, setTheme } = useContext(UIContext);
   return (
     <div className="sticky top-0 z-50">
       <nav className="bg-[#F8FFF9] dark:bg-[#121313] shadow dark:shadow-[#41414140] text-[#101010] dark:text-white">
@@ -78,11 +78,13 @@ const Navbar = () => {
               <div className="ml-4 flex space-x-4 items-center">
                 {navbarVars2.map((object, index) => (
                   <Link to={object.link} key={index} target="_blank">
-                    <p
-                      className={`px-3 py-2 border border-[#8A8F98] dark:border-white rounded-full text-sm font-medium hover:border-2 ${style.border_gradient}`}
-                    >
-                      {object.name}
-                    </p>
+                    <div className={`rounded-full p-1 ${style.border_gradient}`}>
+                      <p
+                        className={`px-3 py-2 border border-[#8A8F98] dark:border-white rounded-full text-sm font-medium bg-[#F8FFF9] dark:bg-[#121313] ${style.border_removal}`}
+                      >
+                        {object.name}
+                      </p>
+                    </div>
                   </Link>
                 ))}
                 <Link to="/admission-form">
@@ -91,17 +93,20 @@ const Navbar = () => {
                   </p>
                 </Link>
                 <label className="swap swap-rotate">
-                  <input onChange={() =>
-                  setTheme((prev) => {
-                    if (prev === "light") {
-                      localStorage.setItem("theme", "dark");
-                      return "dark";
-                    } else {
-                      localStorage.setItem("theme", "light");
-                      return "light";
+                  <input
+                    onChange={() =>
+                      setTheme((prev) => {
+                        if (prev === "light") {
+                          localStorage.setItem("theme", "dark");
+                          return "dark";
+                        } else {
+                          localStorage.setItem("theme", "light");
+                          return "light";
+                        }
+                      })
                     }
-                  })
-                } type="checkbox" />
+                    type="checkbox"
+                  />
 
                   {/* sun icon */}
                   <svg
