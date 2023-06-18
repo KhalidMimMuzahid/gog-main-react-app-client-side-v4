@@ -10,7 +10,7 @@ import EngineeringNerds from "./UpCommingBatches/EngineeringNerds/EngineeringNer
 import Landing from "./Landing/Landing";
 import SDEInfo from "./SDEInfo/SDEInfo";
 
-import Super30 from "./Super30/Super30";
+import Super30 from "./Super30Card/Super30Card";
 import Faq from "./Faq/Faq";
 
 import ExploreCourses from "./ExploreCourses/ExploreCourses";
@@ -18,7 +18,11 @@ import StudentReview from "./StudentReview/StudentReview";
 import DreamJob from "./DreamJob/DreamJob";
 import Benefits from "./Benefits/Benefits";
 import StudentPlaced from "./StudentPlaced/StudentPlaced";
+
 import MeetOurTeam from "./MeetOurTeam/MeetOurTeam";
+
+import FirstStepCard from "./FirstStepCard/FirstStepCard";
+
 
 
 
@@ -33,9 +37,10 @@ const Home = () => {
       <SchoolChamp/>
       <CodingBees/>
       <EngineeringNerds/>
+      <ExploreCourses/>
       <DreamJob/>
       <Benefits/>
-      <ExploreCourses/>
+      <FirstStepCard />
       <StudentReview />
       <MeetOurTeam/>
       <StudentPlaced/>
