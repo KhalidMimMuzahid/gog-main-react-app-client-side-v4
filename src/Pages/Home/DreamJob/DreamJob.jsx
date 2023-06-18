@@ -4,6 +4,7 @@ import simpleSteps2 from "../../../assets/someBG/02.svg";
 import simpleSteps3 from "../../../assets/someBG/03.svg";
 import simpleSteps4 from "../../../assets/someBG/04.svg";
 import simpleSteps5 from "../../../assets/someBG/05.svg";
+import style from "./dreamJob.module.css"
 import Step from "./Step/Step";
 
 const DreamJob = () => {
@@ -57,7 +58,7 @@ const DreamJob = () => {
           </ul>
         </div>
         <div className="mx-auto my-auto">
-          <img src={jobStatus?.selectedThambnail} alt="steps image" />
+          <img src={jobStatus?.selectedThambnail} className={style.fade_in} alt="steps image" />
         </div>
       </div>
     </div>

@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import style from "./navbar.module.css";
 import logo from "../../assets/Navbar/logo.png";
 import { BsSun, BsMoon } from "react-icons/bs";
+import { UIContext } from "../../contexts/UIProvider/UIProvider";
 
 const navbarVars = [
   // {
@@ -50,7 +51,8 @@ const navbarVars2 = [
   },
 ];
 
-const Navbar = ({ theme, setTheme }) => {
+const Navbar = () => {
+  const {theme, setTheme} = useContext(UIContext);
   return (
     <div className="sticky top-0 z-50">
       <nav className="bg-[#F8FFF9] dark:bg-[#121313] shadow dark:shadow-[#41414140] text-[#101010] dark:text-white">
