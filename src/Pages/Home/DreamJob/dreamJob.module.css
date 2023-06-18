@@ -1,4 +1,4 @@
-@keyframes fadeIn {
+@keyframes animateIn {
   0% {
     opacity: 0;
     transform: translateY(20px);
@@ -9,21 +9,6 @@
   }
 }
 
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.slide_in {
-  animation: slideIn 0.5s ease-out;
-}
-
-.fade_in {
-  animation: fadeIn 0.5s ease-out;
+.steps_image_class {
+    animation: animateIn 0.8s ease-out;
 }

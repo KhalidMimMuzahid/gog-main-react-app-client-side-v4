@@ -10,21 +10,21 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="p-8">
-      <div className="rounded-2xl grid grid-cols-12 w-full mx-auto bg-[#D1FFD0] dark:bg-[#1A211F] p-16 gap-6 text-[#101010] dark:text-white">
-        <div className="col-span-3">
-          <Link to="/">
-            <img src={logo} alt="Geeks of Gurukul logo" className="w-[190px]" />
+    <div className="md:p-8 p-10">
+      <div className="rounded-2xl grid-cols-1 grid md:grid-cols-12 w-full mx-auto bg-[#D1FFD0] dark:bg-[#1A211F] p-8 md:p-16 gap-6 text-[#101010] dark:text-white">
+        <div className="col-span-1 md:col-span-3">
+          <Link to="/" className="">
+            <img src={logo} alt="Geeks of Gurukul logo" className="w-[120px] md:w-[190px]" />
           </Link>
-          <p className="text-left text-[16px] mt-10">
+          <p className="text-justify md:text-left text-sm md:text-[16px] mt-5 md:mt-10">
             Unleash the Power of Learning: Discover a World of Possibilities
             with our Cutting-edge Learning Management System.
           </p>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-1 md:col-span-2">
           <ul>
-            <li className="text-xl font-bold text-[#4BA25D] dark:text-[#D1FFD0] dark:font-medium">Connect</li>
-            <div className="flex flex-col gap-5 mt-5">
+            <li className="text-lg md:text-xl font-medium md:font-bold text-[#4BA25D] dark:text-[#D1FFD0] dark:font-medium">Connect</li>
+            <div className="flex flex-col gap-3 md:gap-5 mt-5 text-sm md:text-base">
               <Link to="/contact-us">
                 <li className="hover:text-[#37ED81]">Contact us</li>
               </Link>
@@ -40,10 +40,10 @@ const Footer = () => {
             </div>
           </ul>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-1 md:col-span-2">
           <ul>
-            <li className="text-xl font-bold text-[#4BA25D] dark:text-[#D1FFD0] dark:font-medium">Resources</li>
-            <div className="flex flex-col gap-5 mt-5">
+            <li className="text-lg md:text-xl font-medium md:font-bold text-[#4BA25D] dark:text-[#D1FFD0] dark:font-medium">Resources</li>
+            <div className="flex flex-col gap-3 md:gap-5 mt-5 text-sm md:text-base">
               <Link to="">
                 <li className="hover:text-[#37ED81]">Blog</li>
               </Link>
@@ -62,10 +62,10 @@ const Footer = () => {
             </div>
           </ul>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-1 md:col-span-2">
           <ul>
-            <li className="text-xl font-bold text-[#4BA25D] dark:text-[#D1FFD0] dark:font-medium">Company</li>
-            <div className="flex flex-col gap-5 mt-5">
+            <li className="text-lg md:text-xl font-medium md:font-bold text-[#4BA25D] dark:text-[#D1FFD0] dark:font-medium">Company</li>
+            <div className="flex flex-col gap-3 md:gap-5 mt-5 text-sm md:text-base">
               <Link to="">
                 <li className="hover:text-[#37ED81]">Careers</li>
               </Link>
@@ -78,10 +78,10 @@ const Footer = () => {
             </div>
           </ul>
         </div>
-        <div className="col-span-3">
+        <div className="col-span-1 md:col-span-3">
           <ul>
-            <li className="text-xl font-bold text-[#4BA25D] dark:text-[#D1FFD0] dark:font-medium">Get in touch</li>
-            <div className="flex items-center gap-5 mt-5 mb-7">
+            <li className="text-lg md:text-xl font-medium md:font-bold text-[#4BA25D] dark:text-[#D1FFD0] dark:font-medium">Get in touch</li>
+            <div className="flex items-center gap-3 md:gap-5 mt-5 mb-7 text-sm md:text-base">
               <li className="bg-[#E4FFE3] dark:bg-[#8A8F98] p-2 rounded-full">
                 <Link to="">
                   <FaFacebookF size={20} color="#101010" />
@@ -103,8 +103,8 @@ const Footer = () => {
                 </Link>
               </li>
             </div>
-            <li className="text-xl font-bold text-[#4BA25D] dark:text-[#D1FFD0] dark:font-medium">Contact us</li>
-            <div className="flex flex-col gap-4 mt-5 text-xs">
+            <li className="text-lg md:text-xl font-medium md:font-bold text-[#4BA25D] dark:text-[#D1FFD0] dark:font-medium">Contact us</li>
+            <div className="flex flex-col gap-3 md:gap-4 mt-5 text-xs">
               <Link to="">
                 <div className="flex items-center gap-2 hover:text-[#37ED81]">
                   <BsTelephone size={18} />
