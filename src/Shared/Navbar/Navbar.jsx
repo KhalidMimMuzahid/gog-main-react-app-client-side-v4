@@ -5,6 +5,7 @@ import logo from "../../assets/Navbar/logo.png";
 import { BsList } from "react-icons/bs";
 import { UIContext } from "../../contexts/UIProvider/UIProvider";
 import Drawer from "./Drawer/Drawer";
+import { useState } from "react";
 
 const navbarVars = [
   {
@@ -38,6 +39,7 @@ const navbarVars2 = [
 
 const Navbar = () => {
   const { theme, setTheme } = useContext(UIContext);
+  const [drawerOpen, setDrawerOpen] = useState(true);
   return (
     <div className="sticky top-0 z-50">
       <nav className="bg-[#F8FFF9] dark:bg-[#121313] shadow dark:shadow-[#41414140] text-[#101010] dark:text-white">
@@ -116,19 +118,38 @@ const Navbar = () => {
               </div>
             </div>
             <div className="flex lg:hidden">
-              <button
-                type="button"
-                className="bg-gray-900 p-2 rounded-md text-gray-400"
-              >
-                <span className="sr-only">Open main menu</span>
-                <BsList size={20} />
-              </button>
+              <label className="btn btn-circle swap swap-rotate bg-[#F8FFF9] dark:bg-[#121313] border-0">
+                {/* this hidden checkbox controls the state */}
+                <input type="checkbox" onClick={() => setDrawerOpen((prev) => !prev)} checked={!drawerOpen} readOnly={true} />
+
+                {/* hamburger icon */}
+                <svg
+                  className="swap-off dark:fill-white fill-[#121313]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 512 512"
+                >
+                  <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                </svg>
+
+                {/* close icon */}
+                <svg
+                  className="swap-on dark:fill-white fill-[#121313]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 512 512"
+                >
+                  <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+                </svg>
+              </label>
             </div>
           </div>
         </div>
       </nav>
-      <div className="hidden">
-        <Drawer />
+      <div className="block">
+        <Drawer drawerOpen={drawerOpen} setDrawerOpen={setDrawerOpen} />
       </div>
     </div>
   );
