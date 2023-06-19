@@ -148,7 +148,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <div className="block">
+      <div className="block lg:hidden">
         <Drawer drawerOpen={drawerOpen} setDrawerOpen={setDrawerOpen} />
       </div>
 
