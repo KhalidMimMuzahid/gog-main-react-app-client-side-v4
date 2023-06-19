@@ -95,7 +95,7 @@ const MeetOurTeam = () => {
       <div>
         <Marquee pauseOnHover={true} className="mb-[60px]" speed={40}>
             {teams?.map((team, i) => (
-              <TeamCard team={team}/>
+              <TeamCard team={team} key={i}/>
             ))}
         </Marquee>
       </div>
