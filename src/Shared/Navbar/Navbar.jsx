@@ -2,18 +2,11 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import style from "./navbar.module.css";
 import logo from "../../assets/Navbar/logo.png";
-import { BsSun, BsMoon } from "react-icons/bs";
+import { BsList } from "react-icons/bs";
 import { UIContext } from "../../contexts/UIProvider/UIProvider";
+import Drawer from "./Drawer/Drawer";
 
 const navbarVars = [
-  // {
-  //   name: "Sign-up",
-  //   link: "/sign-up",
-  // },
-  // {
-  //   name: "Sign-in",
-  //   link: "/sign-in",
-  // },
   {
     name: "Home",
     link: "/",
@@ -30,14 +23,6 @@ const navbarVars = [
     name: "Contact Us",
     link: "/contact-us",
   },
-  // {
-  //   name: "About Us",
-  //   link: "/about-us",
-  // },
-  // {
-  //   name: "Webinar",
-  //   link: "/additionals/webinar",
-  // },
 ];
 
 const navbarVars2 = [
@@ -56,7 +41,7 @@ const Navbar = () => {
   return (
     <div className="sticky top-0 z-50">
       <nav className="bg-[#F8FFF9] dark:bg-[#121313] shadow dark:shadow-[#41414140] text-[#101010] dark:text-white">
-        <div className="px-[75px] mx-auto ">
+        <div className="px-[30px] md:px-[75px] mx-auto ">
           <div className="flex items-center justify-between h-[90px]">
             <div className="flex-shrink-0">
               <Link to="/">
@@ -78,7 +63,9 @@ const Navbar = () => {
               <div className="ml-4 flex space-x-4 items-center">
                 {navbarVars2.map((object, index) => (
                   <Link to={object.link} key={index} target="_blank">
-                    <div className={`rounded-full p-1 ${style.border_gradient}`}>
+                    <div
+                      className={`rounded-full p-1 ${style.border_gradient}`}
+                    >
                       <p
                         className={`px-3 py-2 border border-[#8A8F98] dark:border-white rounded-full text-sm font-medium bg-[#F8FFF9] dark:bg-[#121313] ${style.border_removal}`}
                       >
@@ -128,63 +115,19 @@ const Navbar = () => {
                 </label>
               </div>
             </div>
-            {/* <div>
-              <input
-                onChange={() =>
-                  setTheme((prev) => {
-                    if (prev === "light") {
-                      localStorage.setItem("theme", "dark");
-                      return "dark";
-                    } else {
-                      localStorage.setItem("theme", "light");
-                      return "light";
-                    }
-                  })
-                }
-                type="checkbox"
-                className="toggle md:toggle-lg mx-2 "
-                checked={theme === "dark"}
-              />
-            </div> */}
-            <div className="-mr-2 flex lg:hidden">
+            <div className="flex lg:hidden">
               <button
                 type="button"
-                className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                className="bg-gray-900 p-2 rounded-md text-gray-400"
               >
                 <span className="sr-only">Open main menu</span>
-                <svg
-                  className="block h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-                <svg
-                  className="hidden h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
+                <BsList size={20} />
               </button>
             </div>
           </div>
         </div>
       </nav>
+      <Drawer />
     </div>
   );
 };
