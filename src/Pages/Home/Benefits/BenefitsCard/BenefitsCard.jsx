@@ -6,7 +6,7 @@ const BenefitsCard = ({ each }) => {
 
 
   return (
-    <div className={`md:h-[200px] group overflow-hidden bg-[#D1FFD0] dark:bg-[#222C26] text-center md:mx-[80px]  md:text-left rounded-2xl flex flex-col md:flex-row items-center px-[20px] md:py-[40px] py-[20px] md:gap-[40px] gap-[30px] border-2 border-transparent hover:border-gradient-red-blue hover:border-opacity-100`}>
+    <div className={`md:h-[200px] group overflow-hidden bg-[#D1FFD0] dark:bg-[#222C26] text-center md:mx-[80px]  md:text-left rounded-2xl flex flex-col md:flex-row items-center px-[20px] md:py-[40px] py-[20px] md:gap-[40px] gap-[30px]  `}>
       <div>
         <img style={{ minWidth: '166px' }} src={thambnail} alt="images for benefits" />
       </div>
