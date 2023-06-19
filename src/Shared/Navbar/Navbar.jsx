@@ -151,6 +151,7 @@ const Navbar = () => {
       <div className="block">
         <Drawer drawerOpen={drawerOpen} setDrawerOpen={setDrawerOpen} />
       </div>
+
     </div>
   );
 };
