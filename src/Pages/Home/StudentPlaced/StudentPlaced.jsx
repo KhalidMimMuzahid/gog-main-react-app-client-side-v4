@@ -51,7 +51,7 @@ const brands2 = [
 const StudentPlaced = () => {
   return (
     <div className="mx-[30px] md:mx-[65px]">
-      <h2 className="mb-[80px] text-center font-[500] md:text-[36px] text-[22px]  bg-clip-text text-transparent bg-gradient-to-r from-[#37ED81] via-[#3DA5BD] to-[#905BEC]">
+      <h2 className="mb-[80px] text-center font-[500] md:text-[36px] text-[25px]  bg-clip-text text-transparent bg-gradient-to-r from-[#37ED81] via-[#3DA5BD] to-[#905BEC]">
         OUR STUDENTS PLACED AT
       </h2>
 
