@@ -127,7 +127,11 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      {/* <Drawer /> */}
+
+      <div className="hidden">
+        <Drawer />
+      </div>
+
     </div>
   );
 };

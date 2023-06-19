@@ -11,7 +11,7 @@ function Landing() {
         </h1>
         <div className="relative">
           <div className="text-[#37ED81] text-4xl lg:text-5xl font-black my-6">
-            <p className="absolute inset-0 mt-6">
+            <div className="absolute inset-0 mt-6">
               <Typewriter
                 options={{
                   strings: ["India's Best Gurukul"],
@@ -19,7 +19,7 @@ function Landing() {
                   loop: true,
                 }}
               />
-            </p>
+            </div>
             {/* This element is only to give predefined height for typewritter */}
             <p className="invisible">India's Best Gurukul</p>
           </div>
