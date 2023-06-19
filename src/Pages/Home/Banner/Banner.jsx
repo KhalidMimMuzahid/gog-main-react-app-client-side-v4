@@ -4,6 +4,7 @@ import hiring from "../../../assets/Banner/hiring.svg";
 import meeting from "../../../assets/Banner/meeting.svg";
 import placement from "../../../assets/Banner/placement.svg";
 import roadmap from "../../../assets/Banner/roadmap.svg";
+import style from "./banner.module.css";
 
 const data = [
   {
@@ -42,20 +43,22 @@ const Banner = () => {
             <div className="flex flex-col gap-[40px]">
               {data.slice(0, 3).map((item, index) => (
                 <div
-                  className="w-[340px] rounded-[20px] bg-[#BDF5BC] dark:bg-[#222C26] p-5 lg:hover:translate-x-6 lg:hover:scale-110 transition-[2000ms] hover:cursor-pointer"
+                  className="w-[340px] rounded-[20px] lg:hover:translate-x-6 lg:hover:scale-110 transition-[2000ms] hover:cursor-pointer"
                   key={index}
                 >
-                  <div className="flex items-center">
-                    <div className="w-1/2 font-medium">
-                      <p className="text-[20px] font-medium text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC] dark:from-[#37ED81] dark:to-[#905BEC]">
-                        {item?.title}
-                      </p>
-                      <p className="text-[36px] dark:text-[#3BE686]">
-                        {item?.number}
-                      </p>
-                    </div>
-                    <div className="w-1/2">
-                      <img src={item?.img} alt="enrolled-student" />
+                  <div className={`${style.border_gradient} rounded-[20px]`}>
+                    <div className="flex items-center p-5 bg-[#BDF5BC] dark:bg-[#222C26]  rounded-[20px]">
+                      <div className="w-1/2 font-medium">
+                        <p className="text-[20px] font-medium text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC] dark:from-[#37ED81] dark:to-[#905BEC]">
+                          {item?.title}
+                        </p>
+                        <p className="text-[36px] dark:text-[#3BE686]">
+                          {item?.number}
+                        </p>
+                      </div>
+                      <div className="w-1/2">
+                        <img src={item?.img} alt="enrolled-student" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -65,20 +68,22 @@ const Banner = () => {
           <div className="flex flex-col gap-[40px]">
             {data.slice(3, 5).map((item, index) => (
               <div
-                className="w-[340px] rounded-[20px] bg-[#BDF5BC] dark:bg-[#222C26] p-5 lg:hover:translate-x-4 lg:hover:scale-110 transition-[2000ms] hover:cursor-pointer"
+                className="w-[340px] rounded-[20px] lg:hover:translate-x-6 lg:hover:scale-110 transition-[2000ms] hover:cursor-pointer"
                 key={index}
               >
-                <div className="flex items-center">
-                  <div className="w-1/2 font-medium">
-                    <p className="text-xl font-medium text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC] dark:from-[#37ED81] dark:to-[#905BEC]">
-                      {item?.title}
-                    </p>
-                    <p className="text-[36px] dark:text-[#3BE686]">
-                      {item?.number}
-                    </p>
-                  </div>
-                  <div className="w-1/2">
-                    <img src={item?.img} alt="enrolled-student" />
+                <div className={`${style.border_gradient} rounded-[20px]`}>
+                  <div className="flex items-center p-5 bg-[#BDF5BC] dark:bg-[#222C26]  rounded-[20px]">
+                    <div className="w-1/2 font-medium">
+                      <p className="text-xl font-medium text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#000000] to-[#905BEC] dark:from-[#37ED81] dark:to-[#905BEC]">
+                        {item?.title}
+                      </p>
+                      <p className="text-[36px] dark:text-[#3BE686]">
+                        {item?.number}
+                      </p>
+                    </div>
+                    <div className="w-1/2">
+                      <img src={item?.img} alt="enrolled-student" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -96,7 +101,7 @@ const Banner = () => {
               sessions
             </p>
             <div className="flex lg:justify-end justify-center">
-              <button className="px-4 py-2 text-white bg-[#00A3FF] rounded-[20px] my-4 float-right">
+              <button className="px-4 py-2 text-white bg-gradient-to-r from-[#00A3FF] to-[#00A3FF] hover:to-[#905BEC] rounded-[20px] my-4 float-right">
                 Assessment Test
               </button>
             </div>

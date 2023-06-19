@@ -22,6 +22,8 @@ import StudentPlaced from "./StudentPlaced/StudentPlaced";
 import MeetOurTeam from "./MeetOurTeam/MeetOurTeam";
 
 import FirstStepCard from "./FirstStepCard/FirstStepCard";
+import LearningJourneyCard from "./LearningJourneyCard/LearningJourneyCard";
+import TopTalentCard from "./TopTalentCard/TopTalentCard";
 
 
 
@@ -42,8 +44,10 @@ const Home = () => {
       <Benefits/>
       <FirstStepCard />
       <StudentReview />
+      <TopTalentCard />
       <MeetOurTeam/>
       <StudentPlaced/>
+      <LearningJourneyCard />
       <Faq/>
     </div>
   );
