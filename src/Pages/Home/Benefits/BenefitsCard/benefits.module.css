@@ -1,0 +1,9 @@
+.border_gradient {
+  padding: 1px;
+}
+.border_gradient:hover {
+  background: linear-gradient(to bottom right, #00a3ff, #37ed81);
+}
+.border_gradient:hover > .border_removal {
+  border-color: #12131300 !important;
+}

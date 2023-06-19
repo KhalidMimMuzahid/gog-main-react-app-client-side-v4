@@ -44,8 +44,7 @@ const Faq = () => {
     },
   ];
   return (
-
-    <div className='w-11/12 mt-[120px] md:mx-[65px] mx-[30px]'>
+    <div className='md:w-9/12 my-[120px] mx-[30px] md:mx-auto'>
       <h3 className='text-center md:text-[36px]  text-[25px] font-medium text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#4BA25D] via-[#3DA5BD] to-[#905BEC] mb-[80px] '>
 
         Frequently Asked Questions
