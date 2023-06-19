@@ -84,10 +84,10 @@ const MeetOurTeam = () => {
 
   return (
     <div className="mb-[120px] md:mx-[65] mx-[30px]">
-      <h2 className="mb-[40px] text-center font-[500] md:text-[36px] text-[22px]  bg-clip-text text-transparent bg-gradient-to-r from-[#37ED81] via-[#3DA5BD] to-[#905BEC]">
+      <h2 className="mb-[40px] text-center font-[500] md:text-[36px] text-[25px]  bg-clip-text text-transparent bg-gradient-to-r from-[#37ED81] via-[#3DA5BD] to-[#905BEC]">
         MEET OUR Team
       </h2>
-      <p className="mb-[80px] text-center font-[500] dark:text-[white] text-[#101010] text-[18px]">
+      <p className="mb-[80px] text-center font-[500] dark:text-[white] text-[#101010] md:text-[18px] text-[15px]">
         A Team Of IITians to Boost your Tech Career to New Heights. The
         Curriculum Team is an experienced group of data analyst instructors
       </p>
