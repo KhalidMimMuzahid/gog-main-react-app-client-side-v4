@@ -4,7 +4,7 @@ import Super30Batch from "./Super30Batch/Super30Batch";
 
 const Super30 = () => {
   return (
-    <div>
+    <div className="px-[30px] md:px-[65px]">
       {/* Sarwar */}
       <Super30Hero />
       {/* Sarwar */}
