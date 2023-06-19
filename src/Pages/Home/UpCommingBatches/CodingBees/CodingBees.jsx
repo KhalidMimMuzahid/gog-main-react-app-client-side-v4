@@ -22,16 +22,16 @@ const info = [
 
 const CodingBees = () => {
   return (
-    <div className="mt-[120px] px-[65px]">
-      <h2 className="text-4xl font-medium text-center text-transparent bg-clip-text text-gradient bg-gradient-to-r from-green-500 to-blue-500 mb-[24px]">
+    <div className="mt-[80px] md:mt-[120px] px-[30px] md:px-[65px]">
+      <h2 className="text-[25px] md:text-[36px] font-medium text-center text-transparent bg-clip-text text-gradient bg-gradient-to-r from-green-500 to-blue-500 mb-[24px]">
         UPCOMING <span className="text-[#4BA25D] font-bold">CODING BEES</span>{" "}
         BATCHES
       </h2>
-      <p className="text-center leading-27 text-[18px] font-[500] dark:text-white">
+      <p className="text-center leading-27 text-[15px] md:text-[18px] font-[500] dark:text-white">
         We provide Job Assistance Tech courses for Graduates and Under Graduates
         Student and Professionals.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-[80px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-[80px]">
         <CardComponent info={info[0]} />
         <CardComponent info={info[1]} />
       </div>
