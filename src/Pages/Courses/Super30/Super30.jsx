@@ -1,6 +1,9 @@
 import React from "react";
 import Super30Hero from "./Super30Hero/Super30Hero";
 import Super30Batch from "./Super30Batch/Super30Batch";
+import ProgramOverview from "./ProgramOverview/ProgramOverview";
+import CourseLayout from "./CourseLayout/CourseLayout";
+import CourseContent from "./CourseContent/CourseContent";
 
 const Super30 = () => {
   return (
@@ -11,6 +14,9 @@ const Super30 = () => {
 
       {/* Sojib */}
       <Super30Batch />
+      <ProgramOverview/>
+      <CourseLayout/>
+      <CourseContent/>
       {/* Sojib */}
     </div>
   );
