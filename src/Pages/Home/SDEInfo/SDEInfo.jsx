@@ -67,7 +67,7 @@ function SDEInfo() {
           <BsArrowLeftCircle className="text-3xl text-[#37ED81]" />
         </button>
 
-        <div className="overflow-hidden w-[85vw] md:w-[80vw]">
+        <div className="overflow-hidden w-full">
           <motion.div
             transition={{ duration: 0.7, ease: [0.32, 0.72, 0, 1] }}
             animate={{ x: `-${index * 100}%` }}
