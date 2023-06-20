@@ -7,6 +7,7 @@ import CourseContent from "./CourseContent/CourseContent";
 import Super30Benifit from "./Super30Benifit/Super30Benifit";
 import WhatsIncluded from "./WhatsIncluded/WhatsIncluded";
 import JobRole from "./JobRole/JobRole";
+import FAQ from "./FAQ/FAQ";
 
 const Super30 = () => {
   return (
@@ -26,7 +27,8 @@ const Super30 = () => {
 
       {/* Sarwar */}
       <WhatsIncluded />
-      <JobRole/>
+      <JobRole />
+      <FAQ/>
       {/* Sarwar */}
     </div>
   );
