@@ -72,11 +72,18 @@ const CourseContent = () => {
       <h4 className="md:mb-[40px] mb-[30px] md:text-[30px] text-[25px] text-center md:text-left text-[#37ED81] font-[500]">
         Course Content
       </h4>
-      <h6 className="mv-[16px] text-center md:text-left text-[#4BA25D] text-[16px] md:text-[18px] font-[600] ">
+      <h6 className="mb-[16px]  text-[#4BA25D] text-[16px] md:text-[18px] font-[600] ">
         Syllabus for data science
       </h6>
-
       {syllabuses1.map((slb, i) => (
+        <ParagraphCard key={i} slb={slb} />
+      ))}
+
+
+      <h6 className="mt-[40px] mb-[16px]  text-[#4BA25D] text-[16px] md:text-[18px] font-[600] ">
+      Syllabus for web development
+      </h6>
+      {syllabuses2.map((slb, i) => (
         <ParagraphCard key={i} slb={slb} />
       ))}
     </div>
