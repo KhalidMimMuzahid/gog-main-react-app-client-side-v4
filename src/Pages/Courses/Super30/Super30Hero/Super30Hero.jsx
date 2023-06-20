@@ -11,7 +11,7 @@ import super30 from "../../../../assets/Seven Step/super30.svg";
 import selected from "../../../../assets/Seven Step/selected.svg";
 function Super30Hero() {
   return (
-    <div className='w-[90vw] mx-auto grid grid-cols-12'>
+    <div className='w-[90vw] mx-auto grid grid-cols-12 mt-6 p-5'>
       <div className='col-span-full md:col-span-7'>
         <div className='font-medium text-[25px] md:text-[30px] dark:text-white'>
           <h2>
@@ -92,7 +92,7 @@ function Super30Hero() {
             Months Coding Commando Training
           </p>
         </div>
-        <div className='col-span-full flex flex-col md:flex-row items-center justify-center md:justify-between gap-8'>
+        <div className='col-span-full flex flex-col md:flex-row items-center justify-center md:justify-between gap-4 lg:gap-[120px]'>
           <button className='flex items-center justify-center gap-7 p-3  rounded-[40px] w-full bg-[#D1FFD0] text-[15px] md:text-[20px] font-medium dark:bg-slate-900 dark:text-white'>
             <img className='w-[25px]' src={job} alt='' />
             <p>Get Placed</p>
