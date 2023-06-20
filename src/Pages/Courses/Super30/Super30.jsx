@@ -4,6 +4,7 @@ import Super30Batch from "./Super30Batch/Super30Batch";
 import ProgramOverview from "./ProgramOverview/ProgramOverview";
 import CourseLayout from "./CourseLayout/CourseLayout";
 import CourseContent from "./CourseContent/CourseContent";
+import Super30Benifit from "./Super30Benifit/Super30Benifit";
 
 const Super30 = () => {
   return (
@@ -11,7 +12,9 @@ const Super30 = () => {
       {/* Sarwar */}
       <Super30Hero />
       {/* Sarwar */}
-
+      {/* Sarwar */}
+      <Super30Benifit/>
+      {/* Sarwar */}
       {/* Sojib */}
       <Super30Batch />
       <ProgramOverview/>
