@@ -6,8 +6,8 @@ import { UIContext } from "../../../../contexts/UIProvider/UIProvider";
 function SDEInfoCarouselComponent({ item }) {
   const { theme } = useContext(UIContext);
   return (
-    <div className="w-full">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center w-[85vw] md:w-[80vw]">
+    <div className="w-full flex-shrink-0">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
         <div className="lg:col-span-7">
           <h2 className="text-[24px] md:text-[30px] lg:text-[36px] font-medium leading-relaxed text-[#101010] dark:text-[#37ED81]">
             {item?.heading}
