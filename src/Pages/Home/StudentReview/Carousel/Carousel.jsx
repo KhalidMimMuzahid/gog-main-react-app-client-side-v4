@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import EachCarouselSection from "./EachCarouselSection/EachCarouselSection";
-import { AnimatePresence, motion, MotionConfig } from "framer-motion";
+import { motion } from "framer-motion";
 import { useEffect } from "react";
 
 function Carousel({ data }) {
@@ -18,7 +18,7 @@ function Carousel({ data }) {
 
   return (
     <>
-      <div className="w-full">
+      <div className="w-full mt-5">
         <div className="mx-auto flex flex-col justify-center">
           <div className="w-[90dvw] overflow-hidden">
             <motion.div
@@ -33,7 +33,7 @@ function Carousel({ data }) {
             </motion.div>
           </div>
         </div>
-        <div className="my-5 flex gap-10 justify-center">
+        <div className="my-5 flex gap-7 justify-center">
           {data.map((item, indexHere) => (
             <div className={`h-[10px] w-[10px] ${index === indexHere ? "bg-[#4BA25D]" : "bg-[#a0ffb3]"} rounded-full`} key={indexHere} onClick={() => setIndex(indexHere)}></div>
           ))}
