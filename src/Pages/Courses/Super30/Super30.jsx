@@ -11,8 +11,6 @@ const Super30 = () => {
     <div className="px-[30px] md:px-[65px]">
       {/* Sarwar */}
       <Super30Hero />
-      {/* Sarwar */}
-      {/* Sarwar */}
       <Super30Benifit/>
       {/* Sarwar */}
       {/* Sojib */}
@@ -21,6 +19,11 @@ const Super30 = () => {
       <CourseLayout/>
       <CourseContent/>
       {/* Sojib */}
+
+
+      {/* Sarwar */}
+      {/* Create your components from here @Sarwarhridoy4 */}
+      {/* Sarwar */}
     </div>
   );
 };
