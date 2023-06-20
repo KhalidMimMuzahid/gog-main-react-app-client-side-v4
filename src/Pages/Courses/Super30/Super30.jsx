@@ -5,24 +5,24 @@ import ProgramOverview from "./ProgramOverview/ProgramOverview";
 import CourseLayout from "./CourseLayout/CourseLayout";
 import CourseContent from "./CourseContent/CourseContent";
 import Super30Benifit from "./Super30Benifit/Super30Benifit";
+import WhatsIncluded from "./WhatsIncluded/WhatsIncluded";
 
 const Super30 = () => {
   return (
-    <div className="px-[30px] md:px-[65px]">
+    <div className='px-[30px] md:px-[65px]'>
       {/* Sarwar */}
       <Super30Hero />
-      <Super30Benifit/>
+      <Super30Benifit />
       {/* Sarwar */}
       {/* Sojib */}
       <Super30Batch />
-      <ProgramOverview/>
-      <CourseLayout/>
-      <CourseContent/>
+      <ProgramOverview />
+      <CourseLayout />
+      <CourseContent />
       {/* Sojib */}
 
-
       {/* Sarwar */}
-      {/* Create your components from here @Sarwarhridoy4 */}
+      <WhatsIncluded />
       {/* Sarwar */}
     </div>
   );
