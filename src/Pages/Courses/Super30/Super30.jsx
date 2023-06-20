@@ -15,6 +15,8 @@ const Super30 = () => {
       {/* Sarwar */}
       <Super30Benifit/>
       {/* Sarwar */}
+      
+      
       {/* Sojib */}
       <Super30Batch />
       <ProgramOverview/>
