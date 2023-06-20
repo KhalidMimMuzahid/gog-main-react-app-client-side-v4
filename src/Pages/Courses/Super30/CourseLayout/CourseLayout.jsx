@@ -9,45 +9,47 @@ import LiveMock from "../../../../assets/icons/s30PageIcons/Live Mock Interviews
 import Projects from "../../../../assets/icons/s30PageIcons/Projects.svg";
 import CoursesLayoutCard from "./CoursesLayoutCard/CoursesLayoutCard";
 
+import { BsCalendarDate, BsClipboardMinus, BsLaptop, BsClock, BsCodeSlash, BsPeople, BsGlobe2 } from "react-icons/bs";
+
 const CourseLayout = () => {
   const coursesLayout = [
     {
-      img: Group,
+      img: <BsCalendarDate/>,
       title: "Duration",
       duration: "24 weeks",
     },
     {
-      img: Assignment,
+      img: <BsClipboardMinus/>,
       title: "100+ Assignments",
       duration: "2 hours every day",
     },
     {
-      img: Hardware,
+      img: <BsLaptop/>,
       title: "Online",
       duration: "Class mode",
     },
     {
-      img: Clock,
+      img: <BsClock/>,
       title: "Flexible Hours",
       duration: "Mon to Sun",
     },
     {
-      img: Projects,
+      img: <BsCodeSlash/>,
       title: "100+ Live Projects",
       duration: "2 hours every day",
     },
     {
-      img: Assignment,
+      img: <BsClipboardMinus/>,
       title: "100% Placement",
       duration: "Assurance",
     },
     {
-      img: LiveMock,
+      img: <BsPeople/>,
       title: "Live Mock Interviews",
       duration: "",
     },
     {
-      img: Course,
+      img: <BsGlobe2/>,
       title: "Course Language",
       duration: "Eng + Hindi",
     },
