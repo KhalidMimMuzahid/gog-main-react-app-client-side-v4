@@ -6,6 +6,7 @@ import CourseLayout from "./CourseLayout/CourseLayout";
 import CourseContent from "./CourseContent/CourseContent";
 import Super30Benifit from "./Super30Benifit/Super30Benifit";
 import WhatsIncluded from "./WhatsIncluded/WhatsIncluded";
+import JobRole from "./JobRole/JobRole";
 
 const Super30 = () => {
   return (
@@ -23,6 +24,7 @@ const Super30 = () => {
 
       {/* Sarwar */}
       <WhatsIncluded />
+      <JobRole/>
       {/* Sarwar */}
     </div>
   );
