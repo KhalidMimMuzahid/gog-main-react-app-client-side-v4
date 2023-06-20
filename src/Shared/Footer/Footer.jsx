@@ -10,9 +10,9 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="p-10">
-      <div className="rounded-2xl grid-cols-1 grid md:grid-cols-12 w-full mx-auto bg-[#D1FFD0] dark:bg-[#1A211F] p-8 md:p-16 gap-6 text-[#101010] dark:text-white">
-        <div className="col-span-1 md:col-span-3">
+    <div className="p-7 md:p-10">
+      <div className="rounded-2xl grid-cols-1 grid lg:grid-cols-12 w-full mx-auto bg-[#D1FFD0] dark:bg-[#1A211F] p-8 md:p-16 gap-6 text-[#101010] dark:text-white">
+        <div className="col-span-1 lg:col-span-3">
           <Link to="/" className="">
             <img src={logo} alt="Geeks of Gurukul logo" className="w-[120px] md:w-[190px]" />
           </Link>
@@ -21,7 +21,7 @@ const Footer = () => {
             with our Cutting-edge Learning Management System.
           </p>
         </div>
-        <div className="col-span-1 md:col-span-2">
+        <div className="col-span-1 lg:col-span-2">
           <ul>
             <li className="text-lg md:text-xl font-medium md:font-bold text-[#4BA25D] dark:text-[#D1FFD0] dark:font-medium">Connect</li>
             <div className="flex flex-col gap-3 md:gap-5 mt-5 text-sm md:text-base">
@@ -40,7 +40,7 @@ const Footer = () => {
             </div>
           </ul>
         </div>
-        <div className="col-span-1 md:col-span-2">
+        <div className="col-span-1 lg:col-span-2">
           <ul>
             <li className="text-lg md:text-xl font-medium md:font-bold text-[#4BA25D] dark:text-[#D1FFD0] dark:font-medium">Resources</li>
             <div className="flex flex-col gap-3 md:gap-5 mt-5 text-sm md:text-base">
@@ -62,7 +62,7 @@ const Footer = () => {
             </div>
           </ul>
         </div>
-        <div className="col-span-1 md:col-span-2">
+        <div className="col-span-1 lg:col-span-2">
           <ul>
             <li className="text-lg md:text-xl font-medium md:font-bold text-[#4BA25D] dark:text-[#D1FFD0] dark:font-medium">Company</li>
             <div className="flex flex-col gap-3 md:gap-5 mt-5 text-sm md:text-base">
@@ -78,7 +78,7 @@ const Footer = () => {
             </div>
           </ul>
         </div>
-        <div className="col-span-1 md:col-span-3">
+        <div className="col-span-1 lg:col-span-3">
           <ul>
             <li className="text-lg md:text-xl font-medium md:font-bold text-[#4BA25D] dark:text-[#D1FFD0] dark:font-medium">Get in touch</li>
             <div className="flex items-center gap-3 md:gap-5 mt-5 mb-7 text-sm md:text-base">
