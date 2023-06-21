@@ -5,9 +5,13 @@ import ProgramOverview from "./ProgramOverview/ProgramOverview";
 import CourseLayout from "./CourseLayout/CourseLayout";
 import CourseContent from "./CourseContent/CourseContent";
 import Super30Benifit from "./Super30Benifit/Super30Benifit";
+
+import CourseStructure from "./CourseStructure/CourseStructure";
+
 import WhatsIncluded from "./WhatsIncluded/WhatsIncluded";
 import JobRole from "./JobRole/JobRole";
 import FAQ from "./FAQ/FAQ";
+
 
 const Super30 = () => {
   return (
@@ -20,9 +24,16 @@ const Super30 = () => {
       
       {/* Sojib */}
       <Super30Batch />
-      <ProgramOverview />
-      <CourseLayout />
-      <CourseContent />
+
+      <ProgramOverview/>
+      <CourseLayout/>
+      <CourseContent/>
+      <CourseStructure/>
+
+      
+      
+      
+
       {/* Sojib */}
 
       {/* Sarwar */}
