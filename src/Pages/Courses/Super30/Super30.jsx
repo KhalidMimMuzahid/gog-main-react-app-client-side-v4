@@ -11,6 +11,7 @@ import CourseStructure from "./CourseStructure/CourseStructure";
 import WhatsIncluded from "./WhatsIncluded/WhatsIncluded";
 import JobRole from "./JobRole/JobRole";
 import FAQ from "./FAQ/FAQ";
+import BookFreeDemo from "./BookFreeDemo/BookFreeDemo";
 
 
 const Super30 = () => {
@@ -39,7 +40,8 @@ const Super30 = () => {
       {/* Sarwar */}
       <WhatsIncluded />
       <JobRole />
-      <FAQ/>
+      <FAQ />
+      <BookFreeDemo/>
       {/* Sarwar */}
     </div>
   );
