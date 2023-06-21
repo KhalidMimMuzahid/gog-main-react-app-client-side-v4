@@ -37,7 +37,7 @@ function Super30Batch() {
               </button>
             </div>
           </div>
-          <div className="mt-[24px] order-1 md:order-2 h-[360px] bg-[#D1FFD0] rounded-[40px] py-[30px]  pl-[30px] flex items-center">
+          <div className="mt-[24px] order-1 md:order-2 h-[360px] dark:text-[white] dark:bg-slate-900 bg-[#D1FFD0] rounded-[40px] py-[30px]  pl-[30px] flex items-center">
             Card Element - Full Stack Web Development
           </div>
         </div>
@@ -58,7 +58,7 @@ function Super30Batch() {
               </button>
             </div>
           </div>
-          <div className="mt-[24px] order-1 md:order-2 h-[360px] bg-[#D1FFD0] rounded-[40px] py-[30px]  pl-[30px] flex items-center">
+          <div className="mt-[24px] order-1 md:order-2 h-[360px] dark:text-[white] dark:bg-slate-900 bg-[#D1FFD0] rounded-[40px] py-[30px]  pl-[30px] flex items-center">
             Card Element - Full Stack Data Science
           </div>
         </div>
