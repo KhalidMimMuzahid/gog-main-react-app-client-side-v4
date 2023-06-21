@@ -2,7 +2,7 @@ import React from "react";
 
 const BookFreeDemo = () => {
   return (
-    <div className='my-20 p-10 bg-gradient-to-r from-[#D1FFD0] to-[#BBE7FF] dark:bg-[#263238] dark:bg-transparent dark:text-white rounded-[20px]'>
+    <div className='my-20 p-10 bg-gradient-to-r from-[#D1FFD0] to-[#BBE7FF] dark:from-[#263238] dark:to-[#263238]  dark:text-white rounded-[20px]'>
       <div>
         <p className='text-center text-[16px] md:text-[20px] font-semibold'>
           If you're still unsure about whether software development is the right
