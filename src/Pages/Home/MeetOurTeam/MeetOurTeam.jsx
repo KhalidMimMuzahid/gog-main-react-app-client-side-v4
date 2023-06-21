@@ -14,7 +14,7 @@ import AC from "../../../assets/Teams/AC.svg";
 import Linkedin from "../../../assets/Teams/Linkedin.svg";
 import IIT from "../../../assets/Teams/IIT.svg";
 
-const MeetOurTeam = () => {
+const MeetOurTeam = ({ showHeading }) => {
   const teams = [
     {
       name: "Rohit rana",
@@ -84,19 +84,22 @@ const MeetOurTeam = () => {
 
   return (
     <div className="mb-[120px] md:mx-[65] mx-[30px]">
-      <h2 className="mb-[40px] text-center font-[500] md:text-[36px] text-[25px]  bg-clip-text text-transparent bg-gradient-to-r from-[#37ED81] via-[#3DA5BD] to-[#905BEC]">
-        MEET OUR Team
-      </h2>
-      <p className="mb-[80px] text-center font-[500] dark:text-[white] text-[#101010] md:text-[18px] text-[15px]">
-        A Team Of IITians to Boost your Tech Career to New Heights. The
-        Curriculum Team is an experienced group of data analyst instructors
-      </p>
-
+      {showHeading && (
+        <>
+          <h2 className="mb-[40px] text-center font-[500] md:text-[36px] text-[25px]  bg-clip-text text-transparent bg-gradient-to-r from-[#37ED81] via-[#3DA5BD] to-[#905BEC]">
+            MEET OUR Team
+          </h2>
+          <p className="mb-[80px] text-center font-[500] dark:text-[white] text-[#101010] md:text-[18px] text-[15px]">
+            A Team Of IITians to Boost your Tech Career to New Heights. The
+            Curriculum Team is an experienced group of data analyst instructors
+          </p>
+        </>
+      )}
       <div>
         <Marquee pauseOnHover={true} className="mb-[60px]" speed={40}>
-            {teams?.map((team, i) => (
-              <TeamCard team={team} key={i}/>
-            ))}
+          {teams?.map((team, i) => (
+            <TeamCard team={team} key={i} />
+          ))}
         </Marquee>
       </div>
     </div>
