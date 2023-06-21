@@ -9,7 +9,7 @@ import LiveMock from "../../../../assets/icons/s30PageIcons/Live Mock Interviews
 import Projects from "../../../../assets/icons/s30PageIcons/Projects.svg";
 import CoursesLayoutCard from "./CoursesLayoutCard/CoursesLayoutCard";
 
-import { BsCalendarDate, BsClipboardMinus, BsLaptop, BsClock, BsCodeSlash, BsPeople, BsGlobe2 } from "react-icons/bs";
+import { BsCalendarDate, BsClipboardMinus, BsBriefcase, BsLaptop, BsClock, BsCodeSlash, BsPeople, BsGlobe2 } from "react-icons/bs";
 
 const CourseLayout = () => {
   const coursesLayout = [
@@ -39,7 +39,7 @@ const CourseLayout = () => {
       duration: "2 hours every day",
     },
     {
-      img: <BsClipboardMinus/>,
+      img: <BsBriefcase/>,
       title: "100% Placement",
       duration: "Assurance",
     },

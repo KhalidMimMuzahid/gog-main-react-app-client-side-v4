@@ -16,6 +16,7 @@ import MeetOurTeam from "../../Home/MeetOurTeam/MeetOurTeam";
 import Instructor from "./Instructor/Instructor";
 
 import BookFreeDemo from "./BookFreeDemo/BookFreeDemo";
+import StudentStories from "./StudentStories/StudentStories";
 
 
 
@@ -37,6 +38,7 @@ const Super30 = () => {
       <CourseStructure/>
       <Instructor/>
       <MeetOurTeam showHeading={false}/>
+      <StudentStories/>
 
       {/* Sojib */}
 
