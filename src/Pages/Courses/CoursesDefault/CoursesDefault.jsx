@@ -1,8 +1,10 @@
 import React from "react";
 import CoursesHero from "./CoursesHero/CoursesHero";
 import SchoolChamp from "./SchoolChamp/SchoolChamp";
-import CodingBees from "../CodingBees/CodingBees";
-import EngineeringNerds from "../EngineeringNerds/EngineeringNerds";
+import CodingBees from "./CodingBees/CodingBees";
+import EngineeringNerds from "./EngineeringNerds/EngineeringNerds";
+import IndustrialCourses from "./IndustrialCourses/IndustrialCourses";
+import SDEInfo from "../../Home/SDEInfo/SDEInfo"
 
 const CoursesDefault = () => {
   return (
@@ -11,6 +13,8 @@ const CoursesDefault = () => {
       <SchoolChamp />
       <CodingBees />
       <EngineeringNerds />
+      <IndustrialCourses />
+      <SDEInfo />
     </div>
   );
 };
