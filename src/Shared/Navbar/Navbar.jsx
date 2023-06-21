@@ -64,7 +64,7 @@ const Navbar = () => {
             <div className="hidden lg:block">
               <div className="ml-4 flex space-x-4 items-center">
                 {navbarVars2.map((object, index) => (
-                  <Link to={object.link} key={index} target="_blank">
+                  <Link to={object.link} key={index}>
                     <div
                       className={`rounded-full p-1 ${style.border_gradient}`}
                     >

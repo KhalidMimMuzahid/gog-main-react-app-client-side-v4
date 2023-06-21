@@ -13,6 +13,7 @@ import SignUp from "../Pages/SignUp/SignUp";
 import SignIn from "../Pages/SignIn/SignIn";
 import ContactUs from "../Pages/ContactUs/ContactUs";
 import AboutUs from "../Pages/AboutUs/AboutUs";
+import ChampsOfBasicCoding from "../Pages/Courses/SpecificCourses/ChampsOfBasicCoding";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
           {
             path: "/courses",
             element: <CoursesDefault />,
+          },
+          {
+            path: "/courses/champs-of-basic-coding",
+            element: <ChampsOfBasicCoding />,
           },
           {
             path: "/courses/super-30",
