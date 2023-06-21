@@ -4,7 +4,7 @@ import CardComponent from "../CardComponent/CardComponent";
 const info = [
   {
     heading: "Full Stack Data Analytics",
-    pricing: "₹3999/month",
+    pricing: "₹3999",
     desc: "Become a skilled Full Stack Data Analyst with our comprehensive course, equipping you to gather, analyze, & visualize data for informed decision making in any industry. Join us to gain the power of data & drive business success.",
     timing: "Flexible time",
     duration: "24 weeks",
@@ -12,7 +12,7 @@ const info = [
   },
   {
     heading: "Full Stack Web Development",
-    pricing: "₹3999/month",
+    pricing: "₹3999",
     desc: "Become a skilled Full Stack Web Developer with our comprehensive course, covering both front-end and back-end development, and unlock endless opportunities in the web development industry.",
     timing: "Flexible time",
     duration: "24 weeks",
