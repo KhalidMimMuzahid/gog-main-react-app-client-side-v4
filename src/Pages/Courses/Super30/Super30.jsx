@@ -11,6 +11,8 @@ import CourseStructure from "./CourseStructure/CourseStructure";
 import WhatsIncluded from "./WhatsIncluded/WhatsIncluded";
 import JobRole from "./JobRole/JobRole";
 import FAQ from "./FAQ/FAQ";
+import MeetOurTeam from "../../Home/MeetOurTeam/MeetOurTeam";
+import Instructor from "./Instructor/Instructor";
 
 
 const Super30 = () => {
@@ -29,10 +31,8 @@ const Super30 = () => {
       <CourseLayout/>
       <CourseContent/>
       <CourseStructure/>
-
-      
-      
-      
+      <Instructor/>
+      <MeetOurTeam showHeading={false}/>
 
       {/* Sojib */}
 
