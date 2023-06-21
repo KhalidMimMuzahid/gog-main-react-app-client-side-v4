@@ -54,11 +54,8 @@ const WhatsIncluded = () => {
       {/* Cards */}
       <div className='my-2 grid grid-cols-12 gap-5 p-5 rounded-lg'>
         {Dataset?.map((data, i) => (
-          <div className='col-span-12 md:col-span-6 lg:col-span-4'>
-            <div
-              key={i}
-              className='w-full border border-[#D1FFD0] p-5 rounded-lg flex flex-col gap-4 items-center justify-center h-96'
-            >
+          <div key={i} className='col-span-12 md:col-span-6 lg:col-span-4'>
+            <div className='w-full border border-[#D1FFD0] p-5 rounded-lg flex flex-col gap-4 items-center justify-center h-96'>
               <img src={data?.image} alt='' />
               <p className='text-center dark:text-white'>{data?.text}</p>
             </div>
