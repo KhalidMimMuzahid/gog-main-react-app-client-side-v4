@@ -20,7 +20,7 @@ function HeroInfoComponent() {
             key={index}
           >
             <BsPatchCheck className="text-2xl text-[#37ED81]" />
-            <p className="text-sm md:text-lg w-full">
+            <p className="text-xs sm:text-sm md:text-lg w-full">
               {point}
             </p>
           </div>
