@@ -4,7 +4,7 @@ import CardComponent from "../CardComponent/CardComponent";
 const info = [
   {
     heading: "Electrical Engineering",
-    pricing: "₹3999/month",
+    pricing: "₹3999",
     desc: "Electrical engineering is a field of engineering that deals with the study and application of electricity, electronics,and electromagnetism. Electrical engineers work in a very wide range of industries & the skills required are likewise variable.",
     timing: "Flexible time",
     duration: "36 weeks",
@@ -13,7 +13,7 @@ const info = [
 
   {
     heading: "Mechanical Engineering",
-    pricing: "₹3999/month",
+    pricing: "₹3999",
     desc: "Mechanical engineering is a branch of engineering that deals with the design, manufacturing, and maintenance of mechanical systems.Using principles motion,energy,force ensuring designs safely,efficiently,and reliably.",
     timing: "Flexible time",
     duration: "36 weeks",

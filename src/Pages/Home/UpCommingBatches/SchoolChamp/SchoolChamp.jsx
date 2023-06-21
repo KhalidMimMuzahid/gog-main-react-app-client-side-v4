@@ -5,7 +5,7 @@ import CardComponent from "../CardComponent/CardComponent";
 const info = [
   {
     heading: "Champs of Basic Coding",
-    pricing: "₹1199/month",
+    pricing: "₹1199",
     desc: "BASIC (Beginners' All-purpose Symbolic Instruction Code) is a family of general-purpose, high-level programming languages designed for ease of use.Computer Programming Including Programming Concepts, Programming Languages.",
     timing: "Flexible time",
     duration: "24 weeks",
@@ -14,7 +14,7 @@ const info = [
 
   {
     heading: "Champs of Advance Coding",
-    pricing: "₹1199/month",
+    pricing: "₹1199",
     desc: "Students learn the fundamentals of programming through creating interactive stories, designing animations, & creating advance-games,mobile apps.Computer Programming Including Programming Concepts, Programming Languages.",
     timing: "Flexible time",
     duration: "24 weeks",
