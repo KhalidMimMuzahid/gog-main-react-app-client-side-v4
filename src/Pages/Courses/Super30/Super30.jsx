@@ -5,6 +5,7 @@ import ProgramOverview from "./ProgramOverview/ProgramOverview";
 import CourseLayout from "./CourseLayout/CourseLayout";
 import CourseContent from "./CourseContent/CourseContent";
 import Super30Benifit from "./Super30Benifit/Super30Benifit";
+import CourseStructure from "./CourseStructure/CourseStructure";
 
 const Super30 = () => {
   return (
@@ -20,6 +21,7 @@ const Super30 = () => {
       <ProgramOverview/>
       <CourseLayout/>
       <CourseContent/>
+      <CourseStructure/>
       {/* Sojib */}
 
 
