@@ -3,8 +3,8 @@ import React from "react";
 const CoursesLayoutCard = ({course}) => {
     const {img, title, duration} = course;
   return (
-    <div class="flex md:gap-[25px] gap-[15px] flex-row-2 items-center">
-      <div class=" my-auto text-[#4BA25D] md:text-[30px] text-[40px]">
+    <div class="flex md:gap-[25px] gap-[15px] flex-row-2  items-center">
+      <div class=" my-auto text-[#4BA25D] text-[30px] md:text-[30px] lg:text-[30px]">
         { img}
       </div>
       <div class="flex flex-col  ">
