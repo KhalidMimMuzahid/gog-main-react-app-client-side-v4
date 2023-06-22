@@ -4,7 +4,7 @@ const inputStyle = "w-full py-2 md:py-2.5 px-2.5 md:px-3 rounded-lg mt-1 dark:bg
 
 function HeroFormComponent() {
   return (
-    <div className="col-span-1 lg:col-span-4 flex flex-col justify-between gap-5 bg-[#D1FFD0] border dark:border-0 dark:bg-[#1C202A] p-10 rounded-xl">
+    <div className="col-span-1 lg:col-span-4 flex flex-col justify-between gap-5 bg-[#D1FFD0] dark:bg-[#1C202A] p-10 rounded-xl">
       <h1 className="text-[20px] md:text-[24px]">Speak to a Career Counselor!</h1>
       <p className="text-[#98A2B3] text-sm md:text-base">
         "Interested in pursuing a successful career in Software Development?

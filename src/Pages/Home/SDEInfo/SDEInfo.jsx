@@ -5,6 +5,8 @@ import lightSVG from "../../../assets/SDEInfo/light.svg";
 import darkSVG from "../../../assets/SDEInfo/dark.svg";
 import lightSVG2 from "../../../assets/SDEInfo/light2.svg";
 import darkSVG2 from "../../../assets/SDEInfo/dark2.svg";
+import lightSVG3 from "../../../assets/SDEInfo/light3.svg";
+import darkSVG3 from "../../../assets/SDEInfo/dark3.svg";
 import { motion } from "framer-motion";
 
 const data = [
@@ -36,6 +38,20 @@ const data = [
     lightSVG: lightSVG2,
     darkSVG: darkSVG2,
   },
+  {
+    heading:
+      "Data Analyst offers a promising career path with high growth potential and earnings.",
+    subHeading: "What Data Analysts are Earning",
+    desc: "These are the average salaries you could be earning as a data analyst in India. Source: Glassdoor.com",
+    info: [
+      "10LPA: Average CTC at entry level placement.",
+      "Remarkable 70% increase in tech team headcount in the past year.",
+      "Projected surge of over 3 million software development jobs in the coming year.",
+      "Expected decline of 25% in campus recruitment.",
+    ],
+    lightSVG: lightSVG3,
+    darkSVG: darkSVG3,
+  },
 ];
 
 function SDEInfo() {
@@ -61,7 +77,9 @@ function SDEInfo() {
       >
         <button
           type="button"
-          onClick={() => setIndex((prev) => prev != 0 && --prev)}
+          onClick={() =>
+            setIndex((prev) => (prev != 0 ? --prev : data.length - 1))
+          }
           className="hidden lg:inline-block"
         >
           <BsArrowLeftCircle className="text-3xl text-[#37ED81]" />
@@ -81,7 +99,9 @@ function SDEInfo() {
 
         <button
           type="button"
-          onClick={() => setIndex((prev) => prev != data.length - 1 && ++prev)}
+          onClick={() =>
+            setIndex((prev) => (prev != data.length - 1 ? ++prev : 0))
+          }
           className="hidden lg:inline-block"
         >
           <BsArrowRightCircle className="text-3xl text-[#37ED81]" />
