@@ -1,10 +1,13 @@
 import React from 'react'
+import StudentStories from './StudentStories/StudentStories'
 
 function SpecificCoursePageComponent({data}) {
   return (
     <div>
       {/* Sojib */}
-      <h3>hissssssssssss</h3>
+      <StudentStories/>
+
+
       {/* Sojib */}
 
       {/* Sarwar */}

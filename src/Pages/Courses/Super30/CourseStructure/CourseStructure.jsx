@@ -8,7 +8,7 @@ const CourseStructure = () => {
         Course Structure
       </h4>
 
-      <h6 className="md:text-[20px] text-[15px] text-[#4BA25D] font-[500] mb-[16px]">
+      <h6 className="md:text-[20px] text-[16px] font-[600] text-[#4BA25D] md:font-[500]  mb-[16px]">
         Eligibility
       </h6>
       <div className="text-[#101010] dark:text-[white] flex gap-5 my-[16px]">
@@ -26,7 +26,7 @@ const CourseStructure = () => {
         <img src={Badge} alt="Badge images" />
         <p>No prior coding experience required.</p>
       </div>
-      <h6 className="md:text-[20px] mt-[40px] text-[15px] text-[#4BA25D] font-[500] mb-[16px]">
+      <h6 className="md:text-[20px] mt-[40px] text-[16px] font-[600] text-[#4BA25D] md:font-[500] mb-[16px]">
         Fees
       </h6>
       <div className="text-[#101010] dark:text-[white] flex gap-5 my-[16px]">
