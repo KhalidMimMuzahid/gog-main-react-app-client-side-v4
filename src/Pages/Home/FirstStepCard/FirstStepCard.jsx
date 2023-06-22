@@ -6,7 +6,7 @@ import polygon from "../../../assets/someBG/polygon.svg";
 
 function FirstStepCard() {
   return (
-    <div className="relative rounded-3xl my-[70px] mx-[30px] md:mx-[65px] md:m-[65px] p-10 lg:p-16 text-[#101010] dark:text-white bg-white shadow-md shadow-[#19B85140] dark:bg-[#1C202A] dark:shadow-none">
+    <div className="relative rounded-3xl my-[70px] md:my-[65px] p-10 lg:p-16 text-[#101010] dark:text-white bg-white shadow-md shadow-[#19B85140] dark:bg-[#1C202A] dark:shadow-none">
       <img
         src={star}
         className="w-[20%] md:w-[15%] lg:w-[10%] absolute left-0 bottom-0"

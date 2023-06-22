@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 
 function Landing() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 pt-[21px] pb-[65px] px-[30px] md:px-[65px] items-center gap-10 mt-5">
+    <div className="grid grid-cols-1 md:grid-cols-2 pt-[21px] pb-[65px] items-center gap-10 mt-5">
       <div className="flex flex-col text-center md:text-left">
         <h1 className="text-[#101010] dark:text-white text-4xl lg:text-5xl font-black">
           Build Your Career with

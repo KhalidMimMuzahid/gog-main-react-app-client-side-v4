@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="p-7 md:p-10">
+    <div className="p-5 md:p-10">
       <div className="rounded-2xl grid-cols-1 grid lg:grid-cols-12 w-full mx-auto bg-[#D1FFD0] dark:bg-[#1A211F] p-8 md:p-16 gap-6 text-[#101010] dark:text-white">
         <div className="col-span-1 lg:col-span-3">
           <Link to="/" className="">
