@@ -12,6 +12,7 @@ const data = [
     rating: "4.5",
     price: "₹ 1199",
     prevPrice: "₹ 2999",
+    link: "champs-of-basic-coding"
   },
   {
     image: schoolChamp,
@@ -22,6 +23,7 @@ const data = [
     rating: "4.5",
     price: "₹ 1199",
     prevPrice: "₹ 2999",
+    link: "champs-of-basic-coding"
   },
 ];
 
