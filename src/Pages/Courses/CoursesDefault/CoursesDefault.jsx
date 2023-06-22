@@ -5,6 +5,7 @@ import CodingBees from "./CodingBees/CodingBees";
 import EngineeringNerds from "./EngineeringNerds/EngineeringNerds";
 import IndustrialCourses from "./IndustrialCourses/IndustrialCourses";
 import SDEInfo from "../../Home/SDEInfo/SDEInfo"
+import CourseDetails from "./CourseDetails/CourseDetails";
 
 const CoursesDefault = () => {
   return (
@@ -15,6 +16,7 @@ const CoursesDefault = () => {
       <EngineeringNerds />
       <IndustrialCourses />
       <SDEInfo />
+      <CourseDetails />
     </div>
   );
 };
