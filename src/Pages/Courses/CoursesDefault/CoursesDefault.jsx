@@ -9,7 +9,7 @@ import CourseDetails from "./CourseDetails/CourseDetails";
 
 const CoursesDefault = () => {
   return (
-    <div className="px-[30px] md:px-[115px] dark:text-white">
+    <div className="px-[20px] md:px-[115px] dark:text-white">
       <CoursesHero />
       <SchoolChamp />
       <CodingBees />
