@@ -60,7 +60,7 @@ const CourseLayout = () => {
       <h4 className="mb-[40px] md:text-[30px] text-[25px] text-center md:text-left text-[#37ED81] font-[500]">
         Course Layout
       </h4>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+      <div className="grid grid-cols-2 md:grid-cols-4 md:gap-5 gap-2">
         {coursesLayout.map((course, i) => <CoursesLayoutCard
             key={i}
             course={course}
