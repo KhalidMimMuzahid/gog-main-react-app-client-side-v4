@@ -43,8 +43,8 @@ const Navbar = () => {
   return (
     <div className="sticky top-0 z-50">
       <nav className="bg-[#F8FFF9] dark:bg-[#121313] shadow dark:shadow-[#41414140] text-[#101010] dark:text-white">
-        <div className="px-[30px] md:px-[75px] mx-auto ">
-          <div className="flex items-center justify-between h-[90px]">
+        <div className="px-[20px] md:px-[75px] mx-auto ">
+          <div className="flex items-center justify-between h-[70px] md:h-[90px]">
             <div className="flex-shrink-0">
               <Link to="/">
                 <img src={logo} className="h-[46px]" />
