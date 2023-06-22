@@ -31,7 +31,7 @@ import TopTalentCard from "./TopTalentCard/TopTalentCard";
 
 const Home = () => {
   return (
-    <div>
+    <div className="md:px-[65px] px-[20px]">
       <Landing />
       <Banner />
       <Super30/>

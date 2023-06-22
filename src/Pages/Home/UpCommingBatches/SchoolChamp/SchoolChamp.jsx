@@ -24,7 +24,7 @@ const info = [
 
 const SchoolChamp = () => {
   return (
-    <div className="mt-[80px] md:mt-[120px] md:px-[65px] px-[30px]">
+    <div className="mt-[80px] md:mt-[120px]">
       <h2 className="text-[25px] md:text-[36px] font-medium text-center text-transparent bg-clip-text text-gradient bg-gradient-to-r from-green-500 to-blue-500 mb-[24px]">
         UPCOMING <span className="text-[#4BA25D] font-bold">SCHOOL CHAMP</span>{" "}
         BATCHES
