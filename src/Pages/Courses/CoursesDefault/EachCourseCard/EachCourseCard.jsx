@@ -3,9 +3,9 @@ import { BsClipboard2, BsClock, BsLaptop, BsStarHalf } from "react-icons/bs";
 
 function EachCourseCard({ item }) {
   return (
-    <div className="rounded-xl dark:from-[#22362A] dark:to-[#22362A] bg-gradient-to-br from-[#D1FFD0] to-[#BBE7FF] border border-gray-300 shadow-md dark:border-0 dark:shadow-none">
+    <div className="rounded-2xl dark:from-[#22362A] dark:to-[#22362A] bg-gradient-to-br from-[#D1FFD0] to-[#BBE7FF] border border-gray-300 shadow-md dark:border-0 dark:shadow-none">
       <div className="max-w-[470px]">
-        <img src={item?.image} className="w-full rounded-t-xl" />
+        <img src={item?.image} className="w-full rounded-t-2xl" />
         <div className="p-7 md:p-10">
           <h1 className="text-[20px] md:text-[24px] mb-5 font-medium">{item?.title}</h1>
           <div className="flex justify-between w-full gap-3">
