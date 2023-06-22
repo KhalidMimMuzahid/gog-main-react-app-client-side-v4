@@ -12,6 +12,7 @@ const data = [
     rating: "4.5",
     price: "₹ 3999",
     prevPrice: "₹ 5999",
+    link: "champs-of-basic-coding"
   },
   {
     image: schoolChamp,
@@ -22,6 +23,7 @@ const data = [
     rating: "4.5",
     price: "₹ 3999",
     prevPrice: "₹ 5999",
+    link: "champs-of-basic-coding"
   },
   {
     image: schoolChamp,
@@ -32,6 +34,7 @@ const data = [
     rating: "4.5",
     price: "₹ 3999",
     prevPrice: "₹ 5999",
+    link: "champs-of-basic-coding"
   },
   {
     image: schoolChamp,
@@ -42,6 +45,7 @@ const data = [
     rating: "4.5",
     price: "₹ 3999",
     prevPrice: "₹ 5999",
+    link: "champs-of-basic-coding"
   },
   {
     image: schoolChamp,
@@ -52,6 +56,7 @@ const data = [
     rating: "4.5",
     price: "₹ 3999",
     prevPrice: "₹ 5999",
+    link: "champs-of-basic-coding"
   },
   {
     image: schoolChamp,
@@ -62,6 +67,7 @@ const data = [
     rating: "4.5",
     price: "₹ 3999",
     prevPrice: "₹ 5999",
+    link: "champs-of-basic-coding"
   },
 ];
 
