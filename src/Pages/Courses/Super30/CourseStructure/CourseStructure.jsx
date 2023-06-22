@@ -38,9 +38,66 @@ const CourseStructure = () => {
         <p>Two Payment Model</p>
       </div>
 
-      <div className="text-[#101010] dark:text-[white] mt-[24px]  flex flex-row gap-[4px] justify-center">
+      
+      {/* table start */}
+      
+      <div className="overflow-x-auto mt-[40px]  lg:w-10/12 md:mx-auto">
+        <table className="table bg-[#E1FFE8]  md:text-[16px] font-poppins text-[12px] text-[black] dark:text-[white] font-[400] dark:bg-slate-950  ">
+          
+          <thead className="">
+            <tr className="">
+              
+              <th className="py-[20px] border-r-2  border-[#F8FFF9] dark:border-[#121313] text-[12px] md:text-[16px]  text-[black] dark:text-[white] font-[400]">Fee</th>
+              <th className="border-r-2  border-[#F8FFF9]  dark:border-[#121313] text-[12px] md:text-[16px]  text-[black] dark:text-[white] font-[400]">Payment Model 1</th>
+              <th className="  text-[12px] md:text-[16px]  text-[black] dark:text-[white] font-[400]">Payment Model 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            {/* row 1 */}
+            <tr>
+              
+              <td className="py-[20px] border-t-2 border-r-2 dark:border-[#121313] border-[#F8FFF9]">Registration</td>
+              <td className="border-t-2 border-r-2 dark:border-[#121313] border-[#F8FFF9]">₹ 5000/-</td>
+              <td className="border-t-2  dark:border-[#121313] border-[#F8FFF9]">₹ 5000/-</td>
+            </tr>
+            {/* row 2 */}
+            <tr>
+              
+              <td className="py-[20px] border-t-2 border-r-2 dark:border-[#121313] border-[#F8FFF9]">Course Fee</td>
+              <td className="border-t-2 border-r-2 dark:border-[#121313] border-[#F8FFF9]">Upfront : <strike>₹60000</strike> ₹55,000</td>
+              <td className="border-t-2  dark:border-[#121313] border-[#F8FFF9]">EMI : ₹10,000*6 months = ₹60,000</td>
+            </tr>
+            {/* row 3 */}
+            <tr>
+             
+              <td className="border-t-2 border-r-2 py-[20px] dark:border-[#121313] border-[#F8FFF9]">Total</td>
+              <td className="border-t-2 border-r-2  dark:border-[#121313] border-[#F8FFF9]">₹ 60000/-</td>
+              <td className="border-t-2   dark:border-[#121313] border-[#F8FFF9]">₹ 65000/-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* <div className="text-[#101010] dark:text-[white] mt-[24px]  flex flex-row gap-[4px] justify-center">
         <div
-          className={`w-[176px]  text-center   font-[400] md:text-[16px] text-[12px] dark:bg-slate-950  py-[20px] bg-[#E1FFE8] rounded-tr-none rounded-tl-[20px]`}
+          className={`w-[176px]  px-[5px]  text-center   font-[400] md:text-[16px] text-[12px] dark:bg-slate-950  py-[20px] bg-[#E1FFE8] rounded-tr-none rounded-tl-[20px]`}
         >
           Fee
         </div>
@@ -58,7 +115,7 @@ const CourseStructure = () => {
 
       <div className="text-[#101010] dark:text-[white] mt-[4px]  flex flex-row gap-[4px] justify-center">
         <div
-          className={`w-[176px]  text-center   font-[400] md:text-[16px] text-[12px] dark:bg-slate-950  py-[20px] bg-[#E1FFE8] `}
+          className={`w-[176px] px-[5px]  text-center   font-[400] md:text-[16px] text-[12px] dark:bg-slate-950  py-[20px] bg-[#E1FFE8] `}
         >
           Registration
         </div>
@@ -76,7 +133,7 @@ const CourseStructure = () => {
 
       <div className="text-[#101010] dark:text-[white] mt-[4px]  flex flex-row gap-[4px] justify-center">
         <div
-          className={`w-[176px]  text-center   font-[400] md:text-[16px] text-[12px] dark:bg-slate-950  py-[20px] bg-[#E1FFE8] `}
+          className={`w-[176px] px-[5px] flex items-center text-center   font-[400] md:text-[16px] text-[12px] dark:bg-slate-950  py-[20px] bg-[#E1FFE8] `}
         >
           Course Fee
         </div>
@@ -88,13 +145,15 @@ const CourseStructure = () => {
         <div
           className={`w-[341px]    font-[400] md:text-[16px] text-[12px] dark:bg-slate-950  py-[20px] bg-[#E1FFE8] `}
         >
-          <p className="md:pl-[40px] text-center px-[5px]">EMI : ₹10,000*6 months = ₹60,000</p>
+          <p className="md:pl-[40px] text-center px-[5px]">
+            EMI : ₹10,000*6 months = ₹60,000
+          </p>
         </div>
       </div>
 
       <div className="text-[#101010] dark:text-[white] mt-[4px]  flex flex-row gap-[4px] justify-center">
         <div
-          className={`w-[176px]  text-center   font-[400] md:text-[16px] text-[12px] dark:bg-slate-950  py-[20px] bg-[#E1FFE8] rounded-br-none rounded-bl-[20px]`}
+          className={`w-[176px]  px-[5px]  text-center   font-[400] md:text-[16px] text-[12px] dark:bg-slate-950  py-[20px] bg-[#E1FFE8] rounded-br-none rounded-bl-[20px]`}
         >
           Total
         </div>
@@ -108,7 +167,7 @@ const CourseStructure = () => {
         >
           <p className="md:pl-[40px] text-center">₹ 65000/-</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

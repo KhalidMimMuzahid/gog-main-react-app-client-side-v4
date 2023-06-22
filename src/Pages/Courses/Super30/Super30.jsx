@@ -22,7 +22,7 @@ import StudentStories from "./StudentStories/StudentStories";
 
 const Super30 = () => {
   return (
-    <div className='px-[30px] md:px-[65px]'>
+    <div className='px-[20px] md:px-[65px]'>
       {/* Sarwar */}
       <Super30Hero />
       <Super30Benifit />
@@ -37,7 +37,7 @@ const Super30 = () => {
       <CourseContent/>
       <CourseStructure/>
       <Instructor/>
-      <MeetOurTeam showHeading={false}/>
+      <div className="md:px-[40px]"><MeetOurTeam showHeading={false}/></div>
       <StudentStories/>
 
       {/* Sojib */}
