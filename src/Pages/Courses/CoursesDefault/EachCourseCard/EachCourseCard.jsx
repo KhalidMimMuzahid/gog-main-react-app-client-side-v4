@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function EachCourseCard({ item }) {
   return (
-    <div className="rounded-[40px] hover:bg-gradient-to-r from-[#00a3ff] via-[#3da5bd] to-[#905bec] p-0.5">
+    <div className="rounded-[40px] hover:bg-gradient-to-br from-[#37ED81] to-[#00A3FF] p-0.5">
       <div className="rounded-[40px] bg-[#D1FFD0] dark:bg-[#22362A] from-[#D1FFD0] to-[#BBE7FF] shadow-md dark:shadow-none">
         <div className="max-w-[470px]">
           <img src={item?.image} className="w-full rounded-t-[40px]" />
@@ -43,9 +43,9 @@ function EachCourseCard({ item }) {
             <div className="flex justify-between items-center mt-7 gap-5">
               <Link
                 to="/courses/champs-of-basic-coding"
-                className="flex-grow text-sm md:text-base text-center hover:bg-gradient-to-r from-[#00a3ff] via-[#3da5bd] to-[#905bec] p-0.5 rounded-full"
+                className="py-2 px-4 border border-[#101010] hover:border-2 dark:border-white rounded-full flex-grow text-sm md:text-base text-center"
               >
-                <div className="py-2 px-4 border border-[#101010] hover:border-inherit dark:border-white rounded-full bg-[#D1FFD0] dark:bg-[#22362A]">Know More</div>
+                Know More
               </Link>
               <Link
                 to="/courses/champs-of-basic-coding"
