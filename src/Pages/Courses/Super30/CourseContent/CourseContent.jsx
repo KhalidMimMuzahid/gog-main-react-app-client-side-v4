@@ -69,7 +69,7 @@ const CourseContent = () => {
 
   return (
     <div className="md:p-[40px] p-[0px]">
-      <h4 className="md:mb-[40px] mb-[30px] md:text-[30px] text-[25px] text-center md:text-left text-[#37ED81] font-[500]">
+      <h4 className="md:mb-[40px] mb-[30px] md:text-[30px] text-[24px] text-center md:text-left text-[#37ED81] font-[500]">
         Course Content
       </h4>
       <h6 className="mb-[16px]  text-[#4BA25D] text-[16px] md:text-[18px] font-[600] ">
