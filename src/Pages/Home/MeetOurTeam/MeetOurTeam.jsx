@@ -83,7 +83,7 @@ const MeetOurTeam = ({ showHeading }) => {
   ];
 
   return (
-    <div className="mb-[120px] md:mx-[65] mx-[30px]">
+    <div className="mb-[120px]">
       {showHeading && (
         <>
           <h2 className="mb-[40px] text-center font-[500] md:text-[36px] text-[25px]  bg-clip-text text-transparent bg-gradient-to-r from-[#37ED81] via-[#3DA5BD] to-[#905BEC]">

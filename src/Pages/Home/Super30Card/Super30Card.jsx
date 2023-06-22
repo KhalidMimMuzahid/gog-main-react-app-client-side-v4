@@ -11,7 +11,7 @@ const Super30 = () => {
   const { theme } = useContext(UIContext);
   return (
     <>
-      <div className="relative rounded-3xl m-[30px] md:m-[65px] p-10 lg:p-16 text-[#101010] dark:text-white bg-white shadow-md shadow-[#19B85140] dark:bg-[#1C202A] dark:shadow-none overflow-hidden">
+      <div className="relative rounded-3xl my-[30px] md:my-[65px] p-10 lg:p-16 text-[#101010] dark:text-white bg-white shadow-md shadow-[#19B85140] dark:bg-[#1C202A] dark:shadow-none overflow-hidden">
         <img
           src={rectangle}
           className="w-[20%] md:w-[15%] lg:w-[10%] absolute top-0 left-1/4"
