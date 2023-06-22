@@ -107,7 +107,7 @@ function CourseDetails() {
             </p>
           </button>
         </div>
-        <div className="bg-white dark:bg-[#202925] py-10 px-5 md:px-1  lg:px-10 lg:py-20 w-full rounded-b-3xl">
+        <div className="bg-[#E1FFE8] dark:bg-[#202925] py-10 px-5 md:px-1  lg:px-10 lg:py-20 w-full rounded-b-3xl">
           <div className="flex justify-center items-center flex-wrap gap-12">
             {selected?.data.map((item, index) => (
               <div className={`flex items-center ${selected?.bool ? "w-[80%] md:w-1/3 lg:w-1/4" : "w-[80%] md:w-1/3"} gap-5`} key={index}>
