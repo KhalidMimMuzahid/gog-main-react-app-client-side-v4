@@ -25,7 +25,7 @@ const Step = ({ defaultThumb, step, index, setJobStatus, jobStatus }) => {
       {jobStatus?.expandedIndex === index && (
         <div className="mt-[12px] font-[400] text-[16px] dark:text-[white] text-[#101010]">
           {/* {step?.body} */}
-          <p className="text-sm">
+          <p className="text-sm md:text-base">
             <Typewriter
               options={{
                 strings: [step?.body],
