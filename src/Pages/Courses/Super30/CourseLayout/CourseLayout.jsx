@@ -56,7 +56,7 @@ const CourseLayout = () => {
   ];
 
   return (
-    <div className="md:p-[40px] p-[0px] my-[40px]">
+    <div className="md:py-[40px] p-[0px] my-[40px]">
       <h4 className="mb-[40px] md:text-[30px] text-[24px] text-center md:text-left text-[#37ED81] font-[500]">
         Course Layout
       </h4>
