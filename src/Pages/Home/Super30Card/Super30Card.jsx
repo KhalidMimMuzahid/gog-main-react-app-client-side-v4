@@ -11,7 +11,7 @@ const Super30 = () => {
   const { theme } = useContext(UIContext);
   return (
     <>
-      <div className="relative rounded-3xl my-[30px] md:my-[65px] p-10 lg:p-16 text-[#101010] dark:text-white bg-white shadow-md shadow-[#19B85140] dark:bg-[#1C202A] dark:shadow-none overflow-hidden">
+      <div className="relative rounded-3xl my-[30px] md:my-[65px] p-6 md:p-10 lg:p-16 text-[#101010] dark:text-white bg-white shadow-md shadow-[#19B85140] dark:bg-[#1C202A] dark:shadow-none overflow-hidden">
         <img
           src={rectangle}
           className="w-[20%] md:w-[15%] lg:w-[10%] absolute top-0 left-1/4"
@@ -22,16 +22,16 @@ const Super30 = () => {
         />
         {theme === "dark" ? (
           <>
-            <img src={meshDark} className="h-[100%] absolute top-0 left-0 hidden md:inline-block" />
+            <img src={meshDark} className="h-[100%] absolute top-0 left-0 hidden lg:inline-block" />
             <img src={circle} className="w-[20%] md:w-[15%] lg:w-[10%] absolute top-0 right-0" />
           </>
         ) : (
-          <img src={meshLight} className="h-[100%] absolute top-0 right-0 hidden md:inline-block" />
+          <img src={meshLight} className="h-[100%] absolute top-0 right-0 hidden lg:inline-block" />
         )}
-        <div className="">
+        <div className="text-center lg:text-left">
           <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-10">
             <div className="col-span-1 lg:col-span-10 z-10">
-              <p className="text-xl md:text-4xl lg:text-5xl font-medium pb-10 leading-relaxed">
+              <p className="text-xl md:text-4xl lg:text-5xl font-medium pb-6 md:pb-10 leading-relaxed">
                 "Join our prestigious
                 <span className="text-[#3DA5BD] leading-relaxed">
                   {" "}
@@ -47,7 +47,7 @@ const Super30 = () => {
             <div className="col-span-1 lg:col-span-2 flex justify-center lg:justify-end w-full z-10">
               <button
                 type="button"
-                className="text-sm md:text-xl rounded-full bg-[#00A3FF] text-white py-2 px-4"
+                className="text-sm md:text-xl rounded-full bg-[#00A3FF] text-white py-2 px-4 w-full lg:w-auto hover:bg-gradient-to-r hover:from-[#00A3FF] hover:to-[#905BEC]"
               >
                 Super 30
               </button>
