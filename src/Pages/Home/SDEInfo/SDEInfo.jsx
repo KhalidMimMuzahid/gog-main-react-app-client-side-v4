@@ -55,7 +55,7 @@ function SDEInfo() {
   return (
     <>
       <div
-        className="flex items-center justify-center gap-12 pt-[21px] pb-[65px] px-[30px] md:px-[65px]"
+        className="flex items-center justify-center gap-12 pt-[21px] pb-[65px]"
         onMouseEnter={() => setUpdate(false)}
         onMouseLeave={() => setUpdate(true)}
       >

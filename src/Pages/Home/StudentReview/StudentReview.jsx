@@ -68,7 +68,7 @@ function StudentReview() {
   }, [shouldUpdate]);
 
   return (
-    <div className="flex justify-center p-[30px] md:py-[65px] mx-auto">
+    <div className="flex justify-center py-[30px] md:py-[65px] mx-auto">
       <div className="text-[#101010] dark:text-white">
         <h2 className="text-center text-[25px] md:text-[36px] font-medium text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#4BA25D] via-[#3DA5BD] to-[#905BEC]">
           100+ CODING GEEKS TO INSPIRE YOU

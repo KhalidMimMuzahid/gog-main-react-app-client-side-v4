@@ -36,7 +36,7 @@ const data = [
 
 const Banner = () => {
   return (
-    <div className="p-[30px] md:p-[65px]">
+    <div className="py-[30px] md:py-[65px]">
       <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
         <div className="col-span-8 flex flex-col lg:flex-row items-center gap-[40px]">
           <div className="flex flex-col gap-[40px]">
