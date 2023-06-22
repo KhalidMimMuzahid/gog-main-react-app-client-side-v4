@@ -88,7 +88,7 @@ function CourseDetails() {
             <p
               className={`${
                 selected?.bool ? "text-black dark:text-[#37ED81]" : "text-[#8A8F98]"
-              } font-medium md:text-[20px]`}
+              } font-medium lg:text-[20px]`}
             >
               Basic Details
             </p>
@@ -101,20 +101,20 @@ function CourseDetails() {
             <p
               className={`${
                 !selected?.bool ? "text-black dark:text-[#37ED81]" : "text-[#8A8F98]"
-              } font-medium md:text-[20px]`}
+              } font-medium lg:text-[20px]`}
             >
               Eligibility Requirements
             </p>
           </button>
         </div>
-        <div className="bg-white dark:bg-[#202925] px-10 py-20 w-full rounded-b-3xl">
+        <div className="bg-white dark:bg-[#202925] py-10 px-5 md:px-1  lg:px-10 lg:py-20 w-full rounded-b-3xl">
           <div className="flex justify-center items-center flex-wrap gap-12">
             {selected?.data.map((item, index) => (
-              <div className={`flex items-center ${selected?.bool ? "w-1/4" : "w-1/3"} gap-5`} key={index}>
+              <div className={`flex items-center ${selected?.bool ? "w-[80%] md:w-1/3 lg:w-1/4" : "w-[80%] md:w-1/3"} gap-5`} key={index}>
                 {item?.icon}
-                <div className="flex flex-col gap-2">
-                  <p className="text-[20px] font-medium">{item?.title}</p>
-                  <p>{item?.content}</p>
+                <div className="flex flex-col gap-2 w-full">
+                  <p className="lg:text-[20px] font-medium">{item?.title}</p>
+                  <p className="text-sm lg:text-base">{item?.content}</p>
                 </div>
               </div>
             ))}
