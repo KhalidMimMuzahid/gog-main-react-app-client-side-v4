@@ -37,7 +37,7 @@ const StudentStories = () => {
 
     return (
         <div className="md:p-[40px] mt-[-60px] p-[0px] ">
-        <h4 className="mb-[40px] md:text-[30px] text-[25px] text-center md:text-left text-[#37ED81] font-[500]">
+        <h4 className="mb-[40px] md:text-[30px] text-[24px] text-center md:text-left text-[#37ED81] font-[500]">
         Student Stories
         </h4>
 
