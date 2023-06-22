@@ -3,7 +3,7 @@ import Badge from "../../../../assets/icons/s30PageIcons/Badge.svg";
 
 const CourseStructure = () => {
   return (
-    <div className="md:p-[40px] p-[0px]">
+    <div className="md:py-[40px] p-[0px]">
       <h4 className="md:mb-[40px] mt-[30px] md:mt-[0px] mb-[30px] md:text-[30px] text-[24px] text-center md:text-left text-[#37ED81] font-[500]">
         Course Structure
       </h4>
