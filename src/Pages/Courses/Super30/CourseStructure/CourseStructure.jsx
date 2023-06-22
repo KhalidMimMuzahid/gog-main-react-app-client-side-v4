@@ -4,7 +4,7 @@ import Badge from "../../../../assets/icons/s30PageIcons/Badge.svg";
 const CourseStructure = () => {
   return (
     <div className="md:p-[40px] p-[0px]">
-      <h4 className="md:mb-[40px] mt-[30px] md:mt-[0px] mb-[30px] md:text-[30px] text-[25px] text-center md:text-left text-[#37ED81] font-[500]">
+      <h4 className="md:mb-[40px] mt-[30px] md:mt-[0px] mb-[30px] md:text-[30px] text-[24px] text-center md:text-left text-[#37ED81] font-[500]">
         Course Structure
       </h4>
 
@@ -47,12 +47,12 @@ const CourseStructure = () => {
         <div
           className={`w-[278px]    font-[400] md:text-[16px] text-[12px] dark:bg-slate-950  py-[20px] bg-[#E1FFE8] `}
         >
-          <p className="pl-[40px]">Payment Model 1</p>
+          <p className="md:pl-[40px] text-center">Payment Model 1</p>
         </div>
         <div
           className={`w-[341px]    font-[400] md:text-[16px] text-[12px] dark:bg-slate-950  py-[20px] bg-[#E1FFE8] rounded-tl-none rounded-tr-[20px]`}
         >
-          <p className="pl-[40px]">Payment Model 2</p>
+          <p className="md:pl-[40px] text-center">Payment Model 2</p>
         </div>
       </div>
 
@@ -65,12 +65,12 @@ const CourseStructure = () => {
         <div
           className={`w-[278px]    font-[400] md:text-[16px] text-[12px] dark:bg-slate-950  py-[20px] bg-[#E1FFE8] `}
         >
-          <p className="pl-[40px]">₹ 5000/-</p>
+          <p className="md:pl-[40px] text-center">₹ 5000/-</p>
         </div>
         <div
           className={`w-[341px]    font-[400] md:text-[16px] text-[12px] dark:bg-slate-950  py-[20px] bg-[#E1FFE8] `}
         >
-          <p className="pl-[40px]">₹ 5000/-</p>
+          <p className="md:pl-[40px] text-center">₹ 5000/-</p>
         </div>
       </div>
 
@@ -83,12 +83,12 @@ const CourseStructure = () => {
         <div
           className={`w-[278px]    font-[400] md:text-[16px] text-[12px] dark:bg-slate-950  py-[20px] bg-[#E1FFE8] `}
         >
-          <p className="pl-[40px]">Upfront : ₹60000 ₹55,000</p>
+          <p className="md:pl-[40px] text-center">Upfront : ₹60000 ₹55,000</p>
         </div>
         <div
           className={`w-[341px]    font-[400] md:text-[16px] text-[12px] dark:bg-slate-950  py-[20px] bg-[#E1FFE8] `}
         >
-          <p className="pl-[40px]">EMI : ₹10,000*6 months = ₹60,000</p>
+          <p className="md:pl-[40px] text-center px-[5px]">EMI : ₹10,000*6 months = ₹60,000</p>
         </div>
       </div>
 
@@ -101,12 +101,12 @@ const CourseStructure = () => {
         <div
           className={`w-[278px]    font-[400] md:text-[16px] text-[12px] dark:bg-slate-950  py-[20px] bg-[#E1FFE8] `}
         >
-          <p className="pl-[40px]">₹ 60000/-</p>
+          <p className="md:pl-[40px] text-center">₹ 60000/-</p>
         </div>
         <div
           className={`w-[341px]   font-[400] md:text-[16px] text-[12px]  dark:bg-slate-950  py-[20px] bg-[#E1FFE8] rounded-bl-none rounded-br-[20px]`}
         >
-          <p className="pl-[40px]">₹ 65000/-</p>
+          <p className="md:pl-[40px] text-center">₹ 65000/-</p>
         </div>
       </div>
     </div>
