@@ -113,7 +113,7 @@ function CourseDetails() {
               <div className={`flex items-center ${selected?.bool ? "w-1/4" : "w-1/3"} gap-5`} key={index}>
                 {item?.icon}
                 <div className="flex flex-col gap-2">
-                  <p className="text-[20px]">{item?.title}</p>
+                  <p className="text-[20px] font-medium">{item?.title}</p>
                   <p>{item?.content}</p>
                 </div>
               </div>
