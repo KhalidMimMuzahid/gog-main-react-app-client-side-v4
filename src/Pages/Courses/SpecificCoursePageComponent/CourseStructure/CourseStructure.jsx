@@ -1,5 +1,5 @@
 import React from "react";
-import Badge from "../../../../assets/icons/s30PageIcons/Badge.svg";
+import Badge from '../../../../assets/icons/s30PageIcons/Badge.svg'
 
 const CourseStructure = () => {
   return (
@@ -38,62 +38,63 @@ const CourseStructure = () => {
         <p>Two Payment Model</p>
       </div>
 
-      
       {/* table start */}
-      
+
       <div className="overflow-x-auto mt-[40px]  lg:w-10/12 md:mx-auto">
-        <table className="table bg-[#E1FFE8]  md:text-[16px] font-poppins text-[12px] text-[black] dark:text-[white] font-[400] dark:bg-slate-950  ">
-          
+        <table className="table bg-[#E1FFE8]  md:text-[16px] font-poppins text-[12px] text-[black] dark:text-[white] font-[400] dark:bg-[#263238]  ">
           <thead className="">
             <tr className="">
-              
-              <th className="py-[20px] border-r-2  border-[#F8FFF9] dark:border-[#121313] text-[12px] md:text-[16px]  text-[black] dark:text-[white] font-[400]">Fee</th>
-              <th className="border-r-2  border-[#F8FFF9]  dark:border-[#121313] text-[12px] md:text-[16px]  text-[black] dark:text-[white] font-[400]">Payment Model 1</th>
-              <th className="  text-[12px] md:text-[16px]  text-[black] dark:text-[white] font-[400]">Payment Model 2</th>
+              <th className="py-[20px] border-r-2  border-[#F8FFF9] dark:border-[#121313] text-[12px] md:text-[16px]  text-[black] dark:text-[white] font-[400]">
+                Fee
+              </th>
+              <th className="border-r-2  border-[#F8FFF9]  dark:border-[#121313] text-[12px] md:text-[16px]  text-[black] dark:text-[white] font-[400]">
+                Payment Model 1
+              </th>
+              <th className="  text-[12px] md:text-[16px]  text-[black] dark:text-[white] font-[400]">
+                Payment Model 2
+              </th>
             </tr>
           </thead>
           <tbody>
             {/* row 1 */}
             <tr>
-              
-              <td className="py-[20px] border-t-2 border-r-2 dark:border-[#121313] border-[#F8FFF9]">Registration</td>
-              <td className="border-t-2 border-r-2 dark:border-[#121313] border-[#F8FFF9]">₹ 5000/-</td>
-              <td className="border-t-2  dark:border-[#121313] border-[#F8FFF9]">₹ 5000/-</td>
+              <td className="py-[20px] border-t-2 border-r-2 dark:border-[#121313] border-[#F8FFF9]">
+                Registration
+              </td>
+              <td className="border-t-2 border-r-2 dark:border-[#121313] border-[#F8FFF9]">
+                ₹ 5000/-
+              </td>
+              <td className="border-t-2  dark:border-[#121313] border-[#F8FFF9]">
+                ₹ 5000/-
+              </td>
             </tr>
             {/* row 2 */}
             <tr>
-              
-              <td className="py-[20px] border-t-2 border-r-2 dark:border-[#121313] border-[#F8FFF9]">Course Fee</td>
-              <td className="border-t-2 border-r-2 dark:border-[#121313] border-[#F8FFF9]">Upfront : <strike>₹60000</strike> ₹55,000</td>
-              <td className="border-t-2  dark:border-[#121313] border-[#F8FFF9]">EMI : ₹10,000*6 months = ₹60,000</td>
+              <td className="py-[20px] border-t-2 border-r-2 dark:border-[#121313] border-[#F8FFF9]">
+                Course Fee
+              </td>
+              <td className="border-t-2 border-r-2 dark:border-[#121313] border-[#F8FFF9]">
+                Upfront : <strike>₹60000</strike> ₹55,000
+              </td>
+              <td className="border-t-2  dark:border-[#121313] border-[#F8FFF9]">
+                EMI : ₹10,000*6 months = ₹60,000
+              </td>
             </tr>
             {/* row 3 */}
             <tr>
-             
-              <td className="border-t-2 border-r-2 py-[20px] dark:border-[#121313] border-[#F8FFF9]">Total</td>
-              <td className="border-t-2 border-r-2  dark:border-[#121313] border-[#F8FFF9]">₹ 60000/-</td>
-              <td className="border-t-2   dark:border-[#121313] border-[#F8FFF9]">₹ 65000/-</td>
+              <td className="border-t-2 border-r-2 py-[20px] dark:border-[#121313] border-[#F8FFF9]">
+                Total
+              </td>
+              <td className="border-t-2 border-r-2  dark:border-[#121313] border-[#F8FFF9]">
+                ₹ 60000/-
+              </td>
+              <td className="border-t-2   dark:border-[#121313] border-[#F8FFF9]">
+                ₹ 65000/-
+              </td>
             </tr>
           </tbody>
         </table>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       {/* <div className="text-[#101010] dark:text-[white] mt-[24px]  flex flex-row gap-[4px] justify-center">
         <div

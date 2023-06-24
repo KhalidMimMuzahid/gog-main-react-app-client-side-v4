@@ -68,7 +68,7 @@ const CourseContent = () => {
   ];
 
   return (
-    <div className="md:p-[40px] p-[0px]">
+    <div className="md:py-[40px] p-[0px]">
       <h4 className="md:mb-[40px] mb-[30px] md:text-[30px] text-[24px] text-center md:text-left text-[#37ED81] font-[500]">
         Course Content
       </h4>
