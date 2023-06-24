@@ -1,5 +1,6 @@
 import React from "react";
 import HireFromUsLanding from "./HireFromUsLanding/HireFromUsLanding";
+import StudentPlaced from "../Home/StudentPlaced/StudentPlaced";
 
 const HireFromUs = () => {
   return (
@@ -7,6 +8,7 @@ const HireFromUs = () => {
       <HireFromUsLanding />
 
       {/* @sojib-sudo */}
+      <StudentPlaced showHeading={0}/>
       
       {/* @sojib-sudo */}
     </div>
