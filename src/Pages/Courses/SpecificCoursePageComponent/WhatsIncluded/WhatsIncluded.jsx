@@ -55,9 +55,11 @@ const WhatsIncluded = () => {
       <div className='my-2 grid grid-cols-12 gap-5 p-5 rounded-lg'>
         {Dataset?.map((data, i) => (
           <div key={i} className='col-span-12 md:col-span-6 lg:col-span-4'>
-            <div className='w-full border border-[#D1FFD0] p-5 rounded-lg flex flex-col gap-4 items-center justify-center h-96'>
-              <img src={data?.image} alt='' />
-              <p className='text-center dark:text-white'>{data?.text}</p>
+            <div className='w-full border border-[#D1FFD0] p-5 rounded-lg flex flex-col gap-4 items-center justify-start h-96'>
+              <div className="p-[10px] rounded-full dark:bg-[#1A211F]">
+              <img src={data?.image} alt='' className="w-10 h-10" />
+              </div>
+              <p className='text-justify dark:text-white'>{data?.text}</p>
             </div>
           </div>
         ))}
