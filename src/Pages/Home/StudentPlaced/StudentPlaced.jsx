@@ -46,24 +46,40 @@ const brands2 = [
   hotstar1,
 ];
 
-
-
-const StudentPlaced = () => {
+const StudentPlaced = ({ showHeading }) => {
   return (
     <div className="">
-      <h2 className="mb-[80px] text-center font-[500] md:text-[36px] text-[25px]  bg-clip-text text-transparent bg-gradient-to-r from-[#37ED81] via-[#3DA5BD] to-[#905BEC]">
-        OUR STUDENTS PLACED AT
-      </h2>
+      {showHeading && (
+        <h2 className="mb-[80px] text-center font-[500] md:text-[36px] text-[25px]  bg-clip-text text-transparent bg-gradient-to-r from-[#37ED81] via-[#3DA5BD] to-[#905BEC]">
+          OUR STUDENTS PLACED AT
+        </h2>
+      )}
+
+      {!showHeading && (
+        <h2 className="mb-[80px] text-center font-[500] md:text-[36px] text-[25px]  bg-clip-text text-transparent bg-gradient-to-r from-[#37ED81] via-[#3DA5BD] to-[#905BEC]">
+          Trusted by 500+ companies
+        </h2>
+      )}
 
       <div>
         <Marquee className="mb-[60px]" speed={50}>
           {brands1?.map((image, i) => (
-            <img className="md:px-[40px] md:h-[60px] px-[20px] h-[30px]" src={image} alt="" key={i} />
+            <img
+              className="md:px-[40px] md:h-[60px] px-[20px] h-[30px]"
+              src={image}
+              alt=""
+              key={i}
+            />
           ))}
         </Marquee>
         <Marquee speed={40}>
-        {brands2?.map((image, i) => (
-            <img className="md:px-[40px] md:h-[60px] px-[20px] h-[30px]" src={image} alt="" key={i} />
+          {brands2?.map((image, i) => (
+            <img
+              className="md:px-[40px] md:h-[60px] px-[20px] h-[30px]"
+              src={image}
+              alt=""
+              key={i}
+            />
           ))}
         </Marquee>
       </div>
