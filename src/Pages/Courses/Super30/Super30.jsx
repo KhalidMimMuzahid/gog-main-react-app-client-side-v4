@@ -37,7 +37,7 @@ const Super30 = () => {
       <CourseContent/>
       <CourseStructure/>
       <Instructor/>
-      <div className="md:px-[40px]"><MeetOurTeam showHeading={false}/></div>
+      <MeetOurTeam showHeading={false}/>
       <StudentStories/>
 
       {/* Sojib */}

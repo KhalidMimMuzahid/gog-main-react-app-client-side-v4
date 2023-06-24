@@ -17,7 +17,7 @@ const BookFreeDemo = () => {
         </p>
       </div>
       <div className='mt-6 flex items-center justify-center'>
-        <button className='px-8 py-4 bg-[#00A3FF] rounded-[30px] text-white'>
+        <button className='px-8 py-4 bg-[#00A3FF] rounded-[30px] text-white hover:transition hover:duration-5000 hover:ease-in-out hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-500'>
           BOOK A FREE DEMO
         </button>
       </div>
