@@ -1,7 +1,7 @@
 import React from "react";
 import badge from "../../assets/Contact-Us/Badge.svg";
 import { useForm } from "react-hook-form";
-import { toast } from "react-hot-toast";
+
 const ContactUs = () => {
   const {
     register,
@@ -61,7 +61,7 @@ const ContactUs = () => {
             </p>
           </div>
         </div>
-        <div className='col-span-full md:col-span-6 p-10 dark:bg-[#1C202A] dark:text-white rounded-[40px] border dark:border-[#8A8F98]'>
+        <div className='col-span-full md:col-span-6 p-10 my-10 md:my-0 dark:bg-[#1C202A] dark:text-white rounded-[40px] border dark:border-[#8A8F98]'>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className='w-full flex flex-col items-start justify-start gap-[24px]'>
               <div className='w-full'>
@@ -140,7 +140,7 @@ const ContactUs = () => {
                   {...register("accepted", {
                     required: "Accept Terms and condition",
                   })}
-                  class='w-12 bg-green-600'
+                  className='w-12 bg-green-600'
                   aria-invalid={errors.accepted ? "true" : "false"}
                 />
                 <p className='text-justify'>
