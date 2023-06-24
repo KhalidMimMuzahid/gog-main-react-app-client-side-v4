@@ -1,6 +1,8 @@
 import React from "react";
 import HireFromUsLanding from "./HireFromUsLanding/HireFromUsLanding";
 import StudentPlaced from "../Home/StudentPlaced/StudentPlaced";
+import PerfectFit from "./PerfectFit/PerfectFit";
+
 
 const HireFromUs = () => {
   return (
@@ -9,6 +11,7 @@ const HireFromUs = () => {
 
       {/* @sojib-sudo */}
       <StudentPlaced showHeading={0}/>
+      <PerfectFit/>
       
       {/* @sojib-sudo */}
     </div>
