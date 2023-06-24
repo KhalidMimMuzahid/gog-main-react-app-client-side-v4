@@ -61,7 +61,7 @@ const ContactUs = () => {
             </p>
           </div>
         </div>
-        <div className='col-span-full md:col-span-6 p-10 my-10 md:my-0 dark:bg-[#1C202A] dark:text-white rounded-[40px] border dark:border-[#8A8F98]'>
+        <div className='col-span-full md:col-span-6 p-10 my-10 md:my-0 bg-[#D1FFD0] dark:bg-[#1C202A] dark:text-white rounded-[40px] border dark:border-[#8A8F98]'>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className='w-full flex flex-col items-start justify-start gap-[24px]'>
               <div className='w-full'>
@@ -143,7 +143,7 @@ const ContactUs = () => {
                   className='w-12 bg-green-600'
                   aria-invalid={errors.accepted ? "true" : "false"}
                 />
-                <p className='text-justify'>
+                <p className='text-justify text-[14px]'>
                   I authorize Geeks of Gurukul and its representative to contact
                   me with updates and notifications via Email, SMS, Whatsapp,
                   and Call.
