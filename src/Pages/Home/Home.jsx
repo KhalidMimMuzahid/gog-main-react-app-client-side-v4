@@ -46,7 +46,7 @@ const Home = () => {
       <StudentReview />
       <TopTalentCard />
       <MeetOurTeam showHeading={true}/>
-      <StudentPlaced/>
+      <StudentPlaced showHeading={1}/>
       <LearningJourneyCard />
       <Faq/>
     </div>
