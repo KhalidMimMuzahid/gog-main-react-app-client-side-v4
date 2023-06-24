@@ -41,7 +41,7 @@ const CourseStructure = () => {
       {/* table start */}
 
       <div className="overflow-x-auto mt-[40px]  lg:w-10/12 md:mx-auto">
-        <table className="table bg-[#E1FFE8]  md:text-[16px] font-poppins text-[12px] text-[black] dark:text-[white] font-[400] dark:bg-slate-950  ">
+        <table className="table bg-[#E1FFE8]  md:text-[16px] font-poppins text-[12px] text-[black] dark:text-[white] font-[400] dark:bg-[#263238]  ">
           <thead className="">
             <tr className="">
               <th className="py-[20px] border-r-2  border-[#F8FFF9] dark:border-[#121313] text-[12px] md:text-[16px]  text-[black] dark:text-[white] font-[400]">
