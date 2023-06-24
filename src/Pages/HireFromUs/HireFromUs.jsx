@@ -1,9 +1,14 @@
 import React from "react";
+import HireFromUsLanding from "./HireFromUsLanding/HireFromUsLanding";
 
 const HireFromUs = () => {
   return (
-    <div>
-      <h1>HireFromUs</h1>
+    <div className="p-[20px] md:px-[65px] md:py-[90px] dark:text-white">
+      <HireFromUsLanding />
+
+      {/* @sojib-sudo */}
+      
+      {/* @sojib-sudo */}
     </div>
   );
 };

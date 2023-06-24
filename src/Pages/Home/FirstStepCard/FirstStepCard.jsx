@@ -26,7 +26,7 @@ function FirstStepCard() {
       <div className="text-center lg:text-left">
         <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-10">
           <div className="col-span-1 lg:col-span-10 z-10">
-            <p className="text-xl md:text-4xl lg:text-5xl font-medium pb-6 md:pb-10 leading-relaxed">
+            <p className="text-[20px] md:text-[36px] lg:text-[48px] font-medium pb-6 md:pb-10">
               "Take the{" "}
               <span className="text-[#37ED81] leading-relaxed">First Step</span>{" "}
               Towards Your Dream Education!"
