@@ -4,3 +4,18 @@
 .border_gradient:hover > .border_removal {
   border-color: #12131300 !important;
 }
+.nav_hidden{
+  display : inline-block ;
+}
+.nav_show{
+  display : none ;
+}
+
+@media only screen and (max-width: 1133px) {
+  .nav_hidden{
+    display : none!important ;
+  }
+  .nav_show{
+    display : block!important ;
+  }
+}
