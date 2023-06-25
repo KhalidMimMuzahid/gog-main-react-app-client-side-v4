@@ -121,11 +121,14 @@ const ContactUs = () => {
                   placeholder='Your Message'
                   name='message'
                   {...register("message", {
-                    required: "Enter Your Pnone Number",
+                    required: "Your Message",
                   })}
                   aria-invalid={errors.message ? "true" : "false"}
                   className='w-full px-[14px] py-[10px] bg-white dark:bg-[#8A8F98] text-black dark:text-white dark:placeholder:text-white rounded-[8px] dark:border-white hover:border-[green] '
                 />
+                <p className='dark:text-[white] text-[#667085] text-[14px] float-right'>
+                  Max word 150
+                </p>
                 {errors.message && (
                   <p role='alert' className='text-red-600'>
                     {errors.message.message}
