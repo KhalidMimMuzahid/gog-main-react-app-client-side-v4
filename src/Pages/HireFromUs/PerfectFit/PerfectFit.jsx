@@ -36,7 +36,7 @@ const PerfectFit = () => {
   };
 
   return (
-    <div className="mt-[80px] grid grid-cols-1 md:grid-cols-2 gap-x-auto items-center gap-[60px]">
+    <div className="mt-[80px] grid grid-cols-1 lg:grid-cols-2 gap-x-auto items-center gap-[60px]">
       <div className="">
         <h1 className="text-center md:text-left md:text-[24px] lg:text-[48px] font-[600] dark:text-[white] text-[#101010]">
           What makes <span className="text-[#37ED81]">Geeks of Gurukul</span> a
@@ -62,7 +62,7 @@ const PerfectFit = () => {
       {/* From is start from here  */}
 
       <div>
-        <div className=" flex flex-col border-[1px] dark:bordder-[#8A8F98] justify-between gap-5 bg-[#D1FFD0] dark:bg-[#1C202A] p-10 rounded-[40px]">
+        <div className=" flex flex-col border-[1px] dark:bordder-[#8A8F98] justify-between gap-5 bg-[#D1FFD0] dark:bg-[#1C202A] p-5 md:p-10 rounded-[20px] md:rounded-[40px]">
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="flex flex-col gap-5"
