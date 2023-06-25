@@ -3,7 +3,7 @@ import hourGlass from "../../../../assets/icons/Duration.svg";
 import Clock from "../../../../assets/icons/Clock.svg";
 import Graduation from "../../../../assets/icons/Graduation cap.svg";
 import prduct from "../../../../assets/icons/User Trusted Product.svg";
-import style from "./cardComponent.module.css"
+import style from "./cardComponent.module.css";
 
 function CardComponent({ info }) {
   return (
@@ -73,12 +73,14 @@ function CardComponent({ info }) {
             </div>
             <div className="flex w-full md:w-auto justify-center gap-5">
               <div className="">
-                <button
-                  type="button"
-                  className="py-2 px-4 border border-[#101010] hover:border-2 dark:border-white rounded-full"
-                >
-                  Know More
-                </button>
+                <div className="hover:bg-gradient-to-r hover:from-[#00a3ff] hover:to-[#905bec] lg:pt-[1.7px] pt-[1.5px] pb-[1.5px] pl-[1.5px] pr-[1.5px] xl:pr-[1.7px] rounded-full dark:[&>a]:border-white [&>button]:hover:border-[hsl(60,100%,3%)]">
+                  <button
+                    type="button"
+                    className="py-2 px-4 border dark:border-white border-black rounded-full bg-[#D1FFD0] dark:bg-[#121313]"
+                  >
+                    Know More
+                  </button>
+                </div>
               </div>
               <div className="float-right">
                 <button
