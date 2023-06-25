@@ -14,6 +14,7 @@ import SignIn from "../Pages/SignIn/SignIn";
 import ContactUs from "../Pages/ContactUs/ContactUs";
 import AboutUs from "../Pages/AboutUs/AboutUs";
 import ChampsOfBasicCoding from "../Pages/Courses/SpecificCourses/ChampsOfBasicCoding";
+import Alumni from "../Pages/Alumni/Alumni";
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path: "/hire-from-us",
         element: <HireFromUs />,
+      },
+      {
+        path: "/alumni",
+        element: <Alumni/>
       },
       {
         path: "/contact-us",

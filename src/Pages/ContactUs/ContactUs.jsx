@@ -24,12 +24,12 @@ const ContactUs = () => {
   return (
     <div className='p-5 md:p-10'>
       <div className='grid grid-cols-12'>
-        <div className='col-span-full md:col-span-6 ml-4'>
+        <div className='col-span-full md:col-span-6 ml-4 m-5'>
           <h1 className='text-[28px] md:text-[38px] text-[Black] dark:text-white font-semibold'>
             Get in <span className='text-[#37ED81]'>touch</span> <br /> with us
           </h1>
           <div className='my-20'>
-            <div className='flex flex-col items-start justify-center font-medium dark:text-white'>
+            <div className='flex flex-col items-start justify-center font-medium dark:text-white gap-7'>
               <div className='flex items-center gap-4'>
                 <img src={badge} alt='badge' />
                 <p>Trusted by thousands of learners worldwide.</p>
@@ -61,7 +61,7 @@ const ContactUs = () => {
             </p>
           </div>
         </div>
-        <div className='col-span-full md:col-span-6 p-10 my-10 md:my-0 bg-[#D1FFD0] dark:bg-[#1C202A] dark:text-white rounded-[40px] border dark:border-[#8A8F98]'>
+        <div className='max-w-[580px] col-span-full md:col-span-6 p-10 m-5 my-10 md:my-0 bg-[#D1FFD0] dark:bg-[#1C202A] dark:text-white rounded-[40px] border dark:border-[#8A8F98]'>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className='w-full flex flex-col items-start justify-start gap-[24px]'>
               <div className='w-full'>
@@ -143,7 +143,7 @@ const ContactUs = () => {
                   {...register("accepted", {
                     required: "Accept Terms and condition",
                   })}
-                  className='w-12 bg-green-600'
+                  className='radio bg-[#37ED81] checked:bg-[#37ED81]'
                   aria-invalid={errors.accepted ? "true" : "false"}
                 />
                 <p className='text-justify text-[14px]'>
