@@ -19,7 +19,7 @@ const PerfectFit = () => {
   return (
     <div className="mt-[80px] grid grid-cols-1 md:grid-cols-2 gap-x-auto items-center gap-[60px]">
       <div className="">
-        <h1 className="text-center md:text-left text-[25px] md:text-[48px] font-[600] dark:text-[white] text-[#101010]">
+        <h1 className="text-center md:text-left md:text-[24px] lg:text-[48px] font-[600] dark:text-[white] text-[#101010]">
           What makes <span className="text-[#37ED81]">Geeks of Gurukul</span> a
           perfect fit for your company?
         </h1>
