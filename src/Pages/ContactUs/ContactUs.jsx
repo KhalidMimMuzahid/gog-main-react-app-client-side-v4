@@ -143,7 +143,7 @@ const ContactUs = () => {
                   {...register("accepted", {
                     required: "Accept Terms and condition",
                   })}
-                  className='w-12 bg-green-600'
+                  className='radio checked:bg-blue-500'
                   aria-invalid={errors.accepted ? "true" : "false"}
                 />
                 <p className='text-justify text-[14px]'>
