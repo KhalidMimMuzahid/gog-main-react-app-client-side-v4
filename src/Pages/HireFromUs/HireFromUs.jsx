@@ -4,6 +4,8 @@ import HireTalentCard from "./HireTalentCard/HireTalentCard";
 import StudentPlaced from "../Home/StudentPlaced/StudentPlaced";
 import PerfectFit from "./PerfectFit/PerfectFit";
 import GraduateBestFit from "./GradutateBestFit/GraduateBestFit";
+import PositionsSection1 from "./PositionsSection1/PositionsSection1";
+import PositionsSection2 from "./PositionsSection2/PositionsSection2";
 
 
 const HireFromUs = () => {
@@ -11,6 +13,8 @@ const HireFromUs = () => {
     <div className="px-[20px] py-[30px] md:px-[65px] md:py-[70px] dark:text-white">
       <HireFromUsLanding />
       <HireTalentCard />
+      <PositionsSection1 />
+      <PositionsSection2 />
 
       {/* @sojib-sudo */}
       <StudentPlaced showHeading={false}/>
