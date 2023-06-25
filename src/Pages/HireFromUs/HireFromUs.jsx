@@ -6,6 +6,7 @@ import PerfectFit from "./PerfectFit/PerfectFit";
 import GraduateBestFit from "./GradutateBestFit/GraduateBestFit";
 import PositionsSection1 from "./PositionsSection1/PositionsSection1";
 import PositionsSection2 from "./PositionsSection2/PositionsSection2";
+import HireCarousel from "./HireCarousel/HireCarousel";
 
 
 const HireFromUs = () => {
@@ -15,6 +16,7 @@ const HireFromUs = () => {
       <HireTalentCard />
       <PositionsSection1 />
       <PositionsSection2 />
+      <HireCarousel />
 
       {/* @sojib-sudo */}
       <StudentPlaced showHeading={false}/>
