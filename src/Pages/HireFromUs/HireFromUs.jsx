@@ -3,6 +3,7 @@ import HireFromUsLanding from "./HireFromUsLanding/HireFromUsLanding";
 import HireTalentCard from "./HireTalentCard/HireTalentCard";
 import StudentPlaced from "../Home/StudentPlaced/StudentPlaced";
 import PerfectFit from "./PerfectFit/PerfectFit";
+import GraduateBestFit from "./GradutateBestFit/GraduateBestFit";
 
 
 const HireFromUs = () => {
@@ -12,8 +13,9 @@ const HireFromUs = () => {
       <HireTalentCard />
 
       {/* @sojib-sudo */}
-      <StudentPlaced showHeading={0}/>
+      <StudentPlaced showHeading={false}/>
       <PerfectFit/>
+      <GraduateBestFit/>
       
       {/* @sojib-sudo */}
     </div>
