@@ -8,7 +8,7 @@ import style from "./cardComponent.module.css";
 function CardComponent({ info }) {
   return (
     <div className={`${style.border_gradient} rounded-2xl flex`}>
-      <div className="flex flex-col items-start w-full bg-[#D1FFD0] rounded-2xl text-[#101010] dark:text-white dark:bg-gradient-to-br from-[#222C26] to-[#121313]">
+      <div className="flex flex-col items-start w-full bg-[#F8FFF9] rounded-2xl text-[#101010] dark:text-white dark:bg-gradient-to-br from-[#222C26] to-[#121313] shadow-lg border dark:border-0">
         <div className="md:p-[40px] p-[30px]">
           <div className="flex justify-between items-center gap-5 flex-wrap">
             <div className="text-xl md:text-2xl font-semibold">
@@ -73,10 +73,10 @@ function CardComponent({ info }) {
             </div>
             <div className="flex w-full md:w-auto justify-center gap-5">
               <div className="">
-                <div className="hover:bg-gradient-to-r hover:from-[#00a3ff] hover:to-[#905bec] lg:pt-[1.7px] pt-[1.5px] pb-[1.5px] pl-[1.5px] pr-[1.5px] xl:pr-[1.7px] rounded-full dark:[&>a]:border-white [&>button]:hover:border-[hsl(60,100%,3%)]">
+                <div className="hover:bg-gradient-to-r hover:from-[#00a3ff] hover:to-[#905bec] lg:pt-[1.7px] pt-[1.5px] pb-[1.5px] pl-[1.5px] pr-[1.5px] xl:pr-[1.7px] rounded-full [&>button]:hover:border-[#F8FFF900]">
                   <button
                     type="button"
-                    className="py-2 px-4 border dark:border-white border-black rounded-full bg-[#D1FFD0] dark:bg-[#121313]"
+                    className="py-2 px-4 border dark:border-white border-black rounded-full bg-[#F8FFF9] dark:bg-[#121313]"
                   >
                     Know More
                   </button>

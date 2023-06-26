@@ -11,7 +11,7 @@ import HireCarousel from "./HireCarousel/HireCarousel";
 
 const HireFromUs = () => {
   return (
-    <div className="px-[20px] py-[30px] md:px-[65px] md:py-[70px] dark:text-white">
+    <div className="relative px-[20px] py-[30px] md:px-[65px] md:py-[70px] dark:text-white">
       <HireFromUsLanding />
       <HireTalentCard />
       <PositionsSection1 />
