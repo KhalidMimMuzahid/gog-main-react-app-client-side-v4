@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Axix from "../../../assets/Alumni/aixs-bank.svg";
 import Citi from "../../../assets/Alumni/citi.svg";
 import AmericanExpress from "../../../assets/Alumni/americanExpress.svg";
@@ -6,7 +6,10 @@ import Akhil from "../../../assets/Alumni/Akhil Sharma.svg";
 import Anagh from "../../../assets/Alumni/Anagh Kanugo.svg";
 import Sandeep from "../../../assets/Alumni/Sandeep Kumar.svg";
 import ReviewCard from "./ReviewCard/ReviewCard";
+import ReactPaginate from "react-paginate";
+import './ReviewArea.css'
 const ReviewArea = () => {
+  const [itemOffset, setItemOffset] = useState(0);
   const Reviews = [
     {
       name: "Akhil Sharma",
@@ -153,11 +156,42 @@ const ReviewArea = () => {
       logo: AmericanExpress,
     },
   ];
+
+  const itemsPerPage = 18;
+
+  const endOffset = itemOffset + itemsPerPage;
+
+  const currentItems = Reviews?.slice(itemOffset, endOffset);
+  const pageCount = Math?.ceil(Reviews?.length / itemsPerPage);
+
+  const handlePageClick = (event) => {
+    const newOffset = (event?.selected * itemsPerPage) % Reviews?.length;
+    console.log(
+      `User requested page number ${event?.selected}, which is offset ${newOffset}`
+    );
+    setItemOffset(newOffset);
+  };
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20'>
-      {Reviews?.map((review, i) => (
+    <div>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20'>
+      {currentItems?.map((review, i) => (
         <ReviewCard key={i} review={review} />
       ))}
+      </div>
+      <div>
+        <div className='pagination'>
+          <ReactPaginate
+            breakLabel='...'
+            nextLabel='>'
+            onPageChange={handlePageClick}
+            pageRangeDisplayed={5}
+            pageCount={pageCount}
+            previousLabel='<'
+            renderOnZeroPageCount={null}
+            containerClassName='pagination-menu'
+          />
+        </div>
+      </div>
     </div>
   );
 };
