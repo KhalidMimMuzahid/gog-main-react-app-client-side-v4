@@ -24,6 +24,7 @@ import MeetOurTeam from "./MeetOurTeam/MeetOurTeam";
 import FirstStepCard from "./FirstStepCard/FirstStepCard";
 import LearningJourneyCard from "./LearningJourneyCard/LearningJourneyCard";
 import TopTalentCard from "./TopTalentCard/TopTalentCard";
+import ScrollButton from "./ScrollButton";
 
 
 
@@ -31,7 +32,7 @@ import TopTalentCard from "./TopTalentCard/TopTalentCard";
 
 const Home = () => {
   return (
-    <div className="md:px-[65px] px-[20px]">
+    <div className="relative md:px-[65px] px-[20px]">
       <Landing />
       <Banner />
       <Super30/>
@@ -49,6 +50,7 @@ const Home = () => {
       <StudentPlaced showHeading={1}/>
       <LearningJourneyCard />
       <Faq/>
+      <ScrollButton />
     </div>
   );
 };
