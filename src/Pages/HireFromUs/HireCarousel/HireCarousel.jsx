@@ -66,7 +66,7 @@ function HireCarousel() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      !stop && setIndex((prev) => (prev >= data.length-1 ? 0 : prev + 1));
+      !stop && setIndex((prev) => (prev >= data.length-2 ? 0 : prev + 1));
     }, 5000);
 
     return () => {
