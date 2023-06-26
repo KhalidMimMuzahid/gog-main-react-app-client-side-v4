@@ -50,7 +50,7 @@ const Navbar = () => {
                 <img src={logo} className="h-[46px]" />
               </Link>
             </div>
-            <div className="hidden lg:block">
+            <div className={style.nav_hidden}>
               <div className="ml-4 flex space-x-4">
                 {navbarVars.map((object, index) => (
                   <Link to={object.link} key={index}>
@@ -61,12 +61,12 @@ const Navbar = () => {
                 ))}
               </div>
             </div>
-            <div className="hidden lg:block">
+            <div className={style.nav_hidden}>
               <div className="ml-4 flex space-x-4 items-center">
                 {navbarVars2.map((object, index) => (
                   <Link to={object.link} key={index}>
                     <div
-                      className={`rounded-full p-1 ${style.border_gradient}`}
+                      className={`rounded-full p-[1.5px] ${style.border_gradient}`}
                     >
                       <p
                         className={`px-3 py-2 border border-[#8A8F98] dark:border-white rounded-full text-sm font-medium bg-[#F8FFF9] dark:bg-[#121313] ${style.border_removal}`}
@@ -117,7 +117,7 @@ const Navbar = () => {
                 </label>
               </div>
             </div>
-            <div className="flex lg:hidden">
+            <div className={style.nav_show}>
               <label className="btn btn-circle swap swap-rotate bg-[#F8FFF9] dark:bg-[#121313] border-0">
                 {/* this hidden checkbox controls the state */}
                 <input type="checkbox" onClick={() => setDrawerOpen((prev) => !prev)} checked={!drawerOpen} readOnly={true} />

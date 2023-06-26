@@ -12,7 +12,21 @@ const UIProvider = ({ children }) => {
     }
   }, []);
 
-  const info = { theme, setTheme };
+  const [screenSize, setScreenSize] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenSize(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    console.log("screen size: ", screenSize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
+
+  const info = { theme, setTheme, screenSize };
   return <UIContext.Provider value={info}>{children}</UIContext.Provider>;
 };
 
