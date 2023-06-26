@@ -8,7 +8,7 @@ const OurCalture = () => {
         <div>
           <div className=" flex  md:justify-start justify-center">
             <h1 className="my-[40px]   font-[600] text-[24px] md:text-[36px] text-center bg-clip-text text-transparent bg-gradient-to-r from-green-500 via-blue-500 to-purple-500">
-              Our Calture
+            Our Mission
             </h1>
           </div>
           <p className="mb-[40px] dark:text-[white] text-justify">
