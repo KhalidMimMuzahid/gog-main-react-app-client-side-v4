@@ -16,7 +16,7 @@ const AboutUs = () => {
       <div className="mt-[64px] mb-[24px] bg-[#D1FFD0] dark:bg-[#1A2C27] rounded-tl-[20px] rounded-[20px]">
         <OurMission />
         <Record />
-        <div className="py-[120px]">
+        <div className="py-[120px] md:px-[65px] px-[20px]">
           <StudentPlaced showHeading={true} />
         </div>
       </div>
