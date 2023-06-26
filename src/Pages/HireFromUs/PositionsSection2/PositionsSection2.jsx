@@ -69,7 +69,7 @@ function PositionsSection2() {
   return (
     <div className="my-[80px]">
       <div className="max-w-[1310px] mx-auto">
-        <div className="flex justify-center gap-5 lg:gap-10 lg:border-2 border-[#37ED81] p-2 lg:rounded-full flex-wrap">
+        <div className="flex justify-center gap-5 lg:gap-10 border lg:border-2 border-[#37ED81] p-2 rounded-[28px] lg:rounded-full flex-wrap">
           {buttons.map((btn, index) => (
             <button
               type="button"
@@ -85,7 +85,7 @@ function PositionsSection2() {
         </div>
         <div className="flex justify-center py-[40px] md:p-[40px] lg:p-[80px] gap-5 lg:gap-10 flex-wrap">
           {data1[element].map((item, index) => (
-            <p key={index} className="text-[12px] sm:text-[14px] lg:text-base bg-[#D1FFD0] px-6 py-3 rounded-full font-medium text-[#101010]">{item}</p>
+            <p key={index} className="text-[12px] sm:text-[14px] lg:text-base shadow-md border dark:border-0 dark:bg-[#1C202A] px-6 py-3.5 rounded-full font-medium ">{item}</p>
           ))}
         </div>
       </div>
