@@ -1,5 +1,6 @@
 import React from "react";
 import referHeroImg from "../../../assets/someBG/referHeroImg.svg";
+//referHeroImg.svg
 
 const ReferHero = () => {
   return (
@@ -14,7 +15,7 @@ const ReferHero = () => {
             Today!
           </span>
         </div>
-        <div className="flex md:justify-start justify-center py-[40px]">
+        <div className="flex md:justify-start justify-center pt-[40px]">
           <button className=" bg-[#00A3FF]  rounded-[20px] py-[8px] px-[16px] text-white hover:transition hover:duration-5000 hover:ease-in-out hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-500">
             Refer Now
           </button>
