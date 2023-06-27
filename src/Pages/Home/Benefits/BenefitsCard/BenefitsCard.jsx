@@ -5,9 +5,9 @@ const BenefitsCard = ({ each }) => {
   const { title, body, thambnail } = each;
 
   return (
-    <div className={`${style.border_gradient} lg:mx-[80px] rounded-2xl`}>
+    <div className={`${style.border_gradient} lg:mx-[80px] rounded-[40px]`}>
       <div
-        className={`md:h-[200px] group overflow-hidden bg-[#D1FFD0] dark:bg-[#222C26] text-center  md:text-left rounded-2xl flex flex-col md:flex-row items-center px-[20px] md:py-[40px] py-[20px] md:gap-[40px] gap-[30px] border-2 border-transparent hover:border-gradient-red-blue hover:border-opacity-100`}
+        className={`md:h-[200px] group overflow-hidden bg-[#D1FFD0] dark:bg-[#222C26] text-center  md:text-left rounded-[40px] flex flex-col md:flex-row items-center px-[20px] md:py-[40px] py-[20px] md:gap-[40px] gap-[30px] border-2 border-transparent hover:border-gradient-red-blue hover:border-opacity-100`}
       >
         <div>
           <img

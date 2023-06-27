@@ -25,6 +25,7 @@ import FirstStepCard from "./FirstStepCard/FirstStepCard";
 import LearningJourneyCard from "./LearningJourneyCard/LearningJourneyCard";
 import TopTalentCard from "./TopTalentCard/TopTalentCard";
 import ScrollButton from "./ScrollButton";
+import ReferAndEarnCard from "./ReferAndEarnCard/ReferAndEarnCard";
 
 
 
@@ -37,15 +38,16 @@ const Home = () => {
       <Banner />
       <Super30/>
       <SDEInfo />
+      <ExploreCourses/>
       <SchoolChamp/>
       <CodingBees/>
       <EngineeringNerds/>
-      <ExploreCourses/>
       <DreamJob/>
       <Benefits/>
       <FirstStepCard />
       <StudentReview />
       <TopTalentCard />
+      <ReferAndEarnCard />
       <MeetOurTeam showHeading={true}/>
       <StudentPlaced showHeading={1}/>
       <LearningJourneyCard />
