@@ -1,6 +1,7 @@
 import React from "react";
 import tempImg from "../../../assets/Landing/tempImage.png";
 import Typewriter from "typewriter-effect";
+import LandingRightSection from "./LandingRightSection";
 
 function Landing() {
   return (
@@ -37,7 +38,8 @@ function Landing() {
         </div>
       </div>
       <div className="flex justify-end">
-        <img src={tempImg} />
+        {/* <img src={tempImg} /> */}
+        <LandingRightSection />
       </div>
     </div>
   );
