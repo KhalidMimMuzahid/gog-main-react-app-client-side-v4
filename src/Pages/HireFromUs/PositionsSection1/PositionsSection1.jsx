@@ -41,7 +41,7 @@ function PositionsSection1() {
         <h1 className="text-[24px] md:text-[36px] font-medium text-center text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#4BA25D] via-[#3DA5BD] to-[#905BEC] mb-[80px]">
           Right Candidates for the Right Position
         </h1>
-        <div className="flex justify-center gap-5 lg:gap-10 lg:border-2 border-[#37ED81] p-2 lg:rounded-full flex-wrap">
+        <div className="flex justify-center gap-5 lg:gap-10 border lg:border-2 border-[#37ED81] p-2 rounded-[28px] lg:rounded-full flex-wrap">
           <button
             type="button"
             onClick={() => setElement(0)}
@@ -63,7 +63,7 @@ function PositionsSection1() {
         </div>
         <div className="flex justify-center py-[40px] md:p-[40px] lg:p-[80px] gap-5 lg:gap-10 flex-wrap">
           {data1[element].map((item, index) => (
-            <p key={index} className="text-[12px] sm:text-[14px] lg:text-base bg-[#D1FFD0] px-6 py-3 rounded-full font-medium text-[#101010]">
+            <p key={index} className="text-[12px] sm:text-[14px] lg:text-base shadow-md border dark:border-0 dark:bg-[#1C202A] px-6 py-3.5 rounded-full font-medium ">
               {item}
             </p>
           ))}
