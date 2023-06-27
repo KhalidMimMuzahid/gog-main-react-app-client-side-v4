@@ -9,7 +9,7 @@ function ReferAndEarnCard() {
         <h1 className="text-[20px] lg:text-[30px] font-medium">
           You will be eligible for a{" "}
           <span className="text-[#37ED81]">
-            <span className="text-[26px] lg:text-[48px]text-[36px] font-semibold">15%</span><br /> referral
+            <span className="text-[26px] lg:text-[36px] font-semibold">15%</span><br /> referral
             voucher
           </span>{" "}
           per successful referral.
