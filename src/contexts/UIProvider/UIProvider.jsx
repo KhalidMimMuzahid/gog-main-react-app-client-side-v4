@@ -19,7 +19,7 @@ const UIProvider = ({ children }) => {
     };
 
     window.addEventListener("resize", handleResize);
-    console.log("screen size: ", screenSize);
+    // console.log("screen size: ", screenSize);
 
     return () => {
       window.removeEventListener("resize", handleResize);
