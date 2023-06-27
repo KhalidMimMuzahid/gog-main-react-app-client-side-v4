@@ -15,6 +15,7 @@ import ContactUs from "../Pages/ContactUs/ContactUs";
 import AboutUs from "../Pages/AboutUs/AboutUs";
 import ChampsOfBasicCoding from "../Pages/Courses/SpecificCourses/ChampsOfBasicCoding";
 import Alumni from "../Pages/Alumni/Alumni";
+import ReferAndEarn from "../Pages/ReferAndEarn/ReferAndEarn";
 
 const router = createBrowserRouter([
   {
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
       {
         path: "/about-us",
         element: <AboutUs />,
+      },
+      {
+        path: "/refer-earn",
+        element: <ReferAndEarn />,
       },
       {
         path: "/sign-up",
