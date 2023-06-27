@@ -8,19 +8,19 @@ import style from "./banner.module.css";
 
 const data = [
   {
-    title: "Students Currently Enrolled",
-    number: "200+",
+    title: "Students Enrolled",
+    number: "450+",
     img: cap,
   },
   {
-    title: "Total Batch",
-    number: "10+",
+    title: "Total Batches",
+    number: "30+",
     img: hiring,
   },
   {
     title: "We Started Our Journey",
-    number: "2023",
-    img: meeting,
+    number: "2021",
+    img: roadmap,
   },
   {
     title: "Placement Rate",
@@ -29,8 +29,8 @@ const data = [
   },
   {
     title: "Hiring Partners",
-    number: "50+",
-    img: roadmap,
+    number: "200+",
+    img: meeting,
   },
 ];
 
