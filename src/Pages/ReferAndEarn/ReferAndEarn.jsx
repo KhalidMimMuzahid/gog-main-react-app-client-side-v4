@@ -2,6 +2,7 @@ import React from 'react';
 import ReferHero from './ReferHero/ReferHero';
 import Rewards from './Rewards/Rewards';
 import Referral from './Referral/Referral';
+import ReferralStatus from './ReferralStatus/ReferralStatus';
 
 const ReferAndEarn = () => {
     return (
@@ -9,6 +10,7 @@ const ReferAndEarn = () => {
             <ReferHero/>
             <Rewards/>
             <Referral/>
+            <ReferralStatus/>
         </div>
     );
 };
