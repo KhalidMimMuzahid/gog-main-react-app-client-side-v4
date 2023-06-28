@@ -66,7 +66,7 @@ const ReferralEntries = () => {
                 <p className="text-[#000] text-[16px] font-[600] pl-[15px]">20 <span className="text-[12px]">members</span></p>
               </div>
             </div>
-            <img className="group-hover:w-[60px] transition-all duration-2000" src={smallAlexa} alt="smallAlexa img" />
+            <img className="group-hover:w-[60px] transition-all duration-2000" src={smallTablate} alt="smallAlexa img" />
             {/* <div className="flex flex-col gap-[-5px] items-center">
                 <img src={smallAlexa} alt="smallAlexa img" />
                 <img className="" src={Ellipse} alt="Ellipse img" />
