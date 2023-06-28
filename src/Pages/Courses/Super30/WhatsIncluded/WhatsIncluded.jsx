@@ -56,7 +56,9 @@ const WhatsIncluded = () => {
         {Dataset?.map((data, i) => (
           <div key={i} className='col-span-12 md:col-span-6 lg:col-span-4'>
             <div className='w-full border border-[#D1FFD0] p-5 rounded-lg flex flex-col gap-4 items-center justify-center h-96'>
+              <div className="p-5 rounded-full bg-[#D1FFD0] dark:bg-transparent">
               <img src={data?.image} alt='' />
+              </div>
               <p className='text-center dark:text-white'>{data?.text}</p>
             </div>
           </div>
