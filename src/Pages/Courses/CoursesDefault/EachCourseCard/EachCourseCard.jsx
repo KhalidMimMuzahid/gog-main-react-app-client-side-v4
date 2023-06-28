@@ -7,7 +7,7 @@ function EachCourseCard({ item }) {
     <div className="rounded-[20px] hover:bg-gradient-to-br from-[#37ED81] to-[#00A3FF] p-0.5">
       <div className="rounded-[20px] bg-[#F8FFF9] dark:bg-[#22362A] shadow-lg dark:shadow-none">
         <div className="max-w-[470px]">
-          <img src={item?.image} className="w-full" />
+          <img src={item?.image} className="w-full rounded-t-[20px]" />
           <div className="p-7 md:p-10">
             <h1 className="text-[20px] md:text-[24px] mb-5 font-medium">
               {item?.title}

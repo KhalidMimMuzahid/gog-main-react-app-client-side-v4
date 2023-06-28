@@ -1,10 +1,11 @@
 import React from "react";
-import schoolChamp from "../../../../assets/coursesLanding/schoolChamps.svg";
+import codingBees1 from "../../../../assets/coursesLanding/codingBees1.svg";
+import codingBees2 from "../../../../assets/coursesLanding/codingBees2.svg";
 import EachCourseCard from "../EachCourseCard/EachCourseCard";
 
 const data = [
   {
-    image: schoolChamp,
+    image: codingBees1,
     title: "Full Stack Data Analytics",
     time: "288+ hours",
     projects: "10+ Projects",
@@ -15,7 +16,7 @@ const data = [
     link: "champs-of-basic-coding"
   },
   {
-    image: schoolChamp,
+    image: codingBees2,
     title: "Full Stack Web Development",
     time: "288+ hours",
     projects: "10+ Projects",
@@ -33,7 +34,7 @@ function CodingBees() {
       <h1 className="text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#37ED81] via-[#3DA5BD] to-[#905BEC] text-[24px] font-medium mb-[40px] text-center">
         CODING BEES
       </h1>
-      <div className="flex justify-center items-center flex-wrap gap-10 md:gap-36">
+      <div className="flex justify-center items-center flex-wrap gap-10 md:gap-x-36">
         {data.map((item, index) => (
           <EachCourseCard item={item} key={index} />
         ))}
