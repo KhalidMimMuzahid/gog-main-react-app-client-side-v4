@@ -53,7 +53,7 @@ const WhyGeeksofGurukul = () => {
         Why Geeks of Gurukul?
       </h1>
 
-      <div className="mt-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
+      <div className="mt-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[40px]">
         
         {cardElemets.map((data, i) => (<DataCard 
             key={i}
