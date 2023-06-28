@@ -17,6 +17,7 @@ import Instructor from "./Instructor/Instructor";
 
 import BookFreeDemo from "./BookFreeDemo/BookFreeDemo";
 import StudentStories from "./StudentStories/StudentStories";
+import SevenSteps from "./SevenSteps/SevenSteps";
 
 
 
@@ -25,6 +26,7 @@ const Super30 = () => {
     <div className='px-[20px] md:px-[65px]'>
       {/* Sarwar */}
       <Super30Hero />
+      <SevenSteps/>
       <Super30Benifit />
       {/* Sarwar */}
       
