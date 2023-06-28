@@ -38,7 +38,7 @@ const Record = () => {
         </div>
       </div>
       <div className="flex items-center justify-center">
-        <div class=" my-[32px] md:w-[80%] w-[100%] border border-green-400 border-opacity-75"></div>
+        <div className=" my-[32px] md:w-[80%] w-[100%] border border-green-400 border-opacity-75"></div>
       </div>
       <p className="text-[#4BA25D]  text-center lg:text-[16px] text-[15px]">
         ADDRESS
