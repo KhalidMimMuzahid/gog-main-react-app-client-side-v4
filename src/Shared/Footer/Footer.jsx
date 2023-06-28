@@ -56,7 +56,7 @@ const Footer = () => {
               Resources
             </li>
             <div className="flex flex-col gap-3 md:gap-5 mt-5 text-sm md:text-base">
-              <Link to="">
+              <Link to="https://www.blogs.geeksofgurukul.com/" target="_blank">
                 <li className="duration-300 hover:text-[#37ED81]">Blog</li>
               </Link>
               <Link to="">
@@ -64,7 +64,7 @@ const Footer = () => {
                   Privacy policy
                 </li>
               </Link>
-              <Link to="">
+              <Link to="/faq">
                 <li className="duration-300 hover:text-[#37ED81]">FAQ</li>
               </Link>
               <Link to="">
@@ -72,7 +72,7 @@ const Footer = () => {
                   Terms and Condition
                 </li>
               </Link>
-              <Link to="">
+              <Link to="refund-policy">
                 <li className="duration-300 hover:text-[#37ED81]">
                   Refund Policy
                 </li>
@@ -86,13 +86,13 @@ const Footer = () => {
               Company
             </li>
             <div className="flex flex-col gap-3 md:gap-5 mt-5 text-sm md:text-base">
-              <Link to="">
+              <Link to="/careers">
                 <li className="duration-300 hover:text-[#37ED81]">Careers</li>
               </Link>
-              <Link to="">
+              <Link to="/alumni">
                 <li className="duration-300 hover:text-[#37ED81]">Alumni</li>
               </Link>
-              <Link to="">
+              <Link to="/our-team">
                 <li className="duration-300 hover:text-[#37ED81]">Our team</li>
               </Link>
             </div>
@@ -105,7 +105,7 @@ const Footer = () => {
             </li>
             <div className="flex items-center gap-3 md:gap-5 mt-5 mb-7 text-sm md:text-base">
               <li className="group bg-[#E1FFE8] hover:bg-white p-2 rounded-full duration-200">
-                <Link to="">
+                <Link to="https://www.facebook.com/people/Geeks-of-Gurukul/100090832062663/" target="_blank">
                   <FaFacebookF
                     size={20}
                     className="text-[#37ED81] group-hover:text-[#101010] duration-200"
@@ -114,7 +114,7 @@ const Footer = () => {
               </li>
 
               <li className="group bg-[#E1FFE8] hover:bg-white p-2 rounded-full duration-200">
-                <Link to="">
+                <Link to="https://twitter.com/geeksofgurukul" target="_blank">
                   <FaTwitter
                     size={20}
                     className="text-[#37ED81] group-hover:text-[#101010] duration-200"
@@ -123,7 +123,7 @@ const Footer = () => {
               </li>
 
               <li className="group bg-[#E1FFE8] hover:bg-white p-2 rounded-full duration-200">
-                <Link to="">
+                <Link to="https://www.instagram.com/geeks_of_gurukul/" target="_blank">
                   <FaInstagram
                     size={20}
                     className="text-[#37ED81] group-hover:text-[#101010] duration-200"
@@ -132,7 +132,7 @@ const Footer = () => {
               </li>
 
               <li className="group bg-[#E1FFE8] hover:bg-white p-2 rounded-full duration-200">
-                <Link to="">
+                <Link to="https://www.linkedin.com/company/geeks-of-gurukul/" target="_blank">
                   <FaLinkedinIn
                     size={20}
                     className="text-[#37ED81] group-hover:text-[#101010] duration-200"

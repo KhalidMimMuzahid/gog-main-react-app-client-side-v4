@@ -19,6 +19,7 @@ import ReferAndEarn from "../Pages/ReferAndEarn/ReferAndEarn";
 import Faq from "../Pages/Faq/Faq";
 import Careers from "../Pages/Careers/Careers";
 import RefundPolicy from "../Pages/RefundPolicy/RefundPolicy";
+import OurTeam from "../Pages/OurTeam/OurTeam";
 
 const router = createBrowserRouter([
   {
@@ -101,6 +102,10 @@ const router = createBrowserRouter([
       {
         path: "/refund-policy",
         element: <RefundPolicy />,
+      },
+      {
+        path: "/our-team",
+        element: <OurTeam />,
       },
     ],
   },
