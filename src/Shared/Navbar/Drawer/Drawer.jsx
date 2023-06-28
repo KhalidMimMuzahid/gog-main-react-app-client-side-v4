@@ -40,10 +40,10 @@ function Drawer({ drawerOpen, setDrawerOpen }) {
     <motion.div
       transition={{ duration: 0.7, ease: [0.32, 0.72, 0, 1] }}
       animate={{ x: `-${drawerOpen ? "100" : "0"}%` }}
-      className="absolute left-0 z-50 bg-[#F8FFF9] dark:bg-[#121313] shadow dark:shadow-[#41414140] text-[#101010] dark:text-white h-[90dvh] w-[100dvw]"
+      className="absolute left-0 z-50 bg-[#F8FFF9] dark:bg-[#121313] shadow dark:shadow-[#41414140] text-[#101010] dark:text-white h-[calc(100vh-70px)] w-[100dvw]"
     >
-      <div className="flex flex-col justify-between h-[100%]">
-        <div className="m-10 flex flex-col gap-10">
+      <div className="flex justify-between flex-col h-[100%]">
+        <div className="mt-10 m-5 flex flex-col gap-10">
           {navbarVars.map((item, index) => (
             <span key={index}>
               <Link
@@ -61,19 +61,22 @@ function Drawer({ drawerOpen, setDrawerOpen }) {
                 onClick={() => setDrawerOpen((prev) => !prev)}
               >
                 <div className="rounded-full p-1 bg-gradient-to-r from-[#00a3ff] via-[#3da5bd] to-[#905bec]">
-                  <p
-                    className="px-3 py-2 rounded-full text-sm font-medium bg-[#F8FFF9] dark:bg-[#121313]"
-                  >
+                  <p className="px-3 py-2 rounded-full text-sm font-medium bg-[#F8FFF9] dark:bg-[#121313]">
                     {item.name}
                   </p>
                 </div>
               </Link>
             </span>
           ))}
+          <Link to="/admission-form">
+            <p className="px-4 py-3 text-white bg-[#37ED81] hover:bg-[#4BA25D] rounded-full text-sm font-medium duration-200">
+              Apply now
+            </p>
+          </Link>
         </div>
         <div>
-          <hr className="mt-10 " />
-          <div className="flex gap-10 w-full p-10 items-center">
+          <hr className="" />
+          <div className="flex gap-10 w-full py-6 p-5 items-center">
             <p>Theme</p>
             <label className="swap swap-rotate">
               <input

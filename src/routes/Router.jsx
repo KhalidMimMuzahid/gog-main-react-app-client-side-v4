@@ -16,6 +16,7 @@ import AboutUs from "../Pages/AboutUs/AboutUs";
 import ChampsOfBasicCoding from "../Pages/Courses/SpecificCourses/ChampsOfBasicCoding";
 import Alumni from "../Pages/Alumni/Alumni";
 import ReferAndEarn from "../Pages/ReferAndEarn/ReferAndEarn";
+import Faq from "../Pages/Faq/Faq";
 
 const router = createBrowserRouter([
   {
@@ -86,6 +87,10 @@ const router = createBrowserRouter([
             element: <Webinar />,
           },
         ],
+      },
+      {
+        path: "/faq",
+        element: <Faq />,
       },
     ],
   },
