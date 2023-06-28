@@ -6,11 +6,13 @@ import EngineeringNerds from "./EngineeringNerds/EngineeringNerds";
 import IndustrialCourses from "./IndustrialCourses/IndustrialCourses";
 import SDEInfo from "../../Home/SDEInfo/SDEInfo"
 import CourseDetails from "./CourseDetails/CourseDetails";
+import Super30Course from "./Super30Course/Super30Course";
 
 const CoursesDefault = () => {
   return (
     <div className="px-[20px] md:px-[115px] dark:text-white">
       <CoursesHero />
+      <Super30Course />
       <SchoolChamp />
       <CodingBees />
       <EngineeringNerds />
