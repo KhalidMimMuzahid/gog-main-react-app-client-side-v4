@@ -201,7 +201,7 @@ const PerfectFit = () => {
               <label
                 id="accepted"
                 htmlFor="accepted"
-                class="w-full ml-4 dark:text-[white] text-[14px] text-[#344054]"
+                className="w-full ml-4 dark:text-[white] text-[14px] text-[#344054]"
               >
                 I authorize Geeks of Gurukul and its representative to contact
                 me with updates and notifications via Email, SMS, Whatsapp, and
