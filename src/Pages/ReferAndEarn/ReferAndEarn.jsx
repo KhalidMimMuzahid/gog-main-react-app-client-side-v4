@@ -8,6 +8,8 @@ import ReferralStatus from './ReferralStatus/ReferralStatus';
 import ReferSteps from './ReferSteps/ReferSteps';
 import ReferralEntries from './ReferralEntries/ReferralEntries';
 import TermsandConditions from './TermsandConditions/TermsandConditions';
+import FrequentlyAskedQuestions from './FrequentlyAskedQuestions/FrequentlyAskedQuestions';
+import WhyGeeksofGurukul from './WhyGeeksofGurukul/WhyGeeksofGurukul';
 
 
 const ReferAndEarn = () => {
@@ -18,8 +20,11 @@ const ReferAndEarn = () => {
             <Rewards/>
             <Referral/>
             <ReferralStatus/>
+            
             <ReferralEntries/>
+            <WhyGeeksofGurukul/>
             <TermsandConditions/>
+            <FrequentlyAskedQuestions/>
         </div>
     );
 };
