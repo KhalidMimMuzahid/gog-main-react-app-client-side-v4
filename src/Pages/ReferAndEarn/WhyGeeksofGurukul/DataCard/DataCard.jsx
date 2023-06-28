@@ -6,7 +6,7 @@ const DataCard = ({data}) => {
     
       <div className="items-center justify-between">
         <div className="flex flex-col items-center">
-          <div className="flex items-center justify-center mb-[40px] p-[10px] bg-[#D1FFD0] rounded-[50%]"><img className="w-[40px] " src={icon} alt="img icon" /></div>
+          <div className="flex items-center justify-center mb-[40px] p-[10px] bg-[#D1FFD0] dark:bg-[#1A211F] rounded-[50%]"><img className="w-[40px] " src={icon} alt="img icon" /></div>
           <h6 className="text-[24px] mb-[40px] dark:text-[#D1FFD0] text-[#000] font-[600]">
             {title}
           </h6>
