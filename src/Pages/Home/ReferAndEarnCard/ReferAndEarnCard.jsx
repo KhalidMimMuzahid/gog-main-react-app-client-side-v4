@@ -1,5 +1,6 @@
 import React from "react";
 import refer from "../../../assets/Landing/referAndEarn.svg";
+import { Link } from "react-router-dom";
 
 function ReferAndEarnCard() {
   return (
@@ -15,12 +16,13 @@ function ReferAndEarnCard() {
           per successful referral.
         </h1>
 
-        <button
+        <Link to="/refer-earn" className="flex flex-grow md:flex-grow-0"><button
           type="button"
           className="capitalize bg-gradient-to-r from-[#00A3FF] to-[#00A3FF] hover:to-[#905BEC] text-white py-2.5 px-4 rounded-full duration-200 lg:text-base text-sm flex-grow md:flex-grow-0"
         >
           Refer Now
         </button>
+        </Link>
       </div>
     </div>
   );
