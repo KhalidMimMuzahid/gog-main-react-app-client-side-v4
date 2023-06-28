@@ -21,7 +21,7 @@ const TermsandConditions = () => {
         Terms and Conditions
       </h1>
       <div>
-        {paragraph.map((data, i) => <p className="text-justify mt-[10px]">{i+1}  <span className="">{data}</span></p>)}
+        {paragraph.map((data, i) => <p className="dark:text-[white] text-justify mt-[10px]">{i+1}  <span className="">{data}</span></p>)}
       </div>
     </div>
   );
