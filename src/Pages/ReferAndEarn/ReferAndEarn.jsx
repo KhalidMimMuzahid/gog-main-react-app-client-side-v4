@@ -8,6 +8,7 @@ import ReferralStatus from './ReferralStatus/ReferralStatus';
 import ReferSteps from './ReferSteps/ReferSteps';
 import ReferralEntries from './ReferralEntries/ReferralEntries';
 import TermsandConditions from './TermsandConditions/TermsandConditions';
+import FrequentlyAskedQuestions from './FrequentlyAskedQuestions/FrequentlyAskedQuestions';
 
 
 const ReferAndEarn = () => {
@@ -20,6 +21,7 @@ const ReferAndEarn = () => {
             <ReferralStatus/>
             <ReferralEntries/>
             <TermsandConditions/>
+            <FrequentlyAskedQuestions/>
         </div>
     );
 };
