@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function EachCourseCard({ item }) {
   return (
     <div className="rounded-[40px] hover:bg-gradient-to-br from-[#37ED81] to-[#00A3FF] p-0.5">
-      <div className="rounded-[40px] bg-[#D1FFD0] dark:bg-[#22362A] from-[#D1FFD0] to-[#BBE7FF] shadow-md dark:shadow-none">
+      <div className="rounded-[40px] bg-[#F8FFF9] dark:bg-[#22362A] shadow-lg dark:shadow-none">
         <div className="max-w-[470px]">
           <img src={item?.image} className="w-full rounded-t-[40px]" />
           <div className="p-7 md:p-10">
@@ -41,12 +41,22 @@ function EachCourseCard({ item }) {
               </s>
             </h1>
             <div className="flex justify-between items-center mt-7 gap-5">
-              <Link
+              <div className="flex-grow">
+                <div className="hover:bg-gradient-to-r hover:from-[#00a3ff] hover:to-[#905bec] lg:pt-[1.7px] pt-[1.5px] pb-[1.5px] pl-[1.5px] pr-[1.5px] xl:pr-[1.7px] rounded-full [&>button]:hover:border-[#F8FFF900] w-full">
+                  <Link
+                    to="/courses/champs-of-basic-coding"
+                    className="py-2 px-4 border dark:border-white border-black rounded-full bg-[#F8FFF9] dark:bg-[#121313]"
+                  >
+                    Know More
+                  </Link>
+                </div>
+              </div>
+              {/* <Link
                 to="/courses/champs-of-basic-coding"
                 className="py-2 px-4 border border-[#101010] hover:border-2 dark:border-white rounded-full flex-grow text-sm md:text-base text-center"
               >
                 Know More
-              </Link>
+              </Link> */}
               <Link
                 to="/courses/champs-of-basic-coding"
                 className="py-2 px-4 border border-[#00A3FF] rounded-full bg-gradient-to-r from-[#00A3FF] to-[#00A3FF] hover:to-[#905BEC] text-white flex-grow text-sm md:text-base text-center"
