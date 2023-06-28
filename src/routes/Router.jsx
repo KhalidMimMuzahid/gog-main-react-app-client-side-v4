@@ -17,6 +17,7 @@ import ChampsOfBasicCoding from "../Pages/Courses/SpecificCourses/ChampsOfBasicC
 import Alumni from "../Pages/Alumni/Alumni";
 import ReferAndEarn from "../Pages/ReferAndEarn/ReferAndEarn";
 import Faq from "../Pages/Faq/Faq";
+import Careers from "../Pages/Careers/Careers";
 
 const router = createBrowserRouter([
   {
@@ -91,6 +92,10 @@ const router = createBrowserRouter([
       {
         path: "/faq",
         element: <Faq />,
+      },
+      {
+        path: "/careers",
+        element: <Careers />,
       },
     ],
   },

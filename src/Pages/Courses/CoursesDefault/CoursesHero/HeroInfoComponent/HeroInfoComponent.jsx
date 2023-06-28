@@ -11,9 +11,9 @@ const info = [
 
 function HeroInfoComponent() {
   return (
-    <div className="col-span-1 lg:col-span-8">
+    <div className="col-span-1 lg:col-span-7">
       <h1 className="text-center md:text-left text-[25px] md:text-[48px] font-medium text-transparent bg-clip-text text-gradient bg-gradient-to-r from-[#37ED81] via-[#3DA5BD] to-[#905BEC]">"Embark on Your Career with the Accelerator Program"</h1>
-      <div className="flex flex-col gap-10 w-full lg:w-[80%] mt-16">
+      <div className="flex flex-col gap-10 w-full lg:w-[100%] mt-16">
         {info.map((point, index) => (
           <div
             className="flex gap-4 items-center text-[#101010] dark:text-white"
